@@ -37,6 +37,6 @@
 			delete-cookies="JESSIONID,SPRING_SECURITY_REMEMBER_ME_COOKIE"
 		/>
 		
+		<security:csrf disabled="true"/>
 	</security:http>
-
 </beans>
