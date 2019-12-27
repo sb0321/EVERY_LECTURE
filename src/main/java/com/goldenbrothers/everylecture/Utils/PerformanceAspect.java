@@ -2,9 +2,11 @@ package com.goldenbrothers.everylecture.Utils;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
+import org.aspectj.lang.annotation.Around;
 
 public class PerformanceAspect {
 	
+	@Around("pointcutMethod()")
 	public Object trace(ProceedingJoinPoint joinPoint) throws Throwable {
 		
 		Signature s = joinPoint.getSignature();
