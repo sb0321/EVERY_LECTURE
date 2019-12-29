@@ -8,7 +8,6 @@ public class Encryptor {
 		// TODO Auto-generated method stub
 		
 		StandardPBEStringEncryptor enc = new StandardPBEStringEncryptor();
-
 	}
 
 }
