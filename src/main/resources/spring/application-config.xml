@@ -13,11 +13,12 @@
 	<context:component-scan base-package="com.goldenbrothers.everylecture"/>
 	
 	<!-- 암호화된 JDBC 연결을 위해서 -->
-	<bean id="propertyConfigurer" class="org.jasypt.spring31.properties.EncryptablePropertyPlaceholderConfigurer">
+	<bean id="propertyConfigurer" 
+	class="org.jasypt.spring31.properties.EncryptablePropertyPlaceholderConfigurer">
 		<constructor-arg ref="configurationEncryptor"/>
 		<property name="locations">
 			<list>
-				<value>classpath:/database/jdbc.properties</value>
+				<value>classpath:database/jdbc.properties</value>
 			</list>
 		</property>
 	</bean>
@@ -32,6 +33,36 @@
 		<property name="config" value="environmentVariablesConfiguration"/>
 		<property name="password" value="goldenbrothers"/>
 	</bean>
+	
+	
+	<!-- 붙여넣기 -->
+<!--     <bean id="propertyConfigurer"  -->
+<!--     class="org.jasypt.spring31.properties.EncryptablePropertyPlaceholderConfigurer"> -->
+<!--         <constructor-arg ref="configurationEncryptor" /> -->
+<!--         <property name="locations"> -->
+<!--             <list> -->
+<!--                 <value>classpath:database/jdbc.properties</value> -->
+<!--             </list> -->
+<!--         </property> -->
+<!--     </bean> -->
+    
+<!-- 	 <bean id="environmentVariablesConfiguration" -->
+<!--       class="org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig"> -->
+<!--         <property name="algorithm" value="PBEWithMD5AndDES" /> -->
+<!--         <property name="passwordEnvName" value="APP_ENCRYPTION_PASSWORD" /> -->
+<!--     </bean> -->
+  
+<!--     <bean id="configurationEncryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor"> -->
+<!--         <property name="config" ref="environmentVariablesConfiguration" /> -->
+<!--         <property name="password" value="goldenbrothers" /> -->
+<!--     </bean> -->
+
+ 
+
+	
+	
+	
+	
 	
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="${jdbc.driverClassName}"/>
