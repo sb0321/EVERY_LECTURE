@@ -67,9 +67,9 @@
 	
 <!-- 	<aop:config> -->
 <!-- 		<aop:aspect id="performanceAspect" ref="performanceAspect"> -->
-<!-- 			<!-- com.goldenbrothers.everylecture 내 모든 함수에서 실행 --> -->
+				<!-- com.goldenbrothers.everylecture 내 모든 함수에서 실행 -->
 <!-- 			<aop:pointcut expression="within(com.goldenbrothers.everylecture.*)" id="timeElapse"/> -->
-			<!-- when 전후 what:trace() 메소드 -->
+				<!-- when 전후 what:trace() 메소드 -->
 <!-- 			<aop:around method="trace" pointcut-ref="timeElapse"/> -->
 <!-- 		</aop:aspect> -->
 <!-- 	</aop:config> -->
