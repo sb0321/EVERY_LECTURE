@@ -8,6 +8,13 @@ public class Encryptor {
 		// TODO Auto-generated method stub
 		
 		StandardPBEStringEncryptor enc = new StandardPBEStringEncryptor();
+		enc.setAlgorithm("PBEWithMD5AndDES");
+		enc.setPassword("goldenbrothers");
+		
+		System.out.println(enc.encrypt("org.mariadb.jdbc.Driver"));
+		System.out.println(enc.encrypt("jdbc:maraidb://every-lecture.iptime.org:3306/test"));
+		System.out.println(enc.encrypt("test"));
+		System.out.println(enc.encrypt("1234"));
 	}
 
 }
