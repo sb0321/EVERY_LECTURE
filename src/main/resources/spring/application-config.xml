@@ -42,11 +42,17 @@
 	</bean>
 	
 	<!-- MyBatis 사용을 위해 -->
-	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-		<property name="dataSource" ref="dataSource"/>
-		<property name="mapperLocations" value="classpath:/sql/*.xml"/>
+	<bean id="sqlSessionFactory" name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	    <property name="dataSource" ref="dataSource" />
+	    <property name="mapperLocations" value="classpath:/sql/*.xml" />
 	</bean>
 	
+	
+	<bean id="sqlSession" name="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" 
+	destroy-method="clearCache">
+	    <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+		
 	<mybatis-spring:scan base-package="com.goldenbrothers.everylecture.dao"/>
 	
 <!--
