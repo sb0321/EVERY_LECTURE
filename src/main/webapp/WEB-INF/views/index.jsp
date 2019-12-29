@@ -9,5 +9,12 @@
 </head>
 <body>
 	EVERY-LECTURE index 페이지
+	
+	<table>
+		<tr>
+			<td>ID</td>
+			<td>이름</td>
+		</tr>
+	</table>
 </body>
 </html>
