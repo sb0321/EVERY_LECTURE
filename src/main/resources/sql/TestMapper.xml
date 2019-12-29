@@ -6,8 +6,8 @@
 <mapper namespace="com.goldenbrothers.everylecture.dao.ITestDAO">
 	
 	<!-- 조회 -->
-	<select id="testList" resultType="com.goldenbrothers.everylecture.model.TestDTO">
-		select * from table
+	<select id="oneList" resultType="com.goldenbrothers.everylecture.model.TestDTO">
+		select * from table where id = 1
 	</select>
 	
 	
