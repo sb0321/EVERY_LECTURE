@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.goldenbrothers.everylecture.model.TestDTO;
 import com.goldenbrothers.everylecture.service.ITestService;
 
 @Controller
@@ -23,8 +24,8 @@ public class TestController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getAllTest(Model model) {
 		
-		service.oneList();
-		
+		TestDTO dto =  service.oneList();
+		model.addAttribute("list", dto);
 		return "index";
 	}
 
