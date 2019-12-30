@@ -21,7 +21,7 @@ public class TestController {
 
 	private static final Logger logger = LoggerFactory.getLogger(TestController.class);
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String getAllTest(Model model) {
 		
 		TestDTO dto =  service.oneList();

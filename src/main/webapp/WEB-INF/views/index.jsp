@@ -6,11 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>EVERY-LECTURE</title>
-<script src="./resources/js/jquery-3.4.1.js"></script>
+<jsp:include page="index/index_top.jsp"/>
 </head>
 <body>
-	EVERY-LECTURE index 페이지
-	
 	<table>
 		<tr>
 			<td>ID</td>
