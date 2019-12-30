@@ -5,7 +5,7 @@
 	
 	<!-- 조회 -->
 	<select id="oneList" resultType="com.goldenbrothers.everylecture.model.TestDTO">
-		select * from testTable where id = 1
+		SELECT * FROM test.check where id = 1
 	</select>
 	
 	
