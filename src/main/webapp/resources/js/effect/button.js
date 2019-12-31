@@ -2,17 +2,54 @@ $(document).ready(function() {
 	
 	$btn = $('.eBtn');
 	
-	btnEffect($btn)
+//	$btn.css({"height": "20px", "width":"50px"});
+});
+$(document).ready(function() {
+	
+	$btn.on("click", function(e) {
+		
+		btnEffect($(this), e);
+	});
 	
 });
 
-function btnEffect(btn) {
+function btnEffect(page, e) {
 	
-	$b = btn;
+	var child = document.createElement("div");
+	page.append(child);
 	
-	$b.mouseenter(function() {
-		$(this).css({'border' : '1'});
-	}).mouseleave(function() {		
-		$(this).css({'border' : '3'});
-	});
+	var position = page.offset();
+//	alert(position.top + " " + position.left);
+	
+	//생성될 요소의 위치를 마우스 포인터 위치로 설정
+	var distance = Math.max(this.clientWidth, this.clientHeight);
+	var top = position.top;
+	var left = position.left;
+	
+	child.style.left = (e.pageX - left) + "px";
+	child.style.top = (e.pageY - top) + "px";
+	
+	
+	//자식 div의 크기를 정함
+	child.style.height = 0 + "px";
+	child.style.width = 0 + "px";
+	
+	// 자식 요소의 스타일을 적용
+	child.style.borderRadius = "50%";
+	child.style.opacity = "80%";
+	
+	
+	// 원의 크기 선별
+	var width = page.width();
+	var height = page.height();
+	var bigger = width + height;
+	
+	$child = $btn.children();
+	$child.animate({'opacity': '0', 
+					"height": bigger,
+					"width": bigger,
+					"top": (e.pageY - top) - bigger / 2,
+					"left":(e.pageX - left) - bigger / 2}, 300, function() {
+						$(this).remove();
+					});
 }

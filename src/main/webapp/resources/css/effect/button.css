@@ -1,0 +1,17 @@
+.eBtn div { /* 자식 요소 div */
+	
+	position: absolute;
+	background-color: white;
+}
+
+.eBtn {
+	position: relative;
+	overflow: hidden;
+	
+	height: 200px;
+	width: 300px;
+	
+	border: 0;
+	border-radius: 2px;
+	background-color: skyblue;
+}
