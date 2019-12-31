@@ -42,14 +42,15 @@ function btnEffect(page, e) {
 	// 원의 크기 선별
 	var width = page.width();
 	var height = page.height();
-	var bigger = width + height;
+	var bigger = (width + height) * 2;
 	
 	$child = $btn.children();
-	$child.animate({'opacity': '0', 
+	$child.animate({ 
 					"height": bigger,
 					"width": bigger,
 					"top": (e.pageY - top) - bigger / 2,
-					"left":(e.pageX - left) - bigger / 2}, 300, function() {
+					"left":(e.pageX - left) - bigger / 2}, 300)
+					.animate({"opacity":"0"}, function() {
 						$(this).remove();
-					});
+					})
 }
