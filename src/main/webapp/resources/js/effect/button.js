@@ -54,5 +54,9 @@ function btnEffect(page, e) {
 						$(this).animate({"opacity":"0"}, function() {
 							$(this).remove();
 						});
+					}).mouseleave(function() {
+						$(this).animate({"opacity":"0"}, function() {
+							$(this).remove();
+						});
 					});
 }
