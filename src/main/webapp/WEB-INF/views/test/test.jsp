@@ -9,7 +9,6 @@
 <title>테스트 페이지 입니다.</title>
 <script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
 <script src="<%= context %>/resources/js/effect/button.js"></script>
-
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
 </head>
 <body>

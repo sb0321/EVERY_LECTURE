@@ -20,12 +20,6 @@ public class ViewController {
 		return "index";
 	}
 	
-	// index_top
-	@RequestMapping(value = "/index/index_top")
-	public String index_top() {
-		return "/index/index_top";
-	}
-	
 	// test
 	@RequestMapping(value = "/test/test")
 	public String test() {
