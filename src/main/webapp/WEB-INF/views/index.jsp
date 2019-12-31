@@ -19,5 +19,7 @@
 			<td>${list.name }</td>
 		</tr>
 	</table>
+	
+	<a href='<c:url value="/test/test"/>'>테스트 페이지</a>
 </body>
 </html>

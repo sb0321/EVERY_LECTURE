@@ -26,5 +26,11 @@ public class ViewController {
 		return "/index/index_top";
 	}
 	
+	// test
+	@RequestMapping(value = "/test/test")
+	public String test() {
+		return "/test/test";
+	}
+	
 
 }
