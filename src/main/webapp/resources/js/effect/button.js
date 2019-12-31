@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
 	
-	$btn.on("click", function(e) {
+	$btn.mousedown(function(e) {
 		
 		btnEffect($(this), e);
 	});
@@ -50,7 +50,9 @@ function btnEffect(page, e) {
 					"width": bigger,
 					"top": (e.pageY - top) - bigger / 2,
 					"left":(e.pageX - left) - bigger / 2}, 300)
-					.animate({"opacity":"0"}, function() {
-						$(this).remove();
-					})
+					.mouseup(function() {
+						$(this).animate({"opacity":"0"}, function() {
+							$(this).remove();
+						});
+					});
 }
