@@ -36,7 +36,7 @@ function btnEffect(page, e) {
 	
 	// 자식 요소의 스타일을 적용
 	child.style.borderRadius = "50%";
-	child.style.opacity = "80%";
+	child.style.opacity = "30%";
 	
 	
 	// 원의 크기 선별
