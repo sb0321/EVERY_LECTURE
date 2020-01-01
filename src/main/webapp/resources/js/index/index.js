@@ -3,6 +3,12 @@ $(document).ready(function() {
 	$goTest = $('#testBtn');
 	
 	$top = $(".index_top");
+	
+	$login = $('#login')
+	
+	$over = $("#overlay_wrapper");
+	$over_sub = $('#index_overlay');
+	
 });
 
 $(document).ready(function() {
@@ -27,4 +33,29 @@ $(document).ready(function() {
 			"padding-right":"0px"
 		}).css({"font-weight":"normal"});
 	});
+});
+
+// 오버레이 관련 함수
+$(document).ready(function() {
+	
+	// 로그인 버튼 클릭 시 오버레이
+	$login.on("click", function() {
+		$over.css({"display":"flex"})
+		.animate({"opacity":"100%"});
+		
+		$over_sub.css({"display":"flex"})
+		.animate({"opacity":"40%"});
+	});
+	
+	// 바깥 누르면 나가짐
+	$over_sub.on("click", function() {
+		$over.animate({"opacity":"0"}, function() {
+			$(this).css({"display":"none"});
+		});
+		
+		$over_sub.animate({"opacity":"0"}, function() {
+			$(this).css({"display":"none"});
+		})
+	});
+	
 });

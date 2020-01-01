@@ -11,7 +11,7 @@
 			</a>
 		</div>
 		<div id="top_right">
-			<div class="index_top">
+			<div id="login" class="index_top">
 				<a href="#">로그인</a>
 			</div>
 			<div class="index_top">
