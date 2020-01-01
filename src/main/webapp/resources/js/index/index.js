@@ -41,7 +41,7 @@ $(document).ready(function() {
 	// 로그인 버튼 클릭 시 오버레이
 	$login.on("click", function() {
 		$over.css({"display":"flex"})
-		.animate({"opacity":"100%"});
+		.animate({"opacity":"100%", "top":"50%"});
 		
 		$over_sub.css({"display":"flex"})
 		.animate({"opacity":"40%"});
@@ -49,7 +49,7 @@ $(document).ready(function() {
 	
 	// 바깥 누르면 나가짐
 	$over_sub.on("click", function() {
-		$over.animate({"opacity":"0"}, function() {
+		$over.animate({"opacity":"0", "top":"25%"}, function() {
 			$(this).css({"display":"none"});
 		});
 		
@@ -59,3 +59,4 @@ $(document).ready(function() {
 	});
 	
 });
+

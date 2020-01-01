@@ -1,0 +1,12 @@
+.eInput {
+	background-color: gray;
+	
+	border: 0px solid green;
+	border-radius: 2px;
+	
+}
+
+.eInput::placeholder {
+	color: white;
+	
+}

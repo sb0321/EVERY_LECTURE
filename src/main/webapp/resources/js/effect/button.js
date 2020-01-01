@@ -22,7 +22,6 @@ function btnEffect(page, e) {
 //	alert(position.top + " " + position.left);
 	
 	//생성될 요소의 위치를 마우스 포인터 위치로 설정
-	var distance = Math.max(this.clientWidth, this.clientHeight);
 	var top = position.top;
 	var left = position.left;
 	

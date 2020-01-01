@@ -110,9 +110,6 @@ a {
 #overlay_wrapper {
 	position: absolute;
 	
-	top: 50%;
-	left: 50%;
-	
 	display: none;
 	
 	width: 500px;
@@ -122,13 +119,49 @@ a {
 	
 	opacity: 0%;
 	
-	top: 50%;
+	top: 25%;
 	left: 50%;
 	transform:translate(-50%, -50%);
 	
 	background-color: white;
 	
 	z-index: 3;
+}
+
+/* 오버레이 실제로 뜨는 창 */
+#overlay_window {
+	display: table;
+	text-align: center;
+	
+	width: 100%;
+	height: 100%;
+	
+}
+
+#window_context {
+	display: table-cell;
+	vertical-align: middle;
+	
+	width: 90%;
+	height: 90%;
+}
+
+#loginId {
+	
+	height: 50px;
+	width: 200px;
+	
+}
+
+#loginPw {
+	height: 50px;
+	width: 200px;
+	
+}
+
+#loginSubmit {
+	height: 100px;
+	width: 300px;
 }
 
 
