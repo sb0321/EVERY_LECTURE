@@ -45,3 +45,63 @@
 	height: 100%;
 	width: 50%;
 }
+
+/* index_top.jsp */
+
+a {
+	text-decoration: none;
+	color: white;
+	
+	width: 100%;
+	height: 100%;
+/* 	display: flex; */
+}
+
+#logoImg {
+	width: 50px;
+	height: auto;
+	float: left;
+}
+
+#lecture {
+	float: right;
+}
+
+#navi {
+	background-color: #2f5597;	
+	width: 100%;
+	height: 50px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin: auto;
+}
+
+.index_top {
+	
+	color: white;
+	
+	display: inline-block;
+	margin: auto;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	
+	width: auto;
+}
+
+#top_right {
+	float: right;
+	margin-right: 1%;
+}
+
+#top_left {
+	float: left;
+	margin: auto;
+	margin-left: 1%;
+}

@@ -10,10 +10,12 @@
 <script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
 <script src="<%= context %>/resources/js/effect/button.js"></script>
 <script src="<%= context %>/resources/js/index/index.js"></script>
+<link rel="stylesheet" href="<%= context %>/resources/css/reset.css">
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
 <link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
 </head>
 <body>
+	<jsp:include page="index/index_top.jsp"></jsp:include>
 	<section id="header">
 		<div id="head">
 			<div id="head_left_wrap">
