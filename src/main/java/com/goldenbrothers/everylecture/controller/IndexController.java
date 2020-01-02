@@ -11,11 +11,5 @@ public class IndexController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 	
-	@RequestMapping(value = "/goLogin", method = RequestMethod.GET)
-	public String goLogin() {
-		
-		return null;
-	}
-	
 
 }

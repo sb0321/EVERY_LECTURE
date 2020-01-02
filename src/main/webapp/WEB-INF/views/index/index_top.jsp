@@ -7,7 +7,7 @@
 			<a href="#none">
 				<img id="logoImg" alt="이미지를 불러오는 것을 실패했습니다." 
 				src="<%= context %>/resources/image/logo-white.png">
-				<label id="lecture">EVERY-LECTURE</label>
+				<a id="logoWord">EVERY-LECTURE</a>
 			</a>
 		</div>
 		<div id="top_right">

@@ -3,11 +3,12 @@
 <body>
 	<section id="overlay_window">
 		<div id="window_context">
-			<form action="">
-				<input id="loginId" class="eInput" type="text" placeholder="ID">
+			<form id="loginForm" method="post">
+				<input id="csrf" type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+				<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
 				<br>
 				<br>
-				<input id="loginPw" class="eInput" type="password" placeholder="Password">
+				<input id="userPW" name="userPW" class="eInput" type="password" placeholder="Password">
 				<br>
 				<br>
 				<input id="loginSubmit" class="eBtn" type="submit" value="Login">

@@ -9,6 +9,10 @@ $(document).ready(function() {
 	$over = $("#overlay_wrapper");
 	$over_sub = $('#index_overlay');
 	
+	
+	// 로그인 관련 변수
+	$loginForm = $('#loginForm');
+	
 });
 
 $(document).ready(function() {
@@ -56,6 +60,37 @@ $(document).ready(function() {
 		$over_sub.animate({"opacity":"0"}, function() {
 			$(this).css({"display":"none"});
 		})
+	});
+	
+});
+
+// 로그인 버튼 누를 시
+$(document).ready(function () {
+	
+	$loginForm.on("submit", function(event) {
+		
+		// 원래 폼 동작 방지
+		event.preventDefault();
+		
+		var loginData = $loginForm.serialize();
+		
+		$.ajax({
+			url: '/everylecture/login/goLogin',
+			type: 'GET',
+			data: loginData,
+			success:function(result) {
+				if(result == "1")
+					alert("성공");
+				else if(result == "0")
+					alert("없는 아이디");
+				
+			},
+			error:function(result) {
+				alert("ERROR");
+			}
+		});
+		
+		
 	});
 	
 });

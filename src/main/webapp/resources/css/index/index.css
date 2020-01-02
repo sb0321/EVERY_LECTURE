@@ -31,7 +31,6 @@
 	overflow: hidden;
 	vertical-align: middle;
 	display: table-cell;
-	vertical-align: middle;
 	padding-left: 10%;
 	color: white;
 }
@@ -44,6 +43,10 @@
 	float: right;	
 	height: 100%;
 	width: 50%;
+}
+
+#intro {
+	font-size: 2em;
 }
 
 /* index_top.jsp */
@@ -59,8 +62,16 @@ a {
 
 #logoImg {
 	width: 50px;
-	height: auto;
-	float: left;
+	height: 50px;
+}
+
+#logoWord {
+	height: 50px;
+	min-width: 200px;
+	
+	margin-top: 10px;
+	
+	font-size: 1.5em;
 }
 
 #lecture {
@@ -98,12 +109,23 @@ a {
 #top_right {
 	float: right;
 	margin-right: 1%;
+	
 }
 
 #top_left {
 	float: left;
 	margin: auto;
 	margin-left: 1%;
+	
+	display: table;
+	
+}
+
+#top_left:first-child {
+	height: 50px;
+	width: 50px;
+	
+	display: flex;
 }
 
 /* 오버레이 설정 */
@@ -146,22 +168,40 @@ a {
 	height: 90%;
 }
 
-#loginId {
+
+#userID {
 	
 	height: 50px;
-	width: 200px;
+	width: 300px;
+	
+	text-align: center;
+	
+	color: white;
 	
 }
 
-#loginPw {
+#userID::placeholder {
+	color: gray;
+}
+
+#userPW {
 	height: 50px;
-	width: 200px;
+	width: 300px;
 	
+	text-align: center;
+	
+	color: white;
+	
+}
+
+#userPW::placeholder {
+	color: gray;
 }
 
 #loginSubmit {
-	height: 100px;
+	height: 50px;
 	width: 300px;
+	color: white;
 }
 
 
