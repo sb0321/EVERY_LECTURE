@@ -21,7 +21,10 @@
 				</div>
 			</div>
 			<div id="head_right_wrap">
-				
+				<div id="head_right">
+					<div id="showTable">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

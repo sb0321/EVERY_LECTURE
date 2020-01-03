@@ -1,10 +1,14 @@
 $(document).ready(function() {
+	
+	// 변수 선언
 	$login = $('#login')
 	
 	$over = $("#overlay_wrapper");
 	$over_sub = $('#index_overlay');
 	
 	$top = $(".index_top");
+	
+	$table = $("#head_right");
 	
 	
 	
@@ -32,12 +36,29 @@ $(document).ready(function() {
 		$(this).animate({
 			"padding-left":"20px",
 			"padding-right":"20px"
-		}, 100).css({"font-weight":"bold"});
-	}).mouseleave(function() {
+		}, 200).css({"font-weight":"bold"});
+	})
+	
+	$top.mouseleave(function() {
 		$(this).animate({
 			"padding-left":"0px",
 			"padding-right":"0px"
-		}, 100).css({"font-weight":"normal"});
+		}, 200).css({"font-weight":"normal"});
 	});
 	
+	$table.delay(100, function() {
+		showTable($(this));
+	});
 });
+
+
+function showTable(table) {
+	
+	var child = document.createElement("div");
+	table.append(child);
+	
+	$child = table.children();
+	
+	
+	
+}

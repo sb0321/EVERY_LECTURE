@@ -25,7 +25,6 @@
 }
 
 #head_left {
-/* 	margin: auto; */
 	
 	width: 90%;
 	overflow: hidden;
@@ -43,6 +42,23 @@
 	float: right;	
 	height: 100%;
 	width: 50%;
+	display: table;
+	text-align: center;
+}
+
+#head_right {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#showTable {
+	border: 2px solid white;
+	border-radius: 5px;
+	
+	width: 80%;
+	height: 70%;
+	
+	margin: auto;
 }
 
 #intro {
