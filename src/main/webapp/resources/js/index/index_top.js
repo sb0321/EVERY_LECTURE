@@ -8,7 +8,7 @@ $(document).ready(function() {
 	
 	$top = $(".index_top");
 	
-	$table = $("#head_right");
+	$table = $("#showTable");
 	
 	
 	
@@ -54,10 +54,26 @@ $(document).ready(function() {
 
 function showTable(table) {
 	
-	var child = document.createElement("div");
-	table.append(child);
+	var child1 = document.createElement("div");
+	var background = document.createElement("div");
+	table.append(child1);
+	table.before(background);
 	
 	$child = table.children();
+	
+	var radius = ($(window).width() + $(window).height()) / 1000;
+	
+	$child.css({
+		"height":"0px",
+		"width":"0px",
+		"margin":"auto",
+		"vertical-align":"middle",
+		"border-left":"50px solid",
+		"border-top":"30px solid transparent",
+		"border-bottom":"30px solid transparent",
+
+	});
+	background.style.backgroundColor = "white";
 	
 	
 	
