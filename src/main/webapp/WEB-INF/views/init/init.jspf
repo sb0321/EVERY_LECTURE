@@ -13,3 +13,7 @@
 <link rel="stylesheet" href="<%= context %>/resources/css/reset.css">
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/input.css">
+
+<!-- index_top 관련 라이브러리 -->
+<script src="<%= context %>/resources/js/index/index_top.js"></script>
+<link rel="stylesheet" href="<%= context %>/resources/css/index/index_top.css">

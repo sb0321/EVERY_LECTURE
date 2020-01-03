@@ -8,13 +8,7 @@
 <link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
 </head>
 <body>
-	<!-- 오버레이 부분 -->
-	<div id="overlay_wrapper">
-		<jsp:include page="login/login_overlay.jsp"></jsp:include>
-	</div>
-	<div id="index_overlay"></div>
-	<!-- 오버레이 부분 끝 -->
-	<jsp:include page="index/index_top.jsp"></jsp:include>
+	<jsp:include page="./index/index_top.jsp"></jsp:include>
 	<section id="header">
 		<div id="head">
 			<div id="head_left_wrap">

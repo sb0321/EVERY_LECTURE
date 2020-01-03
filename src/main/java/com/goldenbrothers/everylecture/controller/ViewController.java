@@ -26,5 +26,10 @@ public class ViewController {
 		return "/test/test";
 	}
 	
+	@RequestMapping(value = "login/login_overlay")
+	public String loginOverlay() {
+		return "login/login_overlay";
+	}
+	
 
 }
