@@ -3,8 +3,7 @@
 <body>
 	<section id="overlay_window">
 		<div id="window_context">
-			<form id="loginForm" method="post">
-				<input id="csrf" type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+			<form id="loginForm" method="post" action="<%= context %>/login/userLoginCheck">
 				<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
 				<br>
 				<br>

@@ -65,36 +65,36 @@ $(document).ready(function() {
 });
 
 // 로그인 버튼 누를 시
-$(document).ready(function () {
-	
-	$loginForm.on("submit", function(event) {
-		
-		// 원래 폼 동작 방지
-		event.preventDefault();
-		
-		var loginData = $loginForm.serialize();
-		
-		$.ajax({
-			url: '/everylecture/login/goLogin',
-			type: 'POST',
-			async:false,
-			data: loginData,
-			success:function(result) {
-				if(result == "1") {					
-					alert("성공");
-					window.location.href="./";
-				}
-				else if(result == "0")
-					alert("없는 사용자 입니다.")
-				
-			},
-			error:function(result) {
-				alert("ERROR");
-			}
-		});
-		
-		
-	});
-	
-});
+//$(document).ready(function () {
+//	
+//	$loginForm.on("submit", function(event) {
+//		
+//		// 원래 폼 동작 방지
+//		event.preventDefault();
+//		
+//		var loginData = $loginForm.serialize();
+//		
+//		$.ajax({
+//			url: '/everylecture/login/goLogin',
+//			type: 'POST',
+//			async:false,
+//			data: loginData,
+//			success:function(result) {
+//				if(result == "1") {					
+//					alert("성공");
+//					window.location.href="./";
+//				}
+//				else if(result == "0")
+//					alert("없는 사용자 입니다.")
+//				
+//			},
+//			error:function(result) {
+//				alert("ERROR");
+//			}
+//		});
+//		
+//		
+//	});
+//	
+//});
 
