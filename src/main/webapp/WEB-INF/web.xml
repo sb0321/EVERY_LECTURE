@@ -59,7 +59,7 @@
 	<jsp-config>                                                                            
 		<jsp-property-group> 
 			<url-pattern>*.jsp</url-pattern> 
-			<include-prelude>/WEB-INF/views/init/init.jspf</include-prelude> 
+			<include-prelude>/WEB-INF/views/init/init.jspf</include-prelude>  
 		</jsp-property-group> 
 	</jsp-config>
 	<!-- Processes application requests -->
