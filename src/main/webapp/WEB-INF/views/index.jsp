@@ -1,20 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<% String context = request.getContextPath(); %>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>당신의 프로그래밍 - EVERY-LECTURE</title>
-<script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
-<script src="<%= context %>/resources/js/effect/button.js"></script>
-<script src="<%= context %>/resources/js/effect/input.js"></script>
 <script src="<%= context %>/resources/js/index/index.js"></script>
-<link rel="stylesheet" href="<%= context %>/resources/css/reset.css">
-<link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
-<link rel="stylesheet" href="<%= context %>/resources/css/effect/input.css">
 <link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
 </head>
 <body>

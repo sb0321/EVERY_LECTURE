@@ -31,7 +31,7 @@ public class LoginController {
 	
 	// ajax 사용시에는 @ResponseBody 사용
 	@ResponseBody
-	@RequestMapping(value = "/login/goLogin")
+	@RequestMapping(value = "/login/goLogin", method = RequestMethod.POST)
 	// dto로 자동 들어옴
 	public String goLogin(UserDTO dto) {
 		

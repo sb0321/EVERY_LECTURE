@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+<!-- 공통된 파일들만 import 하세요 -->
+<% String context = request.getContextPath(); %>
+
+<script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
+<script src="<%= context %>/resources/js/effect/button.js"></script>
+<script src="<%= context %>/resources/js/effect/input.js"></script>
+
+<link rel="stylesheet" href="<%= context %>/resources/css/reset.css">
+<link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
+<link rel="stylesheet" href="<%= context %>/resources/css/effect/input.css">

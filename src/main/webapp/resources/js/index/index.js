@@ -76,13 +76,16 @@ $(document).ready(function () {
 		
 		$.ajax({
 			url: '/everylecture/login/goLogin',
-			type: 'GET',
+			type: 'POST',
+			async:false,
 			data: loginData,
 			success:function(result) {
-				if(result == "1")
+				if(result == "1") {					
 					alert("성공");
+					window.location.href="./";
+				}
 				else if(result == "0")
-					alert("없는 아이디");
+					alert("없는 사용자 입니다.")
 				
 			},
 			error:function(result) {

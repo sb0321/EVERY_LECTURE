@@ -54,7 +54,14 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-
+	
+	<!-- jsp 위 아래 자동으로 삽입 될 수 있게 -->
+	<jsp-config>                                                                            
+		<jsp-property-group> 
+			<url-pattern>*.jsp</url-pattern> 
+			<include-prelude>/WEB-INF/views/init/init.jspf</include-prelude> 
+		</jsp-property-group> 
+	</jsp-config>
 	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
