@@ -3,9 +3,11 @@ package com.goldenbrothers.everylecture.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.security.Principal;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,30 +28,18 @@ public class LoginController {
 	@Autowired
 	ILoginService service;
 	
-	
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 	
 	// ajax 사용시에는 @ResponseBody 사용
-	@ResponseBody
-	@RequestMapping(value = "/login/goLogin", method = RequestMethod.POST)
-	// dto로 자동 들어옴
-	public String goLogin(UserDTO dto) {
+
+	
+	// 먼저 spring security 이후
+	@RequestMapping(value = "/login/userLogin")
+	public String goLogin(HttpSession session, Principal principal) {
+		System.out.println("-------------------");
+		String userID = principal.getName();
+		session.setAttribute("sid", userID);
 		
-		String result = "1";
-		
-		UserDTO check = new UserDTO();
-		
-		try {
-			
-			if(service.selectOne(dto) == null)
-				result = "0";
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-		
-		
-		return result;
+		return "index";
 	}
 }
