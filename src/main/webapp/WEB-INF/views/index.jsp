@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
@@ -11,7 +10,7 @@
 <body>
 	<!-- 오버레이 부분 -->
 	<div id="overlay_wrapper">
-		<jsp:include page="index/login_overlay.jsp"></jsp:include>
+		<jsp:include page="login/login_overlay.jsp"></jsp:include>
 	</div>
 	<div id="index_overlay"></div>
 	<!-- 오버레이 부분 끝 -->
