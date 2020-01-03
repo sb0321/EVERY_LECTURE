@@ -1,7 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
-<% String context = request.getContextPath(); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +10,7 @@
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
 </head>
 <body>
+	<jsp:include page="../index/index_top.jsp"></jsp:include>
 	<%= context %>
 	<button id="" class="eBtn">테스트</button>
 	<button id="" class="eBtn">테스트</button>
