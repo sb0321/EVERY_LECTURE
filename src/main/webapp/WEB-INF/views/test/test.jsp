@@ -8,6 +8,11 @@
 <script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
 <script src="<%= context %>/resources/js/effect/button.js"></script>
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
+<style type="text/css">
+	#navi {
+		background-color: #6260B3;
+	}
+</style>
 </head>
 <body>
 <%-- 	<jsp:include page="../index/index_top.jsp"></jsp:include> --%>

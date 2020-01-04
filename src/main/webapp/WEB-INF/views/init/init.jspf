@@ -7,6 +7,7 @@
 <% String context = request.getContextPath(); %>
 
 <script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
+<script src="<%= context %>/resources/js/jquery-ui.min.js"></script>
 <script src="<%= context %>/resources/js/effect/button.js"></script>
 <script src="<%= context %>/resources/js/effect/input.js"></script>
 

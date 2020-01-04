@@ -10,15 +10,41 @@ $(document).ready(function() {
 	
 	$table = $("#showTable");
 	
+	$userID = $('#userID');
+	$userPW = $('#userPW');
+	
 	
 	
 	// 로그인 버튼 클릭 시 오버레이
 	$login.on("click", function() {
 		$over.css({"display":"flex"})
-		.animate({"opacity":"100%", "top":"50%"});
+		.animate({"opacity":"95%", "top":"50%"});
 		
 		$over_sub.css({"display":"flex"})
 		.animate({"opacity":"40%"});
+	});
+	
+	// 입력 창 누르면 변화
+	$userID.focus(function() {
+		$(this).animate({
+			"background-color":"#ad65e5"
+		});
+	})
+	.blur(function() {
+		$(this).animate({
+			"background-color":"#300b4c"
+		});
+	});
+	
+	$userPW.focus(function() {
+		$(this).animate({
+			"background-color":"#ad65e5"
+		});
+	})
+	.blur(function() {
+		$(this).animate({
+			"background-color":"#300b4c"
+		});
 	});
 	
 	// 바깥 누르면 나가짐

@@ -5,6 +5,10 @@
 <div id="overlay_wrapper">
 	<section id="overlay_window">
 		<div id="window_context">
+			<img id="logoFull" alt="<EVERY-LECTURE>" src="<%= context %>/resources/image/logo-full.png">
+			<br>
+			<br>
+			<br>
 			<form id="loginForm" method="post" action="<%= context %>/login/userLoginCheck">
 				<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
 				<br>
@@ -22,10 +26,10 @@
 <body>
 	<div id="navi">
 		<div id="top_left">
-			<a href="#none">
+			<a id="logo-wrap" href="<%= context %>/">
 				<img id="logoImg" alt="이미지를 불러오는 것을 실패했습니다." 
 				src="<%= context %>/resources/image/logo-white.png">
-				<a id="logoWord">EVERY-LECTURE</a>
+				<div id="logoWord">EVERY-LECTURE</div>
 			</a>
 		</div>
 		<div id="top_right">
@@ -39,8 +43,8 @@
 				</div>
 			</c:if>
 			<c:if test="${not empty sessionScope.sid}">
-				<div>
-				
+				<div class="index_top">
+					${sessionScope.sid }님! 안녕하세요!
 				</div>
 			</c:if>
 			<div class="index_top">

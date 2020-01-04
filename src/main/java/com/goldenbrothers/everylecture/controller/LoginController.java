@@ -40,6 +40,6 @@ public class LoginController {
 		String userID = principal.getName();
 		session.setAttribute("sid", userID);
 		
-		return "index";
+		return "redirect:/";
 	}
 }

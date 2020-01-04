@@ -10,6 +10,8 @@
 	height: 500px;
 	
 	border-radius: 10px;
+	border: 3px solid #300b4c;
+	
 	
 	opacity: 0%;
 	
@@ -38,6 +40,12 @@
 	
 	width: 90%;
 	height: 90%;
+
+}
+
+#logoFull {
+	width: 80%;
+	height: auto;
 }
 
 
@@ -49,11 +57,11 @@
 	text-align: center;
 	
 	color: white;
+	background-color: #300b4c;
 	
 }
 
 #userID::placeholder {
-	color: gray;
 }
 
 #userPW {
@@ -62,12 +70,12 @@
 	
 	text-align: center;
 	
-	color: white;
+	color: white;	
+	background-color: #300b4c;
 	
 }
 
 #userPW::placeholder {
-	color: gray;
 }
 
 #loginSubmit {
@@ -105,7 +113,7 @@
 
 /* index_top.jsp */
 
-a {
+#navi a {
 	text-decoration: none;
 	color: white;
 	
@@ -117,13 +125,24 @@ a {
 #logoImg {
 	width: 50px;
 	height: 50px;
+	
+	float: left;
+}
+
+#logo-wrap {
+	
+	min-width: 250px;
+	height: 50px;
+	
 }
 
 #logoWord {
 	height: 50px;
-	min-width: 200px;
+	width: 200px;
 	
-	margin-top: 10px;
+	float: right;
+	
+	margin-top: 8px;
 	
 	font-size: 1.5em;
 }
