@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
 </head>
 <body>
-	<jsp:include page="../index/index_top.jsp"></jsp:include>
+<%-- 	<jsp:include page="../index/index_top.jsp"></jsp:include> --%>
+	<%@ include file="../index/index_top.jsp" %>
 	<%= context %>
 	<button id="" class="eBtn">테스트</button>
 	<button id="" class="eBtn">테스트</button>

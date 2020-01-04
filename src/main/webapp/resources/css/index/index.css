@@ -97,31 +97,7 @@ a {
 }
 
 #navi {
-	background-color: #6260B3;	
-	width: 100%;
-	height: 50px;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-	margin: auto;
-}
-
-.index_top {
-	
-	color: white;
-	
-	display: inline-block;
-	margin: auto;
-	
-	margin-left: 10px;
-	margin-right: 10px;
-	
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-	
-	width: auto;
+	background-color: #6260B3;
 }
 
 #top_right {

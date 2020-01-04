@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
 </head>
 <body>
-	<jsp:include page="./index/index_top.jsp"></jsp:include>
+<%-- 	<jsp:include page="./index/index_top.jsp"></jsp:include> --%>
+	
+	<%@ include file="index/index_top.jsp" %>
 	<section id="header">
 		<div id="head">
 			<div id="head_left_wrap">

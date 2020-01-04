@@ -1,11 +1,7 @@
 $(document).ready(function() {
 	
 	$btn = $('.eBtn');
-	
-//	$btn.css({"height": "20px", "width":"50px"});
-});
-$(document).ready(function() {
-	
+		
 	$btn.mousedown(function(e) {
 		
 		btnEffect($(this), e);
@@ -53,9 +49,11 @@ function btnEffect(page, e) {
 						$(this).animate({"opacity":"0"}, function() {
 							$(this).remove();
 						});
-					}).mouseleave(function() {
+					})
+					.mouseleave(function() {
 						$(this).animate({"opacity":"0"}, function() {
 							$(this).remove();
 						});
 					});
+	
 }
