@@ -12,6 +12,8 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,11 +37,37 @@ public class LoginController {
 	
 	// 먼저 spring security 이후
 	@RequestMapping(value = "/login/userLogin")
-	public String goLogin(HttpSession session, Principal principal) {
-		System.out.println("-------------------");
+	public String goLogin(HttpSession session, Principal principal) {		
+		// 사용자 정보 가져오기
+		
 		String userID = principal.getName();
-		session.setAttribute("sid", userID);
+		UserDTO dto = new UserDTO();
+		try {
+			
+			if(userID != null)
+				dto =  service.selectOne(userID);
+			
+			session.setAttribute("uInfo", dto);
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+			session.setAttribute("uInfo", "String");
+		}
 		
 		return "redirect:/";
+	}
+	
+	// 로그아웃 할 때
+	@RequestMapping(value = "/logout")
+	public String logout(HttpSession session) {
+		session.invalidate();
+		return "redirect:/";
+	}
+	
+	@RequestMapping(value = "/login/loginFailure")
+	public String loginFailure(HttpServletRequest request) {
+		
+		
+		return "/login/loginFailure";
 	}
 }

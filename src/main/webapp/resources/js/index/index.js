@@ -3,6 +3,7 @@ $(document).ready(function() {
 	$goTest = $('#testBtn');
 	
 	$table = $("#showTable");
+	$right = $("#head_right")
 	
 	
 	$goTest.mouseup(function() {
@@ -11,6 +12,10 @@ $(document).ready(function() {
 	
 	$table.delay(100, function() {
 		showTable($(this));
+	});
+	
+	$right.animate({
+		"opacity":"100%"
 	});
 });
 

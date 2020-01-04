@@ -33,7 +33,7 @@
 			default-target-url="/login/userLogin"
 			username-parameter="userID"
 			password-parameter="userPW"
-			authentication-failure-url="/"
+			authentication-failure-url="/login/loginFailure"
 		/>
 		
 		<security:logout
@@ -54,7 +54,7 @@
 			<security:jdbc-user-service 
 				data-source-ref="dataSource"
 				users-by-username-query="select userID, userPW, userName from test.user where userID=?"
-				authorities-by-username-query="select userID, authority from test.user 
+				authorities-by-username-query="select userID, authority from test.user
 				where userID=?"
 			/>		
 		</security:authentication-provider>

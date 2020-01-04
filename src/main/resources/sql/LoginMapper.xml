@@ -5,10 +5,10 @@
 
 	<!-- 조회 -->
 	<select id="selectOne" 
-	parameterType="com.goldenbrothers.everylecture.model.UserDTO"
+	parameterType="String"
 	resultType="com.goldenbrothers.everylecture.model.UserDTO">
 	
-		SELECT * from test.user WHERE userID = #{userID} and userPW = #{userPW}
+		SELECT * from test.user WHERE userID = #{userID}
 		
 	</select>
 

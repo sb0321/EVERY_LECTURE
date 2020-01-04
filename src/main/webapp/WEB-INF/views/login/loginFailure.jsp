@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>실패</title>
+<script src="<%= context %>/resources/js/login/loginFailure.js"></script>
 </head>
 <body>
-
+	로그인에 실패하셨습니다.
+	<span id="countDown"></span>
 </body>
 </html>

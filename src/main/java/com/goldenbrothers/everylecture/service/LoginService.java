@@ -17,9 +17,9 @@ public class LoginService implements ILoginService {
 	IUserDAO dao;
 
 	@Override
-	public UserDTO selectOne(UserDTO dto) {
+	public UserDTO selectOne(String userID) {
 		// TODO Auto-generated method stub
-		return dao.selectOne(dto);
+		return dao.selectOne(userID);
 	}
 
 	@Override

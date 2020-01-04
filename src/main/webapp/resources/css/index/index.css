@@ -72,6 +72,22 @@
 	font-weight: bold;
 }
 
+#lectureButton {
+	
+	height: 50px;
+	width: 400px;
+	
+	background-color: #ad65e5;
+	
+	text-align: center;
+	
+	color: white;
+	
+	font-size: 1.2em;
+	font-weight: bold;
+	
+}
+
 #head_right_wrap {
 	float: right;	
 	height: 100%;
@@ -83,6 +99,8 @@
 #head_right {
 	display: table-cell;
 	vertical-align: middle;
+	
+	opacity: 0;
 }
 
 #showTable {
@@ -103,4 +121,10 @@
 
 #navi {
 	background-color: #6260B3;
+}
+
+/* footer */
+#footer {
+	width: 90%;
+	height: 100vh;
 }
