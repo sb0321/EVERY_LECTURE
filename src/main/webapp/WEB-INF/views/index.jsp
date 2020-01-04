@@ -19,7 +19,10 @@
 						모두를 위한 강의.<br>모두를 위한 프로그래밍.
 					</div>
 					<br>
+					<br>
 					<div id="left_sub">Java부터 데이터베이스까지 전부 무료!</div>
+					<br><br>
+					<button id="joinButton" class="eBtn">회원 가입</button>
 				</div>
 			</div>
 			<div id="head_right_wrap">
@@ -27,6 +30,8 @@
 					<div id="showTable">
 					</div>
 				</div>
+			</div>
+			<div id="background">
 			</div>
 		</div>
 	</section>
