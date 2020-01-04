@@ -180,6 +180,21 @@
 	width: auto;
 }
 
+#hello {
+	color: white;
+	display: inline-block;
+	margin: auto;
+	
+	border: 2px solid black;
+	border-radius: 3px;
+	
+	padding: 5px;
+}
+
+#mypage {
+	
+}
+
 #top_right {
 	float: right;
 	margin-right: 1%;

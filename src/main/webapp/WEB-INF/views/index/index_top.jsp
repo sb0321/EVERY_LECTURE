@@ -42,14 +42,17 @@
 					<a href="#none">회원 가입</a>
 				</div>
 			</c:if>
-			<c:if test="${not empty sessionScope.sid}">
-				<div class="index_top">
-					${sessionScope.sid }님! 안녕하세요!
-				</div>
-			</c:if>
 			<div class="index_top">
 				<a href="#none">강의 보러가기</a>
 			</div>
+			<c:if test="${not empty sessionScope.sid}">
+				<div class="index_top">
+					<a href="#none">마이페이지</a>
+				</div>
+				<div id="hello">
+					${sessionScope.sid }님! 안녕하세요!
+				</div>
+			</c:if>
 		</div>
 	</div>
 </body>
