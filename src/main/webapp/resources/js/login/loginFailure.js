@@ -14,7 +14,7 @@ function countDown(before, object) {
 	var count = now - before;
 	
 	if(count >= 5)
-		window.location.href="/everylecture";
+		window.location.href="/everylecture/";
 	else {
 		object.innerHTML = count;
 		window.setTimeout(function() {

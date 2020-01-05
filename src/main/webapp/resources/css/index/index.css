@@ -60,7 +60,7 @@
 
 #joinButton {
 	height: 50px;
-	width: 200px;
+	width: 400px;
 	
 	background-color: #e5b565;
 	
@@ -105,14 +105,24 @@
 
 #showTable {
 	border: 2px solid white;
-	border-radius: 5px;
+	border-radius: 10px;
 	
-	width: 75%;
-	height: 70%;
+	background-color: white;
+	
+	background: repeating-linear-gradient(-45deg, white, white 1px, #bcb195 0, #bcb195 50px);
+	background-attachment:fixed;
+	
+	max-width: 500px;
+	width: 100%;
+	height: 500px;
 	
 	margin: auto;
+	margin-top: 50px;
+	margin-right: 200px;
 	
 	display: flex;
+	
+	overflow: visible;
 }
 
 #intro {
@@ -123,8 +133,61 @@
 	background-color: #6260B3;
 }
 
-/* footer */
-#footer {
-	width: 90%;
-	height: 100vh;
+/* middle */
+#middle {
+	opacity: 70%;
+	
+	width: 80%;
+	height: 1000px;
+	
+	margin: auto;
+	
+	padding-top: 100px;
 }
+
+#middle_intro {
+	width: 100%;
+	height: 200px;
+	
+/* 	background-color: blue; */
+	
+	margin: auto;
+	
+	text-align: center;
+	
+	
+}
+
+.middle_intro_show {
+	
+	display: inline-block;
+	border: 2px solid black;
+	
+	vertical-align: middle;
+	
+	height: 100%;
+	width: 32%;
+	
+/* 	margin: auto; */
+}
+
+.icon_show {
+	width: 50px;
+	height: 50px;
+	
+	margin-top: 15px;
+	margin-bottom: 10px;
+	
+	padding: 0;
+	
+}
+
+.horizon {
+	max-width: 90%;
+}
+
+/* footer */
+/* #footer { */
+/* 	width: 90%; */
+/* 	height: 100vh; */
+/* } */

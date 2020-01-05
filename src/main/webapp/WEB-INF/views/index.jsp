@@ -33,6 +33,9 @@
 			<div id="head_right_wrap">
 				<div id="head_right">
 					<div id="showTable">
+						<div>
+							dfvsfswefew
+						</div>
 					</div>
 				</div>
 			</div>
@@ -40,6 +43,7 @@
 			</div>
 		</div>
 	</section>
+	<%@ include file="index/index_middle.jsp" %>
 	<footer id="footer">
 		
 	</footer>
