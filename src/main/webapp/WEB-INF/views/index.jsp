@@ -53,7 +53,10 @@
 	</section>
 	<%@ include file="index/index_middle.jsp" %>
 	<footer id="footer">
-		
+		<div id="joinSession">
+			<div>이제 시작할 준비가 되셨나요?</div>
+			<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
+		</div>
 	</footer>
 	<button id="testBtn" class="eBtn">테스트 페이지 이동</button>
 </body>

@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body {
+	width: 1600px;
+	
+	margin: auto;
+}
 
 #testBtn {
 	color: white;
@@ -22,6 +27,8 @@
 
 #background {
 	
+/* 	position: absolute; */
+
 	/* 패턴 만들기 */
 	background-image: radial-gradient(#300b4c 20%, transparent 0),
 	radial-gradient(#300b4c 20%, transparent 0);
@@ -31,11 +38,11 @@
 	background-color: #6260B3;
 	
 	width: 100%;
-	height: 100%;	
+	height: 550px;
 	
-/* 	position: relative; */
+	position: relative;
 	z-index: -1;
-	
+
 }
 
 #head_left_wrap {
@@ -105,9 +112,8 @@
 }
 
 #showTable {
-	position: static;
 	
-	border: 2px solid white;
+	border: 5px solid white;
 	border-radius: 10px;
 	
 	background-color: white;
@@ -120,7 +126,7 @@
 	height: 500px;
 	
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 100px;
 	margin-right: 200px;
 	
 /* 	display: flex; */
@@ -194,11 +200,11 @@
 	opacity: 70%;
 	
 	width: 80%;
-	height: 1000px;
+	height: auto;
 	
 	margin: auto;
 	
-	padding-top: 100px;
+	padding-top: 150px;
 }
 
 #middle_intro {
@@ -244,7 +250,7 @@
 
 #program_intro {
 	width: 100%;
-	height: 500px;
+	height: auto;
 	
 	margin: auto;
 	margin-top: 200px;
@@ -253,9 +259,10 @@
 
 #program_intro_wrapper {
 	width: 90%;
-	height: 400px;
+	height: 200px;
 	
 	margin: auto;
+	margin-bottom: 0;
 	
 	display: flex;
 }
@@ -279,10 +286,52 @@
 	
 	margin: auto;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* footer */
-/* #footer { */
-/* 	width: 90%; */
-/* 	height: 100vh; */
-/* } */
+#footer {
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
+#joinSession {
+	width: 100%;
+	height: 300px;
+	
+	background-color: #1d7cf8;
+	
+	margin: auto;
+	
+	text-align: center;
+}
+
+#joinSession > div {
+	font-size: 2em;
+	font-weight: bold;
+	
+	color: white;
+	
+	width: 100%;
+	
+	padding-top: 100px;
+	margin-bottom: 20px;
+}
+
+#joinButtonFooter {
+	height: 40px;
+	width: 200px;
+	
+	background-color: white;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	color: skyblue;
+	
+	font-size: 1em;
+}
+

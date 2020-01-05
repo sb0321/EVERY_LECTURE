@@ -23,9 +23,9 @@
 			</div>
 		</div>
 		<div id="program_intro">
-
+			<hr>
+			<br> <br>
 			<h1 id="program_intro_context">최신 언어를 여기서 배워보세요!</h1>
-
 			<div id="program_intro_wrapper">
 				<img class="program_intro_imgs" src="<%= context%>/resources/image/java-logo.png">
 				<img class="program_intro_imgs" src="<%= context%>/resources/image/oracle-logo.png">
