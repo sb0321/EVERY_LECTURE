@@ -10,8 +10,6 @@
 <link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
 </head>
 <body>
-<%-- 	<jsp:include page="./index/index_top.jsp"></jsp:include> --%>
-	
 	<%@ include file="index/index_top.jsp" %>
 	<section id="header">
 		<div id="head">
@@ -35,6 +33,9 @@
 			<div id="head_right_wrap">
 				<div id="head_right">
 					<div id="showTable">
+						<div>
+							<h1>어떤 강의를 찾으시나요?</h1>
+						</div>
 						<div id="table_intro">
 							<label id="search_wrapper">
 								<img id="search_icon" alt="" src="<%= context %>/resources/image/search.png">
@@ -42,7 +43,10 @@
 							</label>
 						</div>
 						<div id="show_context">
-							vswefw
+
+							<div>● 컴퓨터에 관심이 있으신 분들을 위해</div>
+							<div>● 새로운 것을 배우고 싶으신 분들을 위해</div>
+							<div>● 자신의 전공을 다지고 싶으신 분들을 위해</div>
 						</div>
 					</div>
 				</div>
@@ -58,6 +62,5 @@
 			<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
 		</div>
 	</footer>
-	<button id="testBtn" class="eBtn">테스트 페이지 이동</button>
 </body>
 </html>
