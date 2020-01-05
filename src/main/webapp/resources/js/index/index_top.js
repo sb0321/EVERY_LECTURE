@@ -15,11 +15,21 @@ $(document).ready(function() {
 	
 	// 로그인 버튼 클릭 시 오버레이
 	$login.on("click", function() {
-		$over.css({"display":"flex"})
-		.animate({"opacity":"95%", "top":"50%"});
+		
+		var nowPosition = ($(window).height()) / 2 - $over.outerHeight() + $(window).scrollTop();
+		
+		$over.css({
+			"display":"flex",
+			"top": (nowPosition - 200) + "px"
+		})
+		.animate({
+			"opacity":"95%",
+			"top": nowPosition + "px"
+		});
 		
 		$over_sub.css({"display":"flex"})
 		.animate({"opacity":"40%"});
+		
 	});
 	
 	// 입력 창 누르면 변화
@@ -47,7 +57,14 @@ $(document).ready(function() {
 	
 	// 바깥 누르면 나가짐
 	$over_sub.on("click", function() {
-		$over.animate({"opacity":"0", "top":"25%"}, function() {
+		
+		// 현재 위치
+		var nowPosition = ($(window).height()) / 2 - $over.outerHeight() + $(window).scrollTop();
+		
+		$over.animate({
+			"opacity":"0",
+			"top":(nowPosition - 100) + "px"
+			}, function() {
 			$(this).css({"display":"none"});
 		});
 		

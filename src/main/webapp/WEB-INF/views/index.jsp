@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <title>당신의 프로그래밍 - EVERY-LECTURE</title>
 <script src="<%= context %>/resources/js/index/index.js"></script>
+<script src="<%= context %>/resources/js/index/index_middle.js"></script>
+
 <link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
 </head>
 <body>
@@ -33,8 +35,14 @@
 			<div id="head_right_wrap">
 				<div id="head_right">
 					<div id="showTable">
-						<div>
-							dfvsfswefew
+						<div id="table_intro">
+							<label id="search_wrapper">
+								<img id="search_icon" alt="" src="<%= context %>/resources/image/search.png">
+								<input id="search" class="eBtn" placeholder="무엇을 검색하고 싶나요?"/>
+							</label>
+						</div>
+						<div id="show_context">
+							vswefw
 						</div>
 					</div>
 				</div>
