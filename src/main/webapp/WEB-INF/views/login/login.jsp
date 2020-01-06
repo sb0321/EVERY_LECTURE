@@ -20,12 +20,13 @@
 			<input id="userPW" name="userPW" class="eInput" type="password" placeholder="Password">
 			<br>
 			<br>
-			<input id="loginSubmit" class="eBtn" type="submit" value="Login">
+			<button id="loginSubmit" class="eBtn" type="submit">Login</button>
 		</form>
+		<br>
 		<br>
 		<hr>
 		<div id="indicator">
-			<a href='<c:url value="/login/joinForm"/>'><div class="index_top">회원 가입</div></a>
+			<a href='<c:url value="/login/joinForm"/>'><div class="index_top">회원 가입</div></a> 
 			<a href='<c:url value="/"/>'><div class="index_top">홈페이지로 가기</div></a>
 		</div>
 	</div>

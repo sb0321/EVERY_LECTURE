@@ -61,6 +61,15 @@
 			<div>이제 시작할 준비가 되셨나요?</div>
 			<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
 		</div>
+		<div id="last">
+			<div id="last_left">
+				<h2>The flat icon belongs to www.flaticon.com</h2>
+				<br>
+				<h2>This site is made by Golden Brothers.Inc</h2>
+			</div>
+			<div id="last_right">
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
