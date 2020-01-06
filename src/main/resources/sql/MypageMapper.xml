@@ -5,7 +5,7 @@
 
 	<!-- 조회 -->
 	<update id="update" parameterType="com.goldenbrothers.everylecture.model.UserDTO" >
-		UPDATE test.user SET userName = "?" WHERE userID = "?"
+		UPDATE test.user SET userName = #{userName} WHERE userID = #{userID}
 	</update>
 
 </mapper>

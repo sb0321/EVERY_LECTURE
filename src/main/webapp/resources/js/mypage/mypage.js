@@ -14,7 +14,8 @@ $(document).ready(function() {
 			type : "POST",
 			async : true,
 			success : function(result) {
-				alert(result);
+				if(result == "1")
+					location.href="/everylecture/login/login";
 			},
 			error : function(result) {
 				alert("error");

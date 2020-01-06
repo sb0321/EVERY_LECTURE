@@ -28,7 +28,9 @@ public class MypageController {
 	@RequestMapping(value = "/mypage/changeName")
 	public String changeName(HttpSession session, @RequestParam String userName) {
 		
-		String userID = session.getId();
+		// 사용자 정보를 가져옴
+		UserDTO user = (UserDTO) session.getAttribute("uInfo");
+		String userID = user.getUserID();
 		
 		UserDTO dto = new UserDTO();
 		
@@ -37,13 +39,16 @@ public class MypageController {
 		
 		String result = "init";
 		try {			
-			result = Integer.toString(service.updateName(dto));
+			result = Integer.toString(service.update(dto));
+			
+			if(result.equals("1")) {
+				session.invalidate();
+			}
+			
 		}catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-		
-		System.out.println(userID);
 		
 		return result;
 	}
