@@ -9,25 +9,35 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
-	<h3 align="center">회원가입</h3>
-	<hr>
 	
-	<div id="joinLogo">
-		<br>
-		<img id="logo-Full" alt="<EVERY-LECTURE>" src='<c:url value='/resources/image/logo-full.png'/>'>
-		<br>
+	<div id="join_container">
+		<div id="join_content">
+			<div id="join_logo">
+				<img id="logo-full" alt="<EVERY-LECTURE>" src='<c:url value='/resources/image/logo-full.png'/>'>
+			</div>
+			<div id="join_wrapper">
+				<div class="join_box">
+					<h3 class="join_title">아이디</h3>
+					<input class="eInput" type="text" id="id" name="id" maxlength="20"><button class="eBtn">중 복 체 크</button>
+				</div>
+				<br>
+				<div class="join_box">
+					<h3 class="join_title">비밀번호</h3>
+					<input type="password" id="pw" name="pw" maxlength="20">
+				</div>
+				<br>
+				<div class="join_box">
+					<h3 class="join_title">비밀번호 확인</h3>
+					<input type="password" id="pwc" name="pwc" maxlength="20">
+				</div>
+				<br>
+				<div class="join_box">
+					<h3 class="join_title">이 름</h3>
+					<input type="text" id="name" name="name" maxlength="20">
+				</div>
+			</div>
+		</div>
 	</div>
 	
-	<div id="joinDiv">
-		<table class="joinTable">
-			<tr><th scope="row">이 름</th><td><input type="text" id="name" name="name"></td></tr>
-			<tr><th scope="row">아이디</th><td><input type="text" id="id" name="id"><button class="eBtn">중복체크</button></td></tr>
-			<tr><th scope="row">비밀번호</th><td><input type="password"></td></tr>
-			<tr><th scope="row">비밀번호 확인</th><td><input type="password"></td></tr>
-			<tr><td colspan="2" align="center">
-			<button class="eBtn" type="submit">회원가입</button>
-			<button class="eBtn" type="reset">취 소</button></td></tr>
-		</table>
-	</div>
 </body>
 </html>

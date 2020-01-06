@@ -4,6 +4,79 @@
 	background-color:#6260B3;
 }
 
+#logo-Full{
+	width:600px;
+	height:200px;
+	margin:0;
+}
+
+.eInput {
+	background-color: #300b4c;
+}
+
+input{
+	width:300px;
+	height:50px;
+	padding:10px;
+	vertical-align:top;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-left:7px;
+	font-size:1em;
+}
+
+button{
+	width:120px;
+	height:50px;
+	padding:10px;
+	vertical-align:top;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-left:7px;
+	color:white;
+	font-size:1em;
+}
+
+#join_content{
+	width:900px;
+	margin:0 auto;
+}
+
+#join_logo{
+	width:850;
+	margin:0 auto;
+	text-align:center;
+}
+
+#join_Name{
+	padding:5px;
+	font-size:2em;
+	font-weight:700;
+}
+
+.join_title{
+	font-size:1.5em;
+	margin-left:8px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.join_box{
+	
+	width:100%;
+	padding-left:150px;
+	padding-right:3px;
+	padding-top:3px;
+	padding-bottom:3px;
+	
+}
+
+#join_wrapper{
+	margin:0 auto;
+	width:70%;
+}
+
+
+/*
 #joinLogo{
 	margin:auto;
 	width:850px;
@@ -87,8 +160,8 @@ table.joinTable input{
 	border-bottom:1px solid #ccc;
 	margin-left:7px;
 }
-
+*/
 .eBtn{
-	background-color:#AD65E5;
+	background-color:#6260B3;
 	color:white;
 }
