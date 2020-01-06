@@ -41,8 +41,8 @@ body {
 	
 	color: white;
 	
-	border-left: 300px solid white;
-	border-right: 300px solid white;
+	border-left: 0px solid white;
+	border-right: 0px solid white;
 	
 	margin-bottom: 20px;
 }
