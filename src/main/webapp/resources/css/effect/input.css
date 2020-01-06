@@ -3,6 +3,8 @@
 	border: 0px solid green;
 	border-radius: 2px;
 	
+	background-color: #300b4c;
+	
 }
 
 .eInput::placeholder {

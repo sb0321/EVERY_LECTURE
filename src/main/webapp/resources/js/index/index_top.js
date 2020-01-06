@@ -56,29 +56,6 @@ $(document).ready(function() {
 			$(this).css({"display":"none"});
 		})
 	});
-	// 입력 창 누르면 변화
-	$userID.focus(function() {
-		$(this).animate({
-			"background-color":"#ad65e5"
-		});
-	})
-	.blur(function() {
-		$(this).animate({
-			"background-color":"#300b4c"
-		});
-	});
-	
-	$userPW.focus(function() {
-		$(this).animate({
-			"background-color":"#ad65e5"
-		});
-	})
-	.blur(function() {
-		$(this).animate({
-			"background-color":"#300b4c"
-		});
-	});
-	
 	
 	$top.mouseover(function() {
 		$(this).animate({
