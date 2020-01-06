@@ -5,7 +5,7 @@
 
 <section id="window">
 	<div id="context">
-		<img id="logoFull" alt="<EVERY-LECTURE>" src='<c:url value='/resources/image/logo-full.png'/>'>
+		<img id="logoFull" alt="<EVERY-LECTURE>" src='<c:url value='/resources/image/logo-full-clear.png'/>'>
 		<br>
 		<br>
 		<br>
