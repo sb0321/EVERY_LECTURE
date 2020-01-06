@@ -41,12 +41,12 @@
 					</div>
 					<div class="userForm">
 						<div>비밀번호</div>
-						<hr>
+						<hr>						
 						<label>현재 비밀번호</label>
-						<input name="userPW" type="password" value="${uInfo.userPW}">
+						<input id="userPWNow" name="userPW" type="password">
 						<br><br>
 						<label>바꿀 비밀번호</label>
-						<input name="newUserPW" type="password" value="${uInfo.userPW}">
+						<input id="newUserPW" name="newUserPW" type="password">
 						<br><br>
 						<button id="PWModify" class="eBtn">수정하기</button>
 					</div>

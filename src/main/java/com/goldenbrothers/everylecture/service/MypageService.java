@@ -17,12 +17,6 @@ public class MypageService implements IMypageService {
 	IUserDAO dao;
 
 	@Override
-	public int update(UserDTO dto) {
-		// TODO Auto-generated method stub
-		return dao.update(dto);
-	}
-
-	@Override
 	public UserDTO selectOne(String userID) {
 		// TODO Auto-generated method stub
 		return dao.selectOne(userID);
@@ -41,10 +35,30 @@ public class MypageService implements IMypageService {
 	}
 
 	@Override
+	public int update(UserDTO dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateName(UserDTO dto) {
+		// TODO Auto-generated method stub
+		return dao.updateName(dto);
+	}
+
+	@Override
+	public int updatePW(UserDTO dto) {
+		// TODO Auto-generated method stub
+		return dao.updatePW(dto);
+	}
+
+	@Override
 	public int delete(String id) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+
 	
 	
 	

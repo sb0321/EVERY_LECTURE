@@ -39,10 +39,15 @@ public class MypageController {
 		
 		String result = "init";
 		try {			
-			result = Integer.toString(service.update(dto));
+			result = Integer.toString(service.updateName(dto));
 			
 			if(result.equals("1")) {
-				session.invalidate();
+				
+				session.removeAttribute("uInfo");
+				
+				user = service.selectOne(userID);
+				
+				session.setAttribute("uInfo", user);
 			}
 			
 		}catch (Exception e) {
@@ -53,5 +58,45 @@ public class MypageController {
 		return result;
 	}
 	
+	
+	// 비밀번호를 바꿈
+	@ResponseBody
+	@RequestMapping(value = "/mypage/checkPassword")
+	public String checkPassword(HttpSession session, @RequestParam String userPW) {
+		
+		System.out.println(userPW);
+		
+		String result = "0";
+		
+		// 사용자 정보를 가져온다
+		UserDTO user = (UserDTO)session.getAttribute("uInfo");
+		
+		if(user.getUserPW().equals(userPW))
+			result = "1";
+		
+		return result;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/mypage/changePassword")
+	public String changePassword(HttpSession session, @RequestParam String newUserPW) {
+		
+		
+		
+		// 사용자 정보를 가져온다
+		UserDTO update = (UserDTO)session.getAttribute("uInfo");
+		
+		update.setUserPW(newUserPW);
+		String result = "init";
+		try {
+			result = Integer.toString(service.updatePW(update));
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return result;
+	}
 
 }

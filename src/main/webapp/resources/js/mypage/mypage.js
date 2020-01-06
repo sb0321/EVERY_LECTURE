@@ -2,6 +2,8 @@ $(document).ready(function() {
 	
 	$changeNameBtn = $('#nameModify');
 	
+	$changePWBtn = $('#PWModify');
+	
 	
 	// 이름을 수정할 때 보내는 ajax
 	$changeNameBtn.on("click", function() {
@@ -15,13 +17,53 @@ $(document).ready(function() {
 			async : true,
 			success : function(result) {
 				if(result == "1")
-					location.href="/everylecture/login/login";
+					location.reload();
 			},
 			error : function(result) {
 				alert("error");
 				
 			}
 		});
+	});
+	
+	$changePWBtn.on("click", function() {
+
+			var newPW = $("#newUserPW").serialize();
+			
+			var nowPW = $('#userPWNow').serialize();
+			
+			$.ajax({
+				url : "/everylecture/mypage/checkPassword",
+				data : nowPW,
+				type : "POST",
+				async : true,
+				success : function(result) {
+					if(result == "1") {
+						$.ajax({
+							url : "/everylecture/mypage/changePassword",
+							data: newPW,
+							type : "POST",
+							async : true,
+							success : function() {
+								alert("비밀번호 변경에 성공하였습니다.");
+								location.reload();
+							},
+							error : function() {
+								
+							}
+						});
+					}
+					else {
+						alert("현재 비밀번호가 틀립니다. 다시 입력해주세요.");
+					}
+				},
+				error : function(result) {
+					alert("error");
+					
+				}
+			});
+		
+
 	});
 	
 });

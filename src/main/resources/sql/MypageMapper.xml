@@ -3,9 +3,14 @@
 
 <mapper namespace="com.goldenbrothers.everylecture.dao.IUserDAO">
 
-	<!-- 조회 -->
-	<update id="update" parameterType="com.goldenbrothers.everylecture.model.UserDTO" >
+	<!-- userName 업데이트 -->
+	<update id="updateName" parameterType="com.goldenbrothers.everylecture.model.UserDTO" >
 		UPDATE test.user SET userName = #{userName} WHERE userID = #{userID}
+	</update>
+	
+	<!-- userPW 업데이트 -->
+	<update id="updatePW" parameterType="com.goldenbrothers.everylecture.model.UserDTO">
+		UPDATE test.user SET userPW = #{userPW} WHERE userID = #{userID}
 	</update>
 
 </mapper>
