@@ -194,7 +194,7 @@ section {
 	font-size: 1.5em;
 }
 
-.userForm > label > button{
+.userForm > label > button {
 	
 	width: auto;
 	height:60px;
@@ -213,4 +213,6 @@ section {
 	
 	height: 60px;
 	width: auto;
+	
+	margin-bottom: 50px;
 }

@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>${uInfo.userName }님의 마이페이지입니다.</title>
 <script src='<c:url value='/resources/js/mypage/mypage.js'/>'></script>
+<script src='<c:url value='/resources/js/mypage/mypage_switch.js'/>'></script>
 <link rel="stylesheet" href='<c:url value='/resources/css/mypage/mypage.css'/>'>
 </head>
 <body>
@@ -23,35 +24,14 @@
 				</div>
 			</div>
 			<div id="content_bar">
-				<div class="content_list">프로필</div>
-				<div class="content_list">내가 등록한 강의</div>
+				<div class="content_list"><a id="profileBtn">프로필</a></div>
+				<div class="content_list">
+					<a id="lectureBtn">내가 등록한 강의</a>
+				</div>
 			</div>
 		</div>
 		<div id="right_section">
-			<div id="right_wrapper">
-				<div id="context">프로필</div>
-				<div id="content_wrapper">
-					<div class="userForm">
-						<div>이름</div>
-						<hr>
-						<input id="userName" name="userName" type="text" value="${uInfo.userName}">
-						<label>
-							<button id="nameModify" class="eBtn">수정하기</button>
-						</label>
-					</div>
-					<div class="userForm">
-						<div>비밀번호</div>
-						<hr>						
-						<label>현재 비밀번호</label>
-						<input id="userPWNow" name="userPW" type="password">
-						<br><br>
-						<label>바꿀 비밀번호</label>
-						<input id="newUserPW" name="newUserPW" type="password">
-						<br><br>
-						<button id="PWModify" class="eBtn">수정하기</button>
-					</div>
-				</div>
-			</div>
+			<%@ include file="mypage_user.jsp" %>
 		</div>
 	</section>
 

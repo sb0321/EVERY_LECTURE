@@ -44,8 +44,22 @@ public class ViewController {
 	
 	// 마이페이지 이동
 	@RequestMapping(value = "/mypage/mypage")
-	public String mypage() {
-		return "/mypage/mypage";
+	public String mypage(HttpSession session) {
+		
+		if(session.getAttribute("uInfo") == null)
+			return "redirect:/";
+		else
+			return "/mypage/mypage";
+	}
+	
+	@RequestMapping(value = "/mypage/mypageLecture")
+	public String go_lecture() {
+		return "/mypage/mypage_lecture";
+	}
+	
+	@RequestMapping(value = "/mypage/mypageUser")
+	public String go_user() {
+		return "/mypage/mypage_user";
 	}
 	
 

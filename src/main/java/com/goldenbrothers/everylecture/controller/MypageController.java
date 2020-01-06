@@ -64,8 +64,6 @@ public class MypageController {
 	@RequestMapping(value = "/mypage/checkPassword")
 	public String checkPassword(HttpSession session, @RequestParam String userPW) {
 		
-		System.out.println(userPW);
-		
 		String result = "0";
 		
 		// 사용자 정보를 가져온다

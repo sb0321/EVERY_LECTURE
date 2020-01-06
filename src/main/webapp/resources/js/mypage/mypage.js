@@ -55,15 +55,14 @@ $(document).ready(function() {
 					}
 					else {
 						alert("현재 비밀번호가 틀립니다. 다시 입력해주세요.");
+						$("#newUserPW").val('');
+						$('#userPWNow').val('');
 					}
 				},
 				error : function(result) {
 					alert("error");
-					
 				}
 			});
-		
-
 	});
 	
 });
