@@ -25,7 +25,8 @@ function changePart(url){
             alert('통신실패!!');
         },
         success : function(data) {
-        	 $("#right_section").html(data);
+        	$("#right_section").children().remove();
+        	$("#right_section").html(data);
         }
  
     });
