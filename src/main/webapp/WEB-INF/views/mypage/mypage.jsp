@@ -5,7 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>${uInfo.userName }님의 마이페이지입니다.</title>
-<script src='<c:url value='/resources/js/mypage/mypage.js'/>'></script>
 <script src='<c:url value='/resources/js/mypage/mypage_switch.js'/>'></script>
 <link rel="stylesheet" href='<c:url value='/resources/css/mypage/mypage.css'/>'>
 </head>

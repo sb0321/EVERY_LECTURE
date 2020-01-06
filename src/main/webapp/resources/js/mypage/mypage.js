@@ -16,8 +16,13 @@ $(document).ready(function() {
 			type : "POST",
 			async : true,
 			success : function(result) {
-				if(result == "1")
+				if(result == "1") {
+					alert("이름 수정을 완료했습니다.");
 					location.reload();
+				}
+				else {
+					
+				}
 			},
 			error : function(result) {
 				alert("error");
