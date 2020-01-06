@@ -54,11 +54,13 @@ public class ViewController {
 		return "/mypage/mypage_user";
 	}
 	
+<<<<<<< Upstream, based on origin/master
 	@RequestMapping(value = "/lecture/lectureIndex")
 	public String lecture_index() {
 		return "/lecture/lecture_index";
 	}
 	
+<<<<<<< Upstream, based on origin/master
 <<<<<<< Upstream, based on origin/master
 	//---------------------------admin-----------------------------
 	@RequestMapping(value = "/goAdminLogin")
@@ -70,6 +72,10 @@ public class ViewController {
 	public String go_admin_login1() {
 		return "/admin/upload_lecture";
 =======
+=======
+=======
+>>>>>>> 4fe06c0 cb
+>>>>>>> 296c83f cb
 	@RequestMapping(value = "/join/joinForm")
 	public String join() {
 		return "join/joinForm";
