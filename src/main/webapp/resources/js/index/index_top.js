@@ -16,7 +16,8 @@ $(document).ready(function() {
 	// 로그인 버튼 클릭 시 오버레이
 	$login.on("click", function() {
 		
-		var nowPosition = ($(window).height()) / 2 - $over.outerHeight() + $(window).scrollTop();
+//		var nowPosition = ($(window).height()) / 2 - $over.outerHeight() + $(window).scrollTop();
+		var nowPosition = window.innerHeight / 2;
 		
 		$over.css({
 			"display":"flex",
@@ -32,6 +33,24 @@ $(document).ready(function() {
 		
 	});
 	
+	// 바깥 누르면 나가짐
+	$over_sub.on("click", function() {
+		
+		// 현재 위치
+//		var nowPosition = ($(window).height()) / 2 - $over.outerHeight() + $(window).scrollTop();
+		var nowPosition = 300;
+		
+		$over.animate({
+			"opacity":"0",
+			"top":(nowPosition - 100) + "px"
+		}, function() {
+			$(this).css({"display":"none"});
+		});
+		
+		$over_sub.animate({"opacity":"0"}, function() {
+			$(this).css({"display":"none"});
+		})
+	});
 	// 입력 창 누르면 변화
 	$userID.focus(function() {
 		$(this).animate({
@@ -55,23 +74,6 @@ $(document).ready(function() {
 		});
 	});
 	
-	// 바깥 누르면 나가짐
-	$over_sub.on("click", function() {
-		
-		// 현재 위치
-		var nowPosition = ($(window).height()) / 2 - $over.outerHeight() + $(window).scrollTop();
-		
-		$over.animate({
-			"opacity":"0",
-			"top":(nowPosition - 100) + "px"
-			}, function() {
-			$(this).css({"display":"none"});
-		});
-		
-		$over_sub.animate({"opacity":"0"}, function() {
-			$(this).css({"display":"none"});
-		})
-	});
 	
 	$top.mouseover(function() {
 		$(this).animate({

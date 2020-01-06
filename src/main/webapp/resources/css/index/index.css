@@ -259,8 +259,10 @@ body {
 	
 	height: 100%;
 	width: 32%;
-	
-/* 	margin: auto; */
+}
+
+.middle_intro_show > div {
+	line-height: 40px;
 }
 
 .icon_show {

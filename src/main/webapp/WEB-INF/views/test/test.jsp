@@ -5,19 +5,20 @@
 <head>
 <meta charset="UTF-8">
 <title>테스트 페이지 입니다.</title>
-<script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
-<script src="<%= context %>/resources/js/effect/button.js"></script>
-<link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
 <style type="text/css">
 	#navi {
 		background-color: #6260B3;
 	}
 </style>
 </head>
-<body>
-<%-- 	<jsp:include page="../index/index_top.jsp"></jsp:include> --%>
+<body style="height: 3000px;">
 	<%@ include file="../index/index_top.jsp" %>
-	<%= context %>
+
+	<section style="height: 300px; width: 100%;">
+	
+	
+	</section>
+<%-- 	<jsp:include page="../index/index_top.jsp"></jsp:include> --%>
 	<button id="" class="eBtn">테스트</button>
 	<button id="" class="eBtn">테스트</button>
 	<button id="" class="eBtn">테스트</button>
