@@ -9,7 +9,7 @@
 			<br>
 			<br>
 			<br>
-			<form id="loginForm" method="post" action='<c:url value='/login/userLoginCheck' />'>
+			<form id="loginForm" method="post" action='<c:url value='/login/userLogin' />'>
 				<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
 				<br>
 				<br>
@@ -53,7 +53,7 @@
 					<a href="#none">강의 보러가기</a>
 				</div>
 				<div class="index_top">
-					<a href="#none">마이페이지</a>
+					<a href='<c:url value='/mypage/mypage'/>'>마이페이지</a>
 				</div>
 				<div id="hello">
 					${sessionScope.uInfo.userName }님! 안녕하세요!

@@ -18,7 +18,7 @@
 		authentication-manager-ref="userLoginManager">
 		<security:intercept-url pattern="/resources/**" access="permitAll"/>
 		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
-<!-- 		<security:intercept-url pattern="/**" access="hasRole('USER')"/> -->
+<!-- 		<security:intercept-url pattern="/mypage/**" access="hasRole('USER')"/> -->
 		
 		<!-- 세션 관리 -->
 		<security:session-management invalid-session-url="/">
@@ -29,11 +29,12 @@
 		<!-- 로그인시 -->
 		<security:form-login 
 			login-page="/"
-			login-processing-url="/login/userLoginCheck"
+			login-processing-url="/login/userLogin"
 			default-target-url="/login/userLogin"
+			authentication-failure-url="/login/login"
 			username-parameter="userID"
 			password-parameter="userPW"
-			authentication-failure-url="/login/loginFailure"
+			
 		/>
 		
 		<security:logout

@@ -1,0 +1,38 @@
+#window {
+	
+	height: 800px;
+	width: 80%;
+	
+	text-align: center;
+	
+	margin: auto;
+	
+	display: table;
+}
+
+#context {
+	
+	display: table-cell;
+	vertical-align: middle;
+	
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
+#indicator > a > div {
+	color : black;
+	border-color: gray;
+	font-size: 1.2em;
+}
+
+#yesNo {
+	font-size: 1.2em;
+	text-decoration: underline;
+	
+	color: red;
+	
+	margin-bottom: 20px;
+}
+

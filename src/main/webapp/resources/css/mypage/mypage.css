@@ -1,0 +1,216 @@
+body {
+	width: 1600px;
+	
+	margin: auto;
+	
+	background-color: white;
+}
+
+#navi {
+	background-color: #6260b3;
+	
+	width: 100%;
+}
+
+
+/* section */
+section {
+	
+	width: 100%;
+	height: auto;
+	
+}
+
+
+/* left_section */
+#left_section {
+	
+	height: 100%;
+	width: 30%;
+	
+	display: inline-block;
+	float: left;
+	
+	
+	border-left: 2px solid #300b4c
+}
+
+#profile_wrapper {
+	
+	background-color: #e5b565;
+	
+	
+	border-bottom: 3px solid #300b4c;
+	
+	width: 100%;
+	min-height: 400px;
+}
+
+#profile {
+	width: 100%;
+	height: auto;
+	
+	text-align: center;
+}
+
+#profile > div {
+	width: 100%;
+	height: 50px;
+	
+	text-align: center;
+	
+	margin: auto;
+	padding-top: 20px;
+	
+	font-size: 1.5em;
+	color: white;
+}
+
+#profile > img {
+	
+	height: 150px;
+	width: 150px;
+	
+	margin: auto;
+	margin-top: 80px;
+	
+	background-color: white;
+	border-radius: 50%;
+}
+
+#profile_indicator {
+	
+	width: 100%;
+	height: auto;
+	
+	
+	margin: auto;
+	
+	text-align: center;
+	
+	display: inline-block;
+}
+
+#profile_indicator > a > button {
+	
+	min-width: 100px;
+	height: 45px;
+	
+	margin: auto;
+	margin-top: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	display: inline-block;
+}
+
+#content_bar {
+	
+	width: 80%;
+	height: 400px;
+	
+	margin: auto;
+	margin-top: 50px;
+}
+
+.content_list {
+	
+	font-size: 1.5em;
+	
+	text-decoration: underline;
+	
+	line-height: 50px;
+}
+
+
+/* right_section */
+#right_section {
+	
+	border-left: 1px solid #300b4c;
+	
+	height: 100%;
+	width: 69.75%;
+	
+	display: inline-block;
+	float: right;
+	
+	display: block;
+}
+
+#right_wrapper {
+	
+	width: 70%;
+	height: auto;
+	
+	margin: auto;
+	
+	margin-top: 200px;
+}
+
+#context {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#content_wrapper {
+	
+	margin: auto;
+	
+	margin-top: 20px;
+	
+	width: 100%;
+	height: auto;
+	
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.userForm {
+	width: 80%;
+	height: auto;
+	
+	margin: auto;
+	margin-top: 20px;
+	
+	text-align: center;
+	
+	margin-top: 50px;
+}
+
+.userForm > div {
+	
+	text-align: left;
+	font-size: 2em;
+	
+	margin-bottom: 20px;
+}
+
+.userForm > input {
+	width: 80%;
+	height: 60px;
+	
+	text-align: center;
+	
+	font-size: 1.5em;
+}
+
+.userForm > label > button{
+	
+	width: auto;
+	height:60px;
+	
+	margin: auto;
+	margin-left: auto;
+	
+	font-size: 1.5em;
+	
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#PWModify {
+	font-size: 1.5em;
+	
+	height: 60px;
+	width: auto;
+}

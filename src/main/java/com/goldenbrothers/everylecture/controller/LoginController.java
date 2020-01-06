@@ -40,6 +40,7 @@ public class LoginController {
 	public String goLogin(HttpSession session, Principal principal) {		
 		// 사용자 정보 가져오기
 		
+		
 		String userID = principal.getName();
 		UserDTO dto = new UserDTO();
 		try {
@@ -51,7 +52,7 @@ public class LoginController {
 			
 		}catch (Exception e) {
 			// TODO: handle exception
-			session.setAttribute("uInfo", "String");
+			System.out.println("error!!!");
 		}
 		
 		return "redirect:/";
@@ -64,18 +65,4 @@ public class LoginController {
 		return "redirect:/";
 	}
 	
-	@ResponseBody
-	@RequestMapping(value = "login/loginFailure")
-	public int loginFailure() {
-		
-		return 1;
-	}
-	
-	// 테스트 바디
-//	@RequestMapping(value = "/login/loginFailure")
-//	public String loginFailure(HttpServletRequest request) {
-//		
-//		
-//		return "/login/loginFailure";
-//	}
 }

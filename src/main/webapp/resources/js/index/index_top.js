@@ -11,6 +11,11 @@ $(document).ready(function() {
 	$userID = $('#userID');
 	$userPW = $('#userPW');
 	
+	$submit = $('#loginSubmit');
+	$loginForm = $('#loginForm');
+	
+	$navi = $('#navi');
+	
 	
 	
 	// 로그인 버튼 클릭 시 오버레이
@@ -87,6 +92,42 @@ $(document).ready(function() {
 			"padding-left":"0px",
 			"padding-right":"0px"
 		}, 200).css({"font-weight":"normal"});
+	});
+	
+	
+	// 네비게이션 스크롤 할 경우 fixed 시키도록 함
+	var on = false;
+	$(window).scroll(function() {
+		
+		var scrollNow = $(window).scrollTop();
+		
+//		alert(scrollNow);
+		
+		if(scrollNow >= 100 && on == false) {
+			$navi.css({
+				"position":"fixed",
+				"top":"-100px",
+				"opacity":"0",
+			})
+			.animate({
+				"top":"0",
+				"opacity":"100%"
+			});
+			on = true;
+		}
+		
+		if(scrollNow <= 0 && on ==true) {
+			$navi.animate({
+				"top":"-100px",
+				"opacity":"100"
+			})
+			.css({
+				"position":"inherit",
+				"top":"0"
+			});
+			on = false;
+		}
+			
 	});
 	
 

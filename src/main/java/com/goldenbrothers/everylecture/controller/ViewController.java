@@ -1,5 +1,7 @@
 package com.goldenbrothers.everylecture.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -26,9 +28,24 @@ public class ViewController {
 		return "/test/test";
 	}
 	
-	@RequestMapping(value = "login/login_overlay")
+	@RequestMapping(value = "/login/login_overlay")
 	public String loginOverlay() {
 		return "login/login_overlay";
+	}
+	
+	@RequestMapping(value = "/login/login")
+	public String login(HttpSession session) {
+		
+		if(session.getAttribute("uInfo") != null)
+			return "/index";
+		else
+			return "/login/login";
+	}
+	
+	// 마이페이지 이동
+	@RequestMapping(value = "/mypage/mypage")
+	public String mypage() {
+		return "/mypage/mypage";
 	}
 	
 
