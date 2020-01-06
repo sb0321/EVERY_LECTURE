@@ -22,6 +22,7 @@
 					<a href='<c:url value='/' />'><button class="eBtn">홈페이지로 이동</button></a>
 				</div>
 			</div>
+			<hr id="pro_hr">
 			<div id="content_bar">
 				<div class="content_list"><a id="profileBtn">프로필</a></div>
 				<div class="content_list">

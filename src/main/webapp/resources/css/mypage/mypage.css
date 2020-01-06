@@ -3,8 +3,9 @@ body {
 	
 	margin: auto;
 	
-	background-color: white;
+	background-color: #6260b3;
 }
+
 
 #navi {
 	background-color: #6260b3;
@@ -17,7 +18,8 @@ body {
 section {
 	
 	width: 100%;
-	height: auto;
+	height: 100vh;
+	background-color: white;
 	
 }
 
@@ -26,24 +28,20 @@ section {
 #left_section {
 	
 	height: 100%;
-	width: 30%;
+	width: 20%;
 	
 	display: inline-block;
 	float: left;
-	
-	
-	border-left: 2px solid #300b4c
 }
 
 #profile_wrapper {
 	
-	background-color: #e5b565;
-	
-	
-	border-bottom: 3px solid #300b4c;
-	
 	width: 100%;
 	min-height: 400px;
+}
+
+#pro_hr {
+	width: 80%
 }
 
 #profile {
@@ -129,7 +127,7 @@ section {
 	border-left: 1px solid #300b4c;
 	
 	height: 100%;
-	width: 69.75%;
+	width: 79.75%;
 	
 	display: inline-block;
 	float: right;
