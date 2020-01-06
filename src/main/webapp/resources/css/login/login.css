@@ -6,7 +6,6 @@ body {
   background-size: 20px 20px;
 }
 
-
 #window {
 	
 	height: 800px;
@@ -31,8 +30,8 @@ body {
 }
 
 #indicator > a > div {
-	color : black;
-	border-color: gray;
+	color: white;
+	border-color: white;
 	font-size: 1.2em;
 }
 
@@ -40,7 +39,10 @@ body {
 	font-size: 1.2em;
 	text-decoration: underline;
 	
-	color: red;
+	color: white;
+	
+	border-left: 300px solid white;
+	border-right: 300px solid white;
 	
 	margin-bottom: 20px;
 }
