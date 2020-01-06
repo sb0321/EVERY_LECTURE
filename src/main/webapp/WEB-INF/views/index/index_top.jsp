@@ -5,11 +5,11 @@
 <div id="overlay_wrapper">
 	<section id="overlay_window">
 		<div id="window_context">
-			<img id="logoFull" alt="<EVERY-LECTURE>" src="<%= context %>/resources/image/logo-full.png">
+			<img id="logoFull" alt="<EVERY-LECTURE>" src='<c:url value='/resources/image/logo-full.png'/>'>
 			<br>
 			<br>
 			<br>
-			<form id="loginForm" method="post" action="<%= context %>/login/userLoginCheck">
+			<form id="loginForm" method="post" action='<c:url value='/login/userLoginCheck' />'>
 				<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
 				<br>
 				<br>
@@ -26,9 +26,9 @@
 <body>
 	<div id="navi">
 		<div id="top_left">
-			<a id="logo-wrap" href="<%= context %>/">
+			<a id="logo-wrap" href='<c:url value='/' />'>
 				<img id="logoImg" alt="이미지를 불러오는 것을 실패했습니다." 
-				src="<%= context %>/resources/image/logo-white.png">
+				src='<c:url value='/resources/image/logo-white.png' />'>
 				<div id="logoWord">EVERY-LECTURE</div>
 			</a>
 		</div>
@@ -47,7 +47,7 @@
 			</c:if>
 			<c:if test="${not empty sessionScope.uInfo}">
 				<div class="index_top">
-					<a href="<%= context %>/logout">로그아웃</a>
+					<a href='<c:url value='/logout' />'>로그아웃</a>
 				</div>
 				<div class="index_top">
 					<a href="#none">강의 보러가기</a>

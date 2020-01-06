@@ -4,17 +4,30 @@
     
     
 <!-- 공통된 파일들만 import 하세요 -->
-<% String context = request.getContextPath(); %>
 
-<script src="<%= context %>/resources/js/jquery-3.4.1.js"></script>
-<script src="<%= context %>/resources/js/jquery-ui.min.js"></script>
-<script src="<%= context %>/resources/js/effect/button.js"></script>
-<script src="<%= context %>/resources/js/effect/input.js"></script>
+<script src='<c:url value='/resources/js/jquery-3.4.1.js'/>'></script>
+<script src='<c:url value='/resources/js/jquery-ui.min.js'/>'></script>
+<script src='<c:url value='/resources/js/effect/button.js' />'></script>
+<script src='<c:url value='/resources/js/effect/input.js'/>'></script>
 
-<link rel="stylesheet" href="<%= context %>/resources/css/reset.css">
-<link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css">
-<link rel="stylesheet" href="<%= context %>/resources/css/effect/input.css">
+<link rel="stylesheet" href='<c:url value='/resources/css/reset.css'/>'>
+<link rel="stylesheet" href='<c:url value='/resources/css/effect/button.css'/>'>
+<link rel="stylesheet" href='<c:url value='/resources/css/effect/input.css'/>'>
 
 <!-- index_top 관련 라이브러리 -->
-<script src="<%= context %>/resources/js/index/index_top.js"></script>
-<link rel="stylesheet" href="<%= context %>/resources/css/index/index_top.css">
+<script src='<c:url value='/resources/js/index/index_top.js'/>'></script>
+<link rel="stylesheet" href='<c:url value='/resources/css/index/index_top.css' />'>
+
+
+<%-- <script src="<%= context %>/resources/js/jquery-3.4.1.js"></script> --%>
+<%-- <script src="<%= context %>/resources/js/jquery-ui.min.js"></script> --%>
+<%-- <script src="<%= context %>/resources/js/effect/button.js"></script> --%>
+<%-- <script src="<%= context %>/resources/js/effect/input.js"></script> --%>
+
+<%-- <link rel="stylesheet" href="<%= context %>/resources/css/reset.css"> --%>
+<%-- <link rel="stylesheet" href="<%= context %>/resources/css/effect/button.css"> --%>
+<%-- <link rel="stylesheet" href="<%= context %>/resources/css/effect/input.css"> --%>
+
+<!-- index_top 관련 라이브러리 -->
+<%-- <script src="<%= context %>/resources/js/index/index_top.js"></script> --%>
+<%-- <link rel="stylesheet" href="<%= context %>/resources/css/index/index_top.css"> --%>

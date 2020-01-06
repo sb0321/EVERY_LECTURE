@@ -4,10 +4,10 @@
 <head>
 <meta charset="UTF-8">
 <title>당신의 프로그래밍 - EVERY-LECTURE</title>
-<script src="<%= context %>/resources/js/index/index.js"></script>
-<script src="<%= context %>/resources/js/index/index_middle.js"></script>
+<script src='<c:url value='/resources/js/index/index.js'/>'></script>
+<script src='<c:url value='/resources/js/index/index_middle.js'/>'></script>
 
-<link rel="stylesheet" href="<%= context %>/resources/css/index/index.css">
+<link rel="stylesheet" href='<c:url value='/resources/css/index/index.css'/>'>
 </head>
 <body>
 	<%@ include file="index/index_top.jsp" %>
@@ -38,7 +38,7 @@
 						</div>
 						<div id="table_intro">
 							<label id="search_wrapper">
-								<img id="search_icon" alt="" src="<%= context %>/resources/image/search.png">
+								<img id="search_icon" alt="" src='<c:url value='/resources/image/search.png' />'>
 								<input id="search" class="eBtn" placeholder="무엇을 검색하고 싶나요?"/>
 							</label>
 						</div>

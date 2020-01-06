@@ -64,10 +64,18 @@ public class LoginController {
 		return "redirect:/";
 	}
 	
-	@RequestMapping(value = "/login/loginFailure")
-	public String loginFailure(HttpServletRequest request) {
+	@ResponseBody
+	@RequestMapping(value = "login/loginFailure")
+	public int loginFailure() {
 		
-		
-		return "/login/loginFailure";
+		return 1;
 	}
+	
+	// 테스트 바디
+//	@RequestMapping(value = "/login/loginFailure")
+//	public String loginFailure(HttpServletRequest request) {
+//		
+//		
+//		return "/login/loginFailure";
+//	}
 }
