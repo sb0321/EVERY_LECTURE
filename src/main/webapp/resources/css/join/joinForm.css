@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+#navi{
+	background-color:#6260B3;
+}
+
+#joinLogo{
+	margin:auto;
+	width:850px;
+	height:250px;	
+	
+	text-align: center;
+	vertical-align:middle;
+}
+
+#logo-Full{
+	width:600px;
+	height:250px;
+	margin:0;
+}
+
+#joinDiv{
+	text-align:center;
+	margin:auto;
+	width:850px;
+	height:350px;
+}
+
+h3{
+	margin:10px;
+	font-size:1.5em;
+}
+
+table.joinTable{
+	width:830px;
+	height:340px;
+	align:center;
+	border-collapse:separate;
+	border-spacing:0;
+	text-align:left;
+	line-height:1.5;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	margin:20px 10px;	
+}
+
+table.joinTable th{
+	width:260px;
+	height:50px;
+	padding:5px;
+	font-weight:bold;
+	font-size:14px;
+	vertical-align:middle;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	background:#300B4C;
+	color:white;
+}
+
+table.joinTable td{
+	width:250px;
+	padding-left:10px;
+	padding:5px;
+	vertical-align:middle;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+table.joinTable button{
+	width:180px;
+	height:40px;
+	padding:10px;
+	vertical-align:top;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-left:7px;
+	color:white;
+}
+
+table.joinTable input{
+	width:180px;
+	height:40px;
+	padding:10px;
+	vertical-align:top;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	margin-left:7px;
+}
+
+.eBtn{
+	background-color:#AD65E5;
+	color:white;
+}
