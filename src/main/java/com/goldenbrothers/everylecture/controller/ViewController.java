@@ -68,7 +68,9 @@ public class ViewController {
 	@RequestMapping(value = "/admin/uploadLecture")
 	public String go_admin_login1() {
 		return "/admin/upload_lecture";
-
+	}
+	
+	
 	@RequestMapping(value = "/join/joinForm")
 	public String join() {
 		return "join/joinForm";
