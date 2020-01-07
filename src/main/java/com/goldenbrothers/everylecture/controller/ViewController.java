@@ -62,5 +62,10 @@ public class ViewController {
 		return "/mypage/mypage_user";
 	}
 	
+	@RequestMapping(value = "/lecture/lectureIndex")
+	public String lecture_index() {
+		return "/lecture/lecture_index";
+	}
+	
 
 }
