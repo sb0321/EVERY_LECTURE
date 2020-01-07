@@ -234,3 +234,38 @@ section {
 	
 	margin-bottom: 50px;
 }
+
+
+/* ********************************************************* */
+/*
+.lect_table{
+	width: 80%;
+	height: 250px;
+	margin: auto;
+	text-align: center;
+	font-size:1.5em;
+	padding-top:15px;
+}
+.lect_table input{
+	width:80%;
+	height:80%;
+}
+
+.lect_table tr{
+	width:100%;
+	height:100%;
+}
+*/
+#lect_mid{
+	height: 100%;
+	width: 100%;
+	display: inline;
+	vertical-align: top;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.lect_title{
+	width:80%;
+	display:inline;
+}
