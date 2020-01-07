@@ -87,16 +87,16 @@ public class ViewController {
 		return "board/boardEdit";
 	}
 	
-<<<<<<< Upstream, based on origin/jm
+
 	@RequestMapping(value = "/board/boardView")
 	public String boardView() {
 		return "board/boardView";
-=======
+
 	//------------------------lecture---------------------------
 	@RequestMapping(value = "/lecture/lectureIndex")
 	public String lecture_list() {
 		return "redirect:/lecture/lectureList";
->>>>>>> 54c88c1 강의 불러오기 완료
+
 	}
 
 }
