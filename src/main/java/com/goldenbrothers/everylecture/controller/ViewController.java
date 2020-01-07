@@ -54,7 +54,6 @@ public class ViewController {
 		return "/mypage/mypage_user";
 	}
 	
-<<<<<<< Upstream, based on origin/master
 	@RequestMapping(value = "/lecture/lectureIndex")
 	public String lecture_index() {
 		return "/lecture/lecture_index";
