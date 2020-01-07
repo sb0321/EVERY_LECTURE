@@ -88,25 +88,17 @@ public class ViewController {
 	}
 	
 
-<<<<<<< Upstream, based on origin/jm
-	@RequestMapping(value = "/board/boardView")
-	public String boardView() {
-		return "board/boardView";
-
-=======
->>>>>>> 60109d6 k
 	//------------------------lecture---------------------------
 	@RequestMapping(value = "/lecture/lectureIndex")
 	public String lecture_list() {
 		return "redirect:/lecture/lectureList";
-<<<<<<< Upstream, based on origin/jm
-=======
+
 	}
 
 	@RequestMapping(value = "/board/boardView")
 	public String boardView() {
 		return "board/boardView";
->>>>>>> 60109d6 k
+
 
 	}
 
