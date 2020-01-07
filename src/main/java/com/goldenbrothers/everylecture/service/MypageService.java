@@ -1,43 +1,22 @@
 package com.goldenbrothers.everylecture.service;
 
-import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.goldenbrothers.everylecture.dao.IUserDAO;
+import com.goldenbrothers.everylecture.dao.IMypageDAO;
 import com.goldenbrothers.everylecture.model.UserDTO;
 
 @Service
 public class MypageService implements IMypageService {
 	
 	@Autowired
-	@Qualifier("IUserDAO")
-	IUserDAO dao;
+	IMypageDAO dao;
 
 	@Override
-	public UserDTO selectOne(String userID) {
+	public int deleteUser(String userID) {
 		// TODO Auto-generated method stub
-		return dao.selectOne(userID);
-	}
-
-	@Override
-	public ArrayList<UserDTO> selectAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int insert(UserDTO dto) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int update(UserDTO dto) {
-		// TODO Auto-generated method stub
-		return 0;
+		return dao.deleteUser(userID);
 	}
 
 	@Override
@@ -47,16 +26,24 @@ public class MypageService implements IMypageService {
 	}
 
 	@Override
+	public UserDTO selectOne(String userID) {
+		// TODO Auto-generated method stub
+		return dao.selectOne(userID);
+	}
+
+	@Override
+	public int update(UserDTO dto) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
 	public int updatePW(UserDTO dto) {
 		// TODO Auto-generated method stub
 		return dao.updatePW(dto);
 	}
-
-	@Override
-	public int delete(String id) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
+	
 
 
 	
