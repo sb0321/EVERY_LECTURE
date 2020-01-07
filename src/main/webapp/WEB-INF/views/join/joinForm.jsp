@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원가입</title>
+	<script src='<c:url value='/resources/js/join/join.js'/>'></script>
 	<link rel="stylesheet" type="text/css" href="../resources/css/join/joinForm.css">
 </head>
 <body>
@@ -18,7 +19,8 @@
 			
 				<div class="join_box" id="join_another">
 					<h3 id="id_title">아이디</h3>
-					<input class="eInput" type="text" id="id" name="id" maxlength="20"><button class="eBtn">중 복 체 크</button>
+					<input class="eInput" type="text" id="id" name="id" maxlength="20">
+					<button id="checkID" class="eBtn">중 복 체 크</button>
 				</div>
 				<br>
 			<div id="join_wrapper">
@@ -38,7 +40,8 @@
 				</div>
 				<br>	
 				<div id="join_button">
-					<button class="eBtn" type="submit">가 입</button><button class="eBtn" type="reset">취 소</button>
+					<button id="submit" class="eBtn" type="submit">가 입</button>
+					<button class="eBtn" type="reset">취 소</button>
 				</div>
 			</div>
 		</div>
