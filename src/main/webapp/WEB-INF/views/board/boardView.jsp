@@ -36,7 +36,7 @@
 					</tr>
 					<tr class="view_context" id="tr6">
 						<th colspan="2" align="center">
-							<input type="button" value="수정" onclick="">
+							<input type="button" value="수 정" onclick="">
 							<input type="button" value="삭 제" onclick="">
 							<input type="button" value="게시판 보기" onclick="">
 						</th>
