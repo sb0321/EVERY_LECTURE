@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>board edit</title>
 	<link rel="stylesheet" href='<c:url value='/resources/css/board/boardEdit.css'/>'>
 </head>
 <body>
