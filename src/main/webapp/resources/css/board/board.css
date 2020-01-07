@@ -33,6 +33,11 @@ section {
 	margin:0 auto;
 }
 
+<<<<<<< Upstream, based on origin/join
+=======
+<!-- ********************************************* -->
+
+>>>>>>> d2c60db n
 #board_thead {
 	width: 100%;
 	text-align: center;
@@ -45,7 +50,14 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+<<<<<<< Upstream, based on origin/join
 	
+=======
+#thead_context > th {
+	vertical-align: middle;
+	border:3px dashed #bcbcbc;
+}
+>>>>>>> d2c60db n
 #thead_context > th:nth-child(1) {
 	width:10%;
 }
@@ -62,3 +74,43 @@ section {
 	width:10%;
 }
 
+<<<<<<< Upstream, based on origin/join
+=======
+
+<!-- ********************************************* -->
+
+#board_tbody {
+	width: 100%;
+	text-align: center;
+}
+#board_tbody > tr {
+	height:40px;
+	font-size:1.2em;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#tbody_context > th {
+	vertical-align: middle;
+	border:1px dashed #bcbcbc;
+}
+#tbody_context > th:nth-child(1) {
+	width:10%;
+}
+#tbody_context > th:nth-child(2) {
+	width:40%;
+}
+#tbody_context > th:nth-child(3) {
+	width:20%;
+}
+#tbody_context > th:nth-child(4) {
+	width:20%;
+}
+#tbody_context > th:nth-child(5) {
+	width:10%;
+}
+
+
+
+>>>>>>> d2c60db n
