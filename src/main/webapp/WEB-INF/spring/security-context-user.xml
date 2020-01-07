@@ -78,6 +78,8 @@
 		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
 		<security:intercept-url pattern="/mypage/**" access="hasRole('USER')"/>
 		
+		<security:access-denied-handler error-page="/" />
+		
 		<!-- 세션 관리 -->
 		<security:session-management invalid-session-url="/">
 			<!-- 동일 ID의 최대 세션 개수는 1개 -->

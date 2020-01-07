@@ -75,14 +75,41 @@ $(document).ready(function() {
 	// 사용자 탈퇴
 	$expire.on("click", function() {
 		
-		alert("ds");
+		var ok = confirm("정말로 회원 탈퇴를 하시겠습니까? 이 작업은 되돌릴 수 없습니다.");
 		
-		$.ajax({
-			url : "/everylecture/mypage/expireUser",
-			data: newPW,
-			type : "POST",
-			async : true,
-		})
+		if(ok == true) {
+			
+			// 사용자 id 가져옴
+			$.ajax({
+				url : "/everylecture/mypage/expireUserCheck",
+				type : "POST",
+				async : true,
+				success : function(userID) {
+					console.log(userID);
+					var data = {
+							"userID" : String(userID)
+					}
+					
+					// 사용자 삭제
+					$.ajax({					
+						url : "/everylecture/mypage/expireUser",
+						data: data,
+						type : "POST",
+						async : true,
+						success : function(result) {
+							alert("회원탈퇴를 했습니다.");
+							location.href="/everylecture/logout";
+						},
+						error : function(userID) {
+							alert("사용자를 지우는 데 실패했습니다.");
+						}
+					});
+				},
+				error : function(result) {
+					alert("사용자 정보 접근이 불가능합니다.");
+				}
+			});
+		}
 		
 	});
 	
