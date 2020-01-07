@@ -91,5 +91,10 @@ public class ViewController {
 	public String boardEdit() {
 		return "board/boardEdit";
 	}
+	
+	@RequestMapping(value = "/board/boardView")
+	public String boardView() {
+		return "board/boardView";
+	}
 
 }
