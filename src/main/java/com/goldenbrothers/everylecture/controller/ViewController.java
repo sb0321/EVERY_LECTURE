@@ -76,5 +76,10 @@ public class ViewController {
 		return "join/joinForm";
 	}
 	
+	
+	@RequestMapping(value = "/board/boardForm")
+	public String board() {
+		return "board/boardForm";
+	}
 
 }
