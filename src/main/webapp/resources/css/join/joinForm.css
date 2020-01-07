@@ -10,10 +10,6 @@
 	margin:0;
 }
 
-.eInput {
-	background-color: #300b4c;
-}
-
 input{
 	width:300px;
 	height:50px;
@@ -55,27 +51,43 @@ button{
 }
 
 .join_title{
+	
+	
+	
 	font-size:1.5em;
 	margin-left:8px;
 	margin-top:5px;
 	margin-bottom:5px;
+	
+	text-align:left;
+	
 }
 .join_box{
 	
 	width:100%;
-	padding-left:150px;
+	/*padding-left:30px;
 	padding-right:3px;
 	padding-top:3px;
-	padding-bottom:3px;
+	padding-bottom:3px;*/
+	margin:0 auto;
 	
+}
+#join_button{
+	width:100%;
+	padding-top:30px;
+	padding-left:30px;
+	padding-bottom:3px;
+	padding-right:3px;
 }
 
 #join_wrapper{
-	margin:0 auto;
+	margin:auto;
 	width:70%;
+	text-align:center;
+	height:auto;
 }
 
-
+	
 /*
 #joinLogo{
 	margin:auto;
