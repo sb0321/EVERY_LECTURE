@@ -1,7 +1,5 @@
 package com.goldenbrothers.everylecture.controller;
 
-import java.security.Principal;
-import java.util.HashMap;
 
 import javax.servlet.http.HttpSession;
 
@@ -75,6 +73,7 @@ public class MypageController {
 		return result;
 	}
 	
+	// ºñ¹Ð¹øÈ£ ¹Ù²Þ
 	@ResponseBody
 	@RequestMapping(value = "/mypage/changePassword")
 	public String changePassword(HttpSession session, @RequestParam String newUserPW) {
@@ -93,6 +92,16 @@ public class MypageController {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
+		
+		return result;
+	}
+	
+	// È¸¿ø Å»Åð
+	@ResponseBody
+	@RequestMapping(value = "/mypage/expireUser")
+	public String expireUser(@RequestParam String userID) {
+		
+		String result = Integer.toString(service.deleteUser(userID));
 		
 		return result;
 	}

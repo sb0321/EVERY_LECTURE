@@ -4,6 +4,8 @@ $(document).ready(function() {
 	
 	$changePWBtn = $('#PWModify');
 	
+	$expire = $('#expireUser');
+	
 	
 	// 이름을 수정할 때 보내는 ajax
 	$changeNameBtn.on("click", function() {
@@ -68,6 +70,20 @@ $(document).ready(function() {
 					alert("error");
 				}
 			});
+	});
+	
+	// 사용자 탈퇴
+	$expire.on("click", function() {
+		
+		alert("ds");
+		
+		$.ajax({
+			url : "/everylecture/mypage/expireUser",
+			data: newPW,
+			type : "POST",
+			async : true,
+		})
+		
 	});
 	
 });
