@@ -14,6 +14,7 @@
 			<img src="../resources/image/board.PNG" id="board_image">
 		</div>
 		
+<<<<<<< Upstream, based on origin/jm
 		<div id="view_area">
 			<hr><br>
 			<h3>게시글 보기</h3><br><br>
@@ -46,6 +47,11 @@
 			</div>	
 		</div>
 		
+=======
+		<div>
+			
+		</div>
+>>>>>>> bd516eb Start
 	</section>
 </body>
 </html>
