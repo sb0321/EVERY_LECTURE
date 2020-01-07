@@ -11,6 +11,10 @@
 	
 	</insert>
 	
+	<select id="selectLectureAll" resultType="com.goldenbrothers.everylecture.model.LectureDTO">
+		SELECT * FROM test.lecture
+	</select>
+	
 	
 
 </mapper>

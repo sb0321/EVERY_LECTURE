@@ -54,11 +54,6 @@ public class ViewController {
 		return "/mypage/mypage_user";
 	}
 	
-	@RequestMapping(value = "/lecture/lectureIndex")
-	public String lecture_index() {
-		return "/lecture/lecture_index";
-	}
-	
 	//---------------------------admin-----------------------------
 	@RequestMapping(value = "/goAdminLogin")
 	public String go_admin_login() {
@@ -90,6 +85,12 @@ public class ViewController {
 	@RequestMapping(value = "/board/boardEdit")
 	public String boardEdit() {
 		return "board/boardEdit";
+	}
+	
+	//------------------------lecture---------------------------
+	@RequestMapping(value = "/lecture/lectureIndex")
+	public String lecture_list() {
+		return "redirect:/lecture/lectureList";
 	}
 
 }

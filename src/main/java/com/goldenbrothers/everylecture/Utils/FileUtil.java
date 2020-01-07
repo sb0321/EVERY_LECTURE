@@ -5,6 +5,8 @@ import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.util.UUID;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.web.multipart.MultipartFile;
 
 public class FileUtil {
@@ -18,7 +20,7 @@ public class FileUtil {
 		return uid.toString();
 	}
 	
-	public String saveImage(MultipartFile file) {
+	public String saveImage(MultipartFile file, HttpServletRequest request) {
 		
 		// 사전 준비
 		String originalFileName = file.getOriginalFilename();
@@ -32,9 +34,11 @@ public class FileUtil {
 			// 파일 내용
 			byte[] fileContent = file.getBytes();
 			
-			String path = "";
+			String path = "/resources/lecture/";
+			String result_path = request.getContextPath().concat(path);
 //			path = ("/everylecture/resources/video/").concat(path);
-			path = ("C:/EVERY-LECTURE-FILES").concat(path);
+//			path = ("C:/EVERY-LECTURE-FILES").concat(path);
+			path = request.getSession().getServletContext().getRealPath(path);
 			
 			// 디렉토리 여부 확인 후 없으면 생성
 			File uploadDir = new File(path);
@@ -56,7 +60,7 @@ public class FileUtil {
 			out.close();
 			
 			// 확인 변경
-			result = path.concat("/").concat(convertName);
+			result = result_path.concat(convertName);
 			
 		}catch (Exception e) {
 			// TODO: handle exception
