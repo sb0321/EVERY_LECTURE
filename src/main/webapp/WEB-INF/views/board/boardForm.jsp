@@ -36,7 +36,7 @@
 		
 		<div id="board_button">
 			<hr><br>
-		
+			<button onclick="글쓰기 페이지가 나와야함">게시글 작성</button>
 		</div>
 	</section>
 </body>
