@@ -17,10 +17,6 @@ public class LoginService implements ILoginService {
 	@Autowired
 	@Qualifier("IUserDAO")
 	IUserDAO dao;
-	
-	@Autowired
-	@Qualifier("IAdminDAO")
-	IAdminDAO daoAdmin;
 
 	@Override
 	public UserDTO selectOne(String userID) {
@@ -51,14 +47,5 @@ public class LoginService implements ILoginService {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
-	// admin
-	
-	@Override
-	public AdminDTO selectOneAdmin(String userID) {
-		// TODO Auto-generated method stub
-		return daoAdmin.selectOneAdmin(userID);
-	}
-
 
 }

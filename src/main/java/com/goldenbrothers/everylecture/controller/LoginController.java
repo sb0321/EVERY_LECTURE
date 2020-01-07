@@ -66,28 +66,6 @@ public class LoginController {
 		return "redirect:/";
 	}
 	
-	//------------------------------ admin 로그인 ------------------------------
-	
-	@RequestMapping(value = "/admin/adminLogin")
-	public String goLoginAdmin(HttpSession session, Principal principal) {		
-		// 사용자 정보 가져오기
-		String userID = principal.getName();
-		System.out.println(userID);
-		AdminDTO dto = new AdminDTO();
-		try {
-			
-			if(userID != null)
-				dto =  service.selectOneAdmin(userID);
-			
-			session.setAttribute("aInfo", dto);
-			
-		}catch (Exception e) {
-			// TODO: handle exception
-			System.out.println("error!!!");
-		}
-		
-		
-		return "redirect:/";
-	}
+
 	
 }
