@@ -8,7 +8,6 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
-<<<<<<< Upstream, based on origin/join
 	<section>
 		<div>
 		
@@ -18,9 +17,6 @@
 		</div>
 		
 	</section>
-=======
-	
-	
->>>>>>> 8c60ed4 boardForm
+
 </body>
 </html>
