@@ -21,6 +21,7 @@
 <<<<<<< Upstream, based on origin/join
 				<thead id="board_thead">
 <<<<<<< Upstream, based on origin/join
+<<<<<<< Upstream, based on origin/join
 					<tr id="thead_context"><th>번 호</th><th>제 목</th><th>작 성 자</th><th>작 성 일</th><th>조 회 수</th></tr>
 				<thead>
 				<tbody id="board_tbody">
@@ -36,7 +37,11 @@
 =======
 					<tr id="context"><th>번 호</th><th>제 목</th><th>작 성 자</th><th>작 성 일</th><th>조 회 수</th></tr>
 >>>>>>> 277af2f 22
+=======
+					<tr id="thead_context"><th>번 호</th><th>제 목</th><th>작 성 자</th><th>작 성 일</th><th>조 회 수</th></tr>
+>>>>>>> fcfd77e 1123123
 				<thead>
+<<<<<<< Upstream, based on origin/join
 				<tbody>
 <<<<<<< Upstream, based on origin/join
 					
@@ -44,6 +49,10 @@
 =======
 					<tr><td>1234</td></tr>
 >>>>>>> 277af2f 22
+=======
+				<tbody id="board_tbody">
+					<tr id="tbody_context"><td></tr>
+>>>>>>> fcfd77e 1123123
 				</tbody>
 			</table>
 		</div>

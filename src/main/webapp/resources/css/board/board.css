@@ -33,11 +33,6 @@ section {
 	margin:0 auto;
 }
 
-<<<<<<< Upstream, based on origin/join
-<!-- ******** board_thead ******** -->
-=======
->>>>>>> 277af2f 22
-
 #board_thead {
 	width: 100%;
 	text-align: center;
@@ -50,22 +45,7 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-<<<<<<< Upstream, based on origin/join
-#thead_context > th {
-=======
-#context > th {
->>>>>>> 277af2f 22
-	vertical-align: middle;
-	border:0.5px dashed #bcbcbc;
-<<<<<<< Upstream, based on origin/join
-=======
 	
-}
-
-#context > th:nth-child(1) {
-	width:10%;
->>>>>>> 277af2f 22
-}
 #thead_context > th:nth-child(1) {
 	width:10%;
 }
