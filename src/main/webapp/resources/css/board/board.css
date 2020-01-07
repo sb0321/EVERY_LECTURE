@@ -33,45 +33,38 @@ section {
 	margin:0 auto;
 }
 
+
 #board_thead {
 	width: 100%;
 	text-align: center;
 }
-
 #board_thead > tr {
-	height:30px;
+	height:40px;
 	font-size:1.2em;
 	width: 100%;
-	
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	
-	
 }
-
 #context > th {
 	vertical-align: middle;
+	border:0.5px dashed #bcbcbc;
+	
 }
 
 #context > th:nth-child(1) {
 	width:10%;
-	background-color:red;
 }
 #context > th:nth-child(2) {
 	width:40%;
-	background-color:yellow;
 }
 #context > th:nth-child(3) {
 	width:20%;
-	background-color:green;
 }
 #context > th:nth-child(4) {
 	width:20%;
-	background-color:blue;
 }
 #context > th:nth-child(5) {
 	width:10%;
-	background-color:purple;
 }
 

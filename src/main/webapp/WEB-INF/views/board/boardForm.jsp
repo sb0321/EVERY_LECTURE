@@ -18,12 +18,10 @@
 			<hr><br>
 			<table id="board_table">
 				<thead id="board_thead">
-					<tr id="context"><th>번 호</th><th>제 목</th><th>작성자</th><th>작성일</th><th>조회수</th></tr>
-					<tr><td>123123</td></tr>
-					<tr><td>sdsdfsdf</td></tr>
+					<tr id="context"><th>번 호</th><th>제 목</th><th>작 성 자</th><th>작 성 일</th><th>조 회 수</th></tr>
 				<thead>
 				<tbody>
-					
+					<tr><td>1234</td></tr>
 				</tbody>
 			</table>
 		</div>
