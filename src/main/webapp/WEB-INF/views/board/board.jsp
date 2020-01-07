@@ -8,7 +8,14 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
-	
-	
+	<section>
+		<div>
+		
+		</div>
+		
+		<div>
+		</div>
+		
+	</section>
 </body>
 </html>
