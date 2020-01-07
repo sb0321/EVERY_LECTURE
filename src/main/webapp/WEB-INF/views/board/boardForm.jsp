@@ -33,6 +33,11 @@
 				</tbody>
 			</table>
 		</div>
+		
+		<div id="board_button">
+			<hr><br>
+		
+		</div>
 	</section>
 </body>
 </html>
