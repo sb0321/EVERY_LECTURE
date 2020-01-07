@@ -8,8 +8,12 @@
 <link rel="stylesheet" href='<c:url value='/resources/css/lecture/lecture_index.css'/>'>
 </head>
 <body>
-	<section id="left">
+	<%@ include file="../index/index_top.jsp" %>
+	<section id="wrapper">
 	
+		<c:forEach items="">
+		
+		</c:forEach>
 	</section>
 </body>
 </html>

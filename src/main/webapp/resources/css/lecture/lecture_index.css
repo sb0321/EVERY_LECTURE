@@ -8,7 +8,12 @@ body {
 	
 }
 
-#left {
+#navi {
+	
+	background-color: #6260b3;
+}
+
+#wrapper {
 	width: 100%;
 	height: 300px;
 	
