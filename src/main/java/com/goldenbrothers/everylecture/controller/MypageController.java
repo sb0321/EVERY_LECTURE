@@ -1,6 +1,9 @@
 package com.goldenbrothers.everylecture.controller;
 
 
+import java.security.Principal;
+import java.util.HashMap;
+
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -98,10 +101,21 @@ public class MypageController {
 	
 	// È¸¿ø Å»Åð
 	@ResponseBody
-	@RequestMapping(value = "/mypage/expireUser")
-	public String expireUser(@RequestParam String userID) {
+	@RequestMapping(value = "/mypage/expireUserCheck")
+	public String expireUserCheck(Principal principal) {
 		
-		String result = Integer.toString(service.deleteUser(userID));
+		String userID = principal.getName();
+		System.out.println(userID);
+		
+		return userID;
+	}
+	
+	
+	@ResponseBody
+	@RequestMapping(value = "/mypage/expireUser")
+	public String expireUser(@RequestParam HashMap<String, String> user) {
+		
+		String result = Integer.toString(service.deleteUser(user.get("userID")));
 		
 		return result;
 	}

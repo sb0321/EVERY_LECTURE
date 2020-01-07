@@ -25,6 +25,7 @@
 				<br><br>
 				<button id="PWModify" class="eBtn">수정하기</button>
 			</div>
+			<hr id="expireBottom">
 			<div class="userForm">
 				<a id="expireUser" href="#">회원 탈퇴</a>
 			</div>
