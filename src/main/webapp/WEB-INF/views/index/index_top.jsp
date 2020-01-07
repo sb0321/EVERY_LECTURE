@@ -39,7 +39,7 @@
 					<a href="#none">로그인</a>
 				</div>
 				<div class="index_top">
-					<a href="#none">회원 가입</a>
+					<a href='<c:url value='/join/joinForm'/>'>회원 가입</a>
 				</div>
 				<div class="index_top">
 					<a href="<c:url value='/lecture/lectureIndex'/>">강의 보러가기</a>

@@ -26,7 +26,7 @@
 		<br>
 		<hr>
 		<div id="indicator">
-			<a href='<c:url value="/login/joinForm"/>'><div class="index_top">회원 가입</div></a> 
+			<a href='<c:url value='/join/joinForm'/>'><div class="index_top">회원 가입</div></a> 
 			<a href='<c:url value="/"/>'><div class="index_top">홈페이지로 가기</div></a>
 		</div>
 	</div>
