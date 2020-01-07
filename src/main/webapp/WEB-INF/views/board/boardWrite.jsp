@@ -16,7 +16,7 @@
 			
 		<div id="write_area">
 			<hr><br>
-			<h3>게시글 작성</h3><br>
+			<h3>게시글 작성</h3><br><br>
 			<form method="post" action="">
 				<table id="write_table">
 					<tr class="write_context" id="tr1">

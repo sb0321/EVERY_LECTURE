@@ -24,14 +24,13 @@ section {
 
 #write_area{
 	width:80%;
-	height:650px;
+	height:600px;
 	text-align:center;
 	margin:0 auto;
 }
 
 #write_area > form{
 	width:80%;
-	height:100%;
 	text-align:center;
 	margin:0 auto;
 }
@@ -78,6 +77,10 @@ textarea{
 	border:0px;
 	padding-left:20px;
 	padding-top:20px;
+}
+
+h3{
+	font-size:2em;	
 }
 
 #tr1{
