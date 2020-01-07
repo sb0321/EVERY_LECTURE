@@ -5,6 +5,7 @@ public class UserDTO {
 	private String userID;
 	private String userPW;
 	private String userName;
+	private String authority;
 	
 	public String getUserID() {
 		return userID;
@@ -23,6 +24,12 @@ public class UserDTO {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	public String getAuthority() {
+		return authority;
+	}
+	public void setAuthority(String authority) {
+		this.authority = authority;
 	}
 	
 	

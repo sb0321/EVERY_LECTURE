@@ -33,7 +33,9 @@
 		<param-name>contextConfigLocation</param-name>
 		<param-value>
 			classpath:/spring/application-config.xml
-			/WEB-INF/spring/security-context.xml
+			/WEB-INF/spring/security-context-user.xml
+			/WEB-INF/spring/security-context-admin.xml
+			/WEB-INF/spring/security-context-common.xml
 		</param-value>
 	</context-param>
 	<listener>
@@ -71,7 +73,9 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
 				/WEB-INF/spring/appServlet/servlet-context.xml
-				/WEB-INF/spring/security-context.xml
+				/WEB-INF/spring/security-context-user.xml
+				/WEB-INF/spring/security-context-admin.xml
+				/WEB-INF/spring/security-context-common.xml
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>

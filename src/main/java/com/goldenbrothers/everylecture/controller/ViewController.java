@@ -35,21 +35,13 @@ public class ViewController {
 	
 	@RequestMapping(value = "/login/login")
 	public String login(HttpSession session) {
-		
-		if(session.getAttribute("uInfo") != null)
-			return "/index";
-		else
-			return "/login/login";
+		return "/login/login";
 	}
 	
 	// 마이페이지 이동
 	@RequestMapping(value = "/mypage/mypage")
-	public String mypage(HttpSession session) {
-		
-		if(session.getAttribute("uInfo") == null)
-			return "redirect:/";
-		else
-			return "/mypage/mypage";
+	public String mypage() {
+		return "/mypage/mypage";
 	}
 	
 	@RequestMapping(value = "/mypage/mypageLecture")
@@ -65,6 +57,17 @@ public class ViewController {
 	@RequestMapping(value = "/lecture/lectureIndex")
 	public String lecture_index() {
 		return "/lecture/lecture_index";
+	}
+	
+	//---------------------------admin-----------------------------
+	@RequestMapping(value = "/goAdminLogin")
+	public String go_admin_login() {
+		return "/admin/admin_login";
+	}
+	
+	@RequestMapping(value = "/admin/uploadLecture")
+	public String go_admin_login1() {
+		return "/admin/upload_lecture";
 	}
 	
 

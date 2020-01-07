@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import com.goldenbrothers.everylecture.dao.IAdminDAO;
 import com.goldenbrothers.everylecture.dao.IUserDAO;
+import com.goldenbrothers.everylecture.model.AdminDTO;
 import com.goldenbrothers.everylecture.model.UserDTO;
 
 @Service
@@ -15,6 +17,10 @@ public class LoginService implements ILoginService {
 	@Autowired
 	@Qualifier("IUserDAO")
 	IUserDAO dao;
+	
+	@Autowired
+	@Qualifier("IAdminDAO")
+	IAdminDAO daoAdmin;
 
 	@Override
 	public UserDTO selectOne(String userID) {
@@ -44,6 +50,14 @@ public class LoginService implements ILoginService {
 	public int delete(String id) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	// admin
+	
+	@Override
+	public AdminDTO selectOneAdmin(String userID) {
+		// TODO Auto-generated method stub
+		return daoAdmin.selectOneAdmin(userID);
 	}
 
 

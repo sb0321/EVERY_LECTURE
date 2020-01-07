@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- 관리자 -->
+	<security:http pattern="/admin/**" auto-config="true" use-expressions="true"
+		authentication-manager-ref="adminLoginManager">
+		<security:intercept-url pattern="/resources/**" access="permitAll"/>
+		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
+		<security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')"/>
+		
+		<!-- 세션 관리 -->
+		<security:session-management invalid-session-url="/">
+			<!-- 동일 ID의 최대 세션 개수는 1개 -->
+			<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="false"/>
+		</security:session-management>
+		
+		<!-- 로그인시 -->
+		<security:form-login 
+			always-use-default-target="true"
+			login-page="/goAdminLogin"
+			login-processing-url="/admin/goLogin"
+			default-target-url="/admin/adminLogin"
+			authentication-failure-url="/goAdminLogin"
+			username-parameter="adminID"
+			password-parameter="adminPW"
+			
+		/>
+		
+		<security:logout
+			invalidate-session="true"
+			logout-success-url="/"
+			delete-cookies="JESSIONID,SPRING_SECURITY_REMEMBER_ME_COOKIE"
+		/>
+		
+		<security:csrf disabled="true"/>
+	</security:http>
+	
+	<security:authentication-manager id="adminLoginManager">
+		<security:authentication-provider>
+			<!-- users-by-username-query: ID에 따른 비밀번호 일치여부 확인 -->
+			<!-- authorities-by-username-query: 로그인에 성공한 사용자의 권한을 확인하여 접근 가능 / 불가 페이지를 구분해서 접근 -->
+			
+			<!-- 아직 퀴리 수정 안했음 -->
+			<security:jdbc-user-service 
+				data-source-ref="dataSource"
+				users-by-username-query="select adminID, adminPW, authority from test.admin where adminID=?"
+				authorities-by-username-query="select adminID, authority from test.admin
+				where adminID=?"
+			/>		
+		</security:authentication-provider>
+	</security:authentication-manager>
+	
+</beans>

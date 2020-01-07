@@ -9,7 +9,7 @@
 			<br>
 			<br>
 			<br>
-			<form id="loginForm" method="post" action='<c:url value='/login/userLogin' />'>
+			<form id="loginForm" method="post" action='<c:url value='/login/goLogin' />'>
 				<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
 				<br>
 				<br>

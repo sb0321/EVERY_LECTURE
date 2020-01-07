@@ -2,7 +2,7 @@
 
 body {
 	width: 1600px;
-	height: 700px;
+	height: 1000px;
 	
 	margin: auto;
 	
@@ -14,8 +14,44 @@ body {
 }
 
 #wrapper {
+	
+	padding-top: 100px;
+	
 	width: 100%;
-	height: 300px;
+	height: 1000px;
 	
 	background-color: orange;
+}
+
+.lectureTable {
+	
+	width: 80%;
+	height: 300px;
+	
+	background-color: white;
+	
+	border: 1px solid gray;
+	border-radius: 10px;
+	
+	margin: auto;
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#lectureLeft {
+	height: 100%;
+	width: 30%;
+	
+	float: left;
+	
+	border-right: 1px solid gray;
+	border-right-style: dotted;
+}
+
+#lectureRight {
+	height: 100%;
+	width: 69.9%;
+	
+	float: right;
 }

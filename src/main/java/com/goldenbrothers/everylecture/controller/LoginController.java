@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.goldenbrothers.everylecture.model.AdminDTO;
 import com.goldenbrothers.everylecture.model.UserDTO;
 import com.goldenbrothers.everylecture.service.ILoginService;
 
@@ -62,6 +63,30 @@ public class LoginController {
 	@RequestMapping(value = "/logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
+		return "redirect:/";
+	}
+	
+	//------------------------------ admin 로그인 ------------------------------
+	
+	@RequestMapping(value = "/admin/adminLogin")
+	public String goLoginAdmin(HttpSession session, Principal principal) {		
+		// 사용자 정보 가져오기
+		String userID = principal.getName();
+		System.out.println(userID);
+		AdminDTO dto = new AdminDTO();
+		try {
+			
+			if(userID != null)
+				dto =  service.selectOneAdmin(userID);
+			
+			session.setAttribute("aInfo", dto);
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("error!!!");
+		}
+		
+		
 		return "redirect:/";
 	}
 	
