@@ -16,6 +16,29 @@
 			
 		<div id="write_area">
 			<hr><br>
+			<h3>게시글 작성</h3><br>
+			<form method="post" action="">
+				<table id="write_table">
+					<tr class="write_context" id="tr1">
+						<th>작성자</th>
+						<th><input type="text" name="bWriter" size="80"></th>
+					</tr>
+					<tr class="write_context" id="tr2">
+						<th>제 목</th>
+						<th><input type="text" name="bTitle" size="80"></th>
+					</tr>
+					<tr class="write_context">
+						<th>내 용</th><th><textarea rows="15" cols="60" name="bContent"></textarea></th>
+					</tr>
+					<tr class="write_context">
+						<th colspan="2">
+							<input type="submit" value="작 성">
+							<input type="reset" value="재작성 ">
+							<input type="button" value="게시판 보기 ">
+						</th>
+					</tr>
+				</table>
+			</form>
 		</div>
 	</section>
 </body>
