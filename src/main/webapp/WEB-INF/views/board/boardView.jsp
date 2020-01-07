@@ -13,8 +13,6 @@
 		<div id="board_top">
 			<img src="../resources/image/board.PNG" id="board_image">
 		</div>
-		
-<<<<<<< Upstream, based on origin/jm
 		<div id="view_area">
 			<hr><br>
 			<h3>게시글 보기</h3><br><br>
@@ -38,7 +36,7 @@
 					</tr>
 					<tr class="view_context" id="tr6">
 						<th colspan="2" align="center">
-							<input type="button" value="수정 완료" onclick="">
+							<input type="button" value="수정" onclick="">
 							<input type="button" value="삭 제" onclick="">
 							<input type="button" value="게시판 보기" onclick="">
 						</th>
