@@ -17,7 +17,7 @@
 			</div>
 			
 				<div class="join_box" id="join_another">
-					<h3 class="join_title">아이디</h3>
+					<h3 id="id_title">아이디</h3>
 					<input class="eInput" type="text" id="id" name="id" maxlength="20"><button class="eBtn">중 복 체 크</button>
 				</div>
 				<br>
