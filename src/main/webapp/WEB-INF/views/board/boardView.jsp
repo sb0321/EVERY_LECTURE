@@ -47,11 +47,11 @@
 			</div>	
 		</div>
 		
-=======
+
 		<div>
 			
 		</div>
->>>>>>> bd516eb Start
+
 	</section>
 </body>
 </html>
