@@ -3,6 +3,7 @@ package com.goldenbrothers.everylecture.controller;
 import java.security.Principal;
 import java.util.HashMap;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -56,7 +57,7 @@ public class AdminController {
 	@RequestMapping(value = "/admin/uploadLecutureInfo")
 	public String upload_lecture_info(MultipartRequest multipartRequest, 
 			@RequestParam HashMap<String, Object> info,
-			HttpSession session) {
+			HttpSession session, HttpServletRequest request) {
 		// ajax에서 보낸 파일을 받는다.
 		MultipartFile file = multipartRequest.getFile("lectureImg");
 		
@@ -64,7 +65,7 @@ public class AdminController {
 		FileUtil fileUtil = new FileUtil();
 		
 		// 파일 저장하고 저장 경로를 반환
-		String fileLocation = fileUtil.saveImage(file);
+		String fileLocation = fileUtil.saveImage(file, request);
 		
 		LectureDTO dto = new LectureDTO();
 		

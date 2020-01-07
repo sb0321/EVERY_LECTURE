@@ -1,12 +1,11 @@
-package com.goldenbrothers.everylecture.dao;
+package com.goldenbrothers.everylecture.service;
 
 import java.util.ArrayList;
 
 import com.goldenbrothers.everylecture.model.LectureDTO;
 
-public interface ILectureDAO {
+public interface ILectureService {
 	
-	public int uploadLecture(LectureDTO dto);
 	public ArrayList<LectureDTO> selectLectureAll();
 
 }

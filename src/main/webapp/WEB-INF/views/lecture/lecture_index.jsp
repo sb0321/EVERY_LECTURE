@@ -10,14 +10,16 @@
 <body>
 	<%@ include file="../index/index_top.jsp" %>
 	<section id="wrapper">
-		<div class="lectureTable">
-			<div id="lectureLeft">
-				<img alt="강의 이미지" src="">
+		<c:forEach items="${lectureList}" var="lectureList">
+			<div class="lectureTable">
+				<div id="lectureLeft">
+					<img alt="강의 이미지" src="${lectureList.lectureImgPath}">
+				</div>
+				<div id="lectureRight">
+					${lectureList.lectureImgPath}
+				</div>		
 			</div>
-			<div id="lectureRight">
-				설명
-			</div>
-		</div>
+		</c:forEach>
 	</section>
 </body>
 </html>
