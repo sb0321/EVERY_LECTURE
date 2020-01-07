@@ -20,22 +20,22 @@
 			<div id="view_content">	
 				<table id="view_table">
 					<tr class="view_context" id="tr1">
-						<th>번 호</th><th><!-- %{ } --></th>
+						<th>번 호</th><th></th>
 					</tr>
 					<tr class="view_context" id="tr2">
-						<th>조회수</th><th><!-- %{ } --></th>
+						<th>조회수</th><th></th>
 					</tr>
 					<tr class="view_context" id="tr3">
-						<th>작성자</th><th><!-- %{ } --></th>
+						<th>작성자</th><th></th>
 					</tr>
 					<tr class="view_context" id="tr4">
-						<th>제 목</th><th><!-- %{ } --></th>
+						<th>제 목</th><th></th>
 					</tr>
 					<tr class="view_context" id="tr5">
 						<th>내 용</th>
-						<th><textarea rows="15" cols="63" name="" readonly><!-- ${} --></textarea></th>
+						<th><textarea rows="15" cols="63" name="" readonly="readonly"></textarea></th>
 					</tr>
-					<tr class="view_context" id="tr5">
+					<tr class="view_context" id="tr6">
 						<th colspan="2" align="center">
 							<input type="button" value="수정 완료" onclick="">
 							<input type="button" value="삭 제" onclick="">

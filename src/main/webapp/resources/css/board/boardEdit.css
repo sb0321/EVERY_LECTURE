@@ -20,4 +20,31 @@ section {
 	width:520px;
 	height:180px;
 }
+#edit_area{
+	width:80%;
+	height:800px;
+	text-align:center;
+	margin:0 auto;
+}
+h3{
+	font-size:2em;	
+}
+
+
+
+
+
+#edit_area > form{
+	width:80%;
+	text-align:center;
+	margin:0 auto;
+}
+
+#edit_table{
+	text-align:center;
+	margin:0 auto;
+}
+
+
+
 
