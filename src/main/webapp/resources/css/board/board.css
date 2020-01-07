@@ -33,6 +33,7 @@ section {
 	margin:0 auto;
 }
 
+<!-- ******** board_thead ******** -->
 
 #board_thead {
 	width: 100%;
@@ -46,25 +47,26 @@ section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#context > th {
+#thead_context > th {
 	vertical-align: middle;
 	border:0.5px dashed #bcbcbc;
-	
 }
-
-#context > th:nth-child(1) {
+#thead_context > th:nth-child(1) {
 	width:10%;
 }
-#context > th:nth-child(2) {
+#thead_context > th:nth-child(2) {
 	width:40%;
 }
-#context > th:nth-child(3) {
+#thead_context > th:nth-child(3) {
 	width:20%;
 }
-#context > th:nth-child(4) {
+#thead_context > th:nth-child(4) {
 	width:20%;
 }
-#context > th:nth-child(5) {
+#thead_context > th:nth-child(5) {
 	width:10%;
 }
+
+
+
 
