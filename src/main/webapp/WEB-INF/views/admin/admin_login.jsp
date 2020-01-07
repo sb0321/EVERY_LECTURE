@@ -15,6 +15,7 @@
 			<br>
 			<br>
 			<br>
+			<div id="yesNo">관리자 로그인</div>
 			<form id="loginForm" method="post" action='<c:url value='/admin/goLogin' />'>
 				<input id="userID" name="adminID" class="eInput" type="text" placeholder="ID">
 				<br>

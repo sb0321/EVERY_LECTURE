@@ -11,7 +11,7 @@
 		<br>
 		<br>
 		<c:if test="${empty uInfo}">
-			<div id="yesNo">아이디 또는 비밀번호가 틀립니다.</div>
+			<div id="yesNo">사용자 로그인</div>
 		</c:if>
 		<form id="loginForm" method="post" action='<c:url value='/login/goLogin' />'>
 			<input id="userID" name="userID" class="eInput" type="text" placeholder="ID">
