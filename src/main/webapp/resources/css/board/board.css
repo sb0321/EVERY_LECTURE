@@ -32,9 +32,28 @@ section {
 	height:600px;
 	margin:0 auto;
 }
-#context > tr {
-	height:20px;
+
+#board_thead {
+	width: 100%;
+	text-align: center;
 }
+
+#board_thead > tr {
+	height:30px;
+	font-size:1.2em;
+	width: 100%;
+	
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+	
+}
+
+#context > th {
+	vertical-align: middle;
+}
+
 #context > th:nth-child(1) {
 	width:10%;
 	background-color:red;

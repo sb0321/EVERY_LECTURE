@@ -17,8 +17,10 @@
 		<div id="board_list">
 			<hr><br>
 			<table id="board_table">
-				<thead>
+				<thead id="board_thead">
 					<tr id="context"><th>번 호</th><th>제 목</th><th>작성자</th><th>작성일</th><th>조회수</th></tr>
+					<tr><td>123123</td></tr>
+					<tr><td>sdsdfsdf</td></tr>
 				<thead>
 				<tbody>
 					
