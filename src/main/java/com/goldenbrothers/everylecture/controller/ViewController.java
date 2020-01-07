@@ -81,5 +81,10 @@ public class ViewController {
 	public String board() {
 		return "board/boardForm";
 	}
+	
+	@RequestMapping(value = "/board/boardWrite")
+	public String boardWrite() {
+		return "board/boardWrite";
+	}
 
 }
