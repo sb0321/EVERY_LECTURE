@@ -6,55 +6,22 @@
 	<div id="context">강의 목록</div>
 	<div id="content_wrapper">
 		<div id="lect_mid">
-			<div class="lect_title">	
-				<div><input type="checkbox"></div>
-				<div>이미지</div>
-				<div>강의 제목</div>
-				<div>진행도</div>		
+		
+			<div id="lect_title">
+				<div id="jTitle_check">선택</div>
+				<div id="jTitle_image"></div>
+				<div id="jTitle_name">강의 제목</div>
+				<div id="jTitle_progress">진행도</div>	
+				<br><br><hr>	
 			</div>
-			
 			<div>
 				<c:forEach items="" var="prd">
-					<tr>
-						<th><input type="checkbox"></th>
-						<th></th>
-						<th></th>
-						<th></th>
-					</tr>
+					<div id="lect_check"></div>
+					<div id="lect_image"></div>
+					<div id="lect_name"></div>
+					<div id="lect_progress"></div>
 				</c:forEach>
 			</div>
-		
-			<!-- 
-			<table class="lect_table">
-				<colgroup>
-					<col width="30">
-					<col width="50">
-					<col width="560">
-					<col width="90">
-				</colgroup>
-				
-				<thead>
-					
-					<tr>
-						<th scope="col">
-							<input type="checkbox">
-						</th>
-						<th scope="col">image</th>
-						<th scope="col">강의 제목</th>
-						<th scope="col">진행도</th>
-					</tr>
-				</thead>
-				<tbody id="lect_tbody">
-					<c:forEach items="" var="prd">
-						<tr>
-							<th><input type="checkbox"></th>
-							<th></th>
-							<th></th>
-							<th></th>
-						</tr>
-					</c:forEach>
-				</tbody>
-			</table> -->
 		</div>
 	</div>
 </div>
