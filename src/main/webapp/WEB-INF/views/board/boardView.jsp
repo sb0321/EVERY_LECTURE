@@ -39,6 +39,7 @@
 							<input type="button" value="수 정" onclick="">
 							<input type="button" value="삭 제" onclick="">
 							<input type="button" value="게시판 보기" onclick="">
+							<input type="button" value="답 변" onclick="">
 						</th>
 					</tr>
 				</table>

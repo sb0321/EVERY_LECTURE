@@ -98,5 +98,11 @@ public class ViewController {
 	public String boardView() {
 		return "board/boardView";
 	}
-
+	
+	@RequestMapping(value = "/board/boardReply")
+	public String boardReply() {
+		return "board/boardReply";
+	}
+	
+	
 }
