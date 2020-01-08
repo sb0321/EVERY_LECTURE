@@ -87,10 +87,26 @@ public class ViewController {
 		return "board/boardEdit";
 	}
 	
+<<<<<<< HEAD
 	//------------------------lecture---------------------------
 	@RequestMapping(value = "/lecture/lectureIndex")
 	public String lecture_list() {
 		return "redirect:/lecture/lectureList";
+=======
+
+	//------------------------lecture---------------------------
+	@RequestMapping(value = "/lecture/lectureIndex")
+	public String lecture_list() {
+		return "redirect:/lecture/lectureList";
+
+	}
+
+	@RequestMapping(value = "/board/boardView")
+	public String boardView() {
+		return "board/boardView";
+
+
+>>>>>>> refs/remotes/origin/jm
 	}
 
 }
