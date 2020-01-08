@@ -11,25 +11,40 @@
 <body>
 	<div id="wrapper">
 		<div id="title">
-			<h3>관리자 페이지 - 동엽상 등록</h3>
+			<h3>관리자 페이지 - 동영상 등록</h3>
 			<br><hr>
 		</div>
 	
 		<section id="lectureInfo">
-			<div>강의 정보</div>
+			<div id="info_title">-강의 정보 입력-</div>
 			<div>
 				<form id="lectureUploadForm"  method="post" enctype="multipart/form-data">
-					<input type="text" id="lectureName" name="lectureName">
-					<textarea id="lectureExplain" name="lectureExplain" rows="10" cols="10"></textarea>
-					<input type="file" id="lectureImg" name="lectureImg">
-					<button id="submit" class="eBtn">제출하기</button>
+					<table>
+						<tr class="upload_table" id="tr1">
+							<th>강의 제목</th>
+							<th><input type="text" id="lectureName" name="lectureName"></th></tr>
+						<tr class="upload_table" id="tr2">
+							<th>강의 내용</th>
+							<th><textarea id="lectureExplain" name="lectureExplain" rows="10" cols="10"></textarea></th>
+						</tr>
+						<tr class="upload_table" id="tr3">
+							<th colspan="2"><input type="file" id="lectureImg" name="lectureImg"></th>
+						</tr>
+						<tr class="upload_table" id="tr4">
+							<th colspan="2"><button id="submit" class="eBtn">제출하기</button></th>
+						</tr>
+					</table>
 				</form>
 			</div>
 		</section>
 		<section id="lectureVideo">
+			<br><hr><br><hr>
 			
 		</section>
 	
+		<footer>
+			
+		</footer>
 	</div>
 </body>
 </html>
