@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>lecture explain</title>
-	<link rel="stylesheet" href='<c:url value='/resources/css/board/lecture_explain.css'/>'>
+	<link rel="stylesheet" href='<c:url value='/resources/css/lecture/lectureExplain.css'/>'>
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
