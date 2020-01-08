@@ -69,5 +69,41 @@ public class FileUtil {
 		
 		return result;
 	}
+	
+	public int deleteImage(String filePath, HttpServletRequest request) {
+		
+//		String path = "/resources/lecture/";
+//		String result_path = request.getContextPath().concat(path);
+//		path = request.getSession().getServletContext().getRealPath(path);
+		
+		// 사전 준비
+		filePath = filePath.substring(filePath.lastIndexOf("/"), filePath.length());
+		
+		String path = "/resources/lecture/";
+		path = request.getSession().getServletContext().getRealPath(path).concat(filePath);
+		
+		System.out.println(path);
+		
+		int result = 0;
+		
+		try {
+			
+			File file = new File(path);
+			
+			if(file.delete()) {
+				result = 1;
+			}
+			else {
+				result = -1;
+			}
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		
+		return result;
+	}
 
 }

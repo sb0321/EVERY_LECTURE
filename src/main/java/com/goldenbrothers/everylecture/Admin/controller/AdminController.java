@@ -1,6 +1,7 @@
 package com.goldenbrothers.everylecture.Admin.controller;
 
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.servlet.http.HttpServletRequest;
@@ -11,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -55,6 +57,7 @@ public class AdminController {
 		return "redirect:/";
 	}
 	
+	// 강의 생성
 	@ResponseBody
 	@RequestMapping(value = "/admin/uploadLecutureInfo")
 	public String upload_lecture_info(MultipartRequest multipartRequest, 
@@ -93,4 +96,41 @@ public class AdminController {
 		
 		return result;
 	}
+	
+	// 강의 삭제
+	@ResponseBody
+	@RequestMapping(value = "/admin/deleteLecture")
+	public String delete_lecture(@RequestParam String lectureID, HttpServletRequest request) {
+		
+		System.out.println(lectureID);
+		
+		// 강의 정보 불러옴
+		LectureDTO lecture = service.selectOneLecture(lectureID);
+		String filePath = lecture.getLectureImgPath();
+		
+		System.out.println(filePath);
+		
+		// 강의 삭제
+		String result = Integer.toString(service.deleteOneLecture(lectureID));
+		
+		// 강의 이미지 삭제
+		FileUtil fileUtil = new FileUtil();
+		fileUtil.deleteImage(filePath, request);
+		
+		return result;
+	}
+	
+
+	@RequestMapping(value = "/admin/goDeleteLecture")
+	public String go_delete_lecture(Model model) {
+		
+		// 모든 강의를 가져온다.
+		ArrayList<LectureDTO> lectureList = service.selectLectureAll();
+		
+		// 넣는다.
+		model.addAttribute("lectureList", lectureList);
+		
+		return "admin/lecture_index_admin";
+	}
+	
 }

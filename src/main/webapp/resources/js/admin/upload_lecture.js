@@ -37,7 +37,8 @@ $(document).ready(function() {
 	            contentType: false,
 				async : true,
 				success : function(result) {
-					alert(result);
+					alert("강의 등록에 성공했습니다.");
+					location.href="/everylecture/admin/goDeleteLecture"
 				},
 				error : function() {
 					alert("실패");
