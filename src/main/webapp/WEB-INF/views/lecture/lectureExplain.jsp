@@ -40,11 +40,6 @@
 				</div>
 			</div>
 		</div>
-	<div>
-		<div id="head">
-			<br>
-		</div>
-	
 	</div>
 </body>
 </html>
