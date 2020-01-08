@@ -5,6 +5,6 @@ import com.goldenbrothers.everylecture.Lecture.model.LectureDTO;
 
 public interface IAdminDAO {
 	
+	public int uploadLecture(LectureDTO dto);
 	public AdminDTO selectOneAdmin(String userID);
-
 }

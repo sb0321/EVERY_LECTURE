@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.goldenbrothers.everylecture.dao.ITestDAO">
+<mapper namespace="com.goldenbrothers.everylecture.Test.dao.ITestDAO">
 	
 	<!-- 조회 -->
-	<select id="oneList" resultType="com.goldenbrothers.everylecture.model.TestDTO">
+	<select id="oneList" resultType="com.goldenbrothers.everylecture.Test.model.TestDTO">
 		SELECT * FROM test.check where id = 1
 	</select>
 	

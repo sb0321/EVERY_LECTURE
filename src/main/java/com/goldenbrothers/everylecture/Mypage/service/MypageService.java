@@ -2,6 +2,7 @@ package com.goldenbrothers.everylecture.Mypage.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.goldenbrothers.everylecture.Login.model.LoginDTO;
@@ -11,6 +12,7 @@ import com.goldenbrothers.everylecture.Mypage.dao.IMypageDAO;
 public class MypageService implements IMypageService {
 	
 	@Autowired
+//	@Qualifier("IMypageDAO")
 	IMypageDAO dao;
 
 	@Override
@@ -29,12 +31,6 @@ public class MypageService implements IMypageService {
 	public LoginDTO selectOne(String userID) {
 		// TODO Auto-generated method stub
 		return dao.selectOne(userID);
-	}
-
-	@Override
-	public int update(LoginDTO dto) {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 	@Override

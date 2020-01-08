@@ -12,6 +12,7 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -29,6 +30,7 @@ import com.goldenbrothers.everylecture.Login.service.ILoginService;
 public class LoginController {
 	
 	@Autowired
+//	@Qualifier("ILoginService")
 	ILoginService service;
 	
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.goldenbrothers.everylecture.dao.IJoinDAO">
+<mapper namespace="com.goldenbrothers.everylecture.Join.dao.IJoinDAO">
 
 	<!-- 조회 -->
 	<select id="IDCheck" parameterType="String" resultType="Integer">
@@ -11,7 +11,7 @@
 	</select>
 	
 	<!-- 회원 정보 삽입 -->
-	<insert id="insertUser" parameterType="com.goldenbrothers.everylecture.model.UserDTO">
+	<insert id="insertUser" parameterType="com.goldenbrothers.everylecture.Login.model.LoginDTO">
 		INSERT INTO test.user (userID, userPW, userName) VALUES
 		(#{userID}, #{userPW}, #{userName})
 	</insert>

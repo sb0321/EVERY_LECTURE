@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.goldenbrothers.everylecture.Admin.dao.IAdminDAO">
+
+	<!-- 조회 -->
+	<select id="selectOneAdmin" 
+	parameterType="String"
+	resultType="com.goldenbrothers.everylecture.Admin.model.AdminDTO">
+	
+		SELECT * from test.admin WHERE adminID = #{adminID}
+		
+	</select>
+	
+	<insert id="uploadLecture" parameterType="com.goldenbrothers.everylecture.Lecture.model.LectureDTO">
+		
+		INSERT INTO test.lecture (adminID, lectureName, lectureExplain, lectureImgName, lectureImgPath)
+		VALUES(#{adminID}, #{lectureName}, #{lectureExplain}, #{lectureImgName}, #{lectureImgPath})
+	
+	</insert>
+
+</mapper>

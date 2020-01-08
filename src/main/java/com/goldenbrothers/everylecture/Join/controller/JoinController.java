@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class JoinController {
 	
 	@Autowired
+//	@Qualifier("IJoinService")
 	IJoinService service;
 	
 	private static final Logger logger = LoggerFactory.getLogger(JoinController.class);

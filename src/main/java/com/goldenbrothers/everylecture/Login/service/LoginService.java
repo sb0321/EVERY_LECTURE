@@ -15,7 +15,7 @@ import com.goldenbrothers.everylecture.Login.model.LoginDTO;
 public class LoginService implements ILoginService {
 	
 	@Autowired
-	@Qualifier("IUserDAO")
+	@Qualifier("ILoginDAO")
 	ILoginDAO dao;
 
 	@Override
