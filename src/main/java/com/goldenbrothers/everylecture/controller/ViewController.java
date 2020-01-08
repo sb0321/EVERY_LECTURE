@@ -97,9 +97,6 @@ public class ViewController {
 	@RequestMapping(value = "/board/boardView")
 	public String boardView() {
 		return "board/boardView";
-
-
->>>>>>> refs/remotes/origin/jm
 	}
 
 }
