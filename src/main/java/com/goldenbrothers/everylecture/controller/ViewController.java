@@ -86,13 +86,6 @@ public class ViewController {
 	public String boardEdit() {
 		return "board/boardEdit";
 	}
-	
-<<<<<<< HEAD
-	//------------------------lecture---------------------------
-	@RequestMapping(value = "/lecture/lectureIndex")
-	public String lecture_list() {
-		return "redirect:/lecture/lectureList";
-=======
 
 	//------------------------lecture---------------------------
 	@RequestMapping(value = "/lecture/lectureIndex")
