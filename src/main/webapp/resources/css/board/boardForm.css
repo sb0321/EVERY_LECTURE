@@ -1,9 +1,16 @@
 
 @charset "UTF-8";
 
+body {
+	width: 1600px;
+	height: auto;
+}
+
 #navi {
 	background-color: #6260b3;
 	width: 100%;
+	
+	
 }
 section {	
 	width: 100%;

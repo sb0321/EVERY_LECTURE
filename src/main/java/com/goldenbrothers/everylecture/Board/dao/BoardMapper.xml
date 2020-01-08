@@ -26,5 +26,21 @@
 	resultType="com.goldenbrothers.everylecture.Board.model.BoardDTO">
 		SELECT * from test.board WHERE boardID = #{boardID}
 	</select>
+	
+	<!-- board 업데이트 -->
+	<update id="updateBoard" parameterType="com.goldenbrothers.everylecture.Board.model.BoardDTO">
+		UPDATE test.board SET boardName = #{boardName}, boardText = #{boardText}
+		WHERE boardID = #{boardID}
+	</update>
+	
+	<!-- board 삭제 -->
+	<delete id="deleteBoard" parameterType="String">
+		DELETE FROM test.board WHERE boardID = #{boardID};
+	</delete>
+	
+	<!-- board showed 수 올리기 -->
+	<update id="boardCountUp" parameterType="String">
+		UPDATE test.board SET showed = showed + 1 WHERE boardID = #{boardID}
+	</update>
 
 </mapper>
