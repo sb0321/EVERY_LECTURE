@@ -87,4 +87,11 @@ public class BoardController {
 		
 		return "board/boardView";
 	}
+	
+	@RequestMapping(value = "/board/boardRevise/{boardID}")
+	public String boardRevise(@PathVariable String boardID, Model model) {
+		
+		
+		return "board/boardRevise";
+	}
 }
