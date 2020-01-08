@@ -25,8 +25,26 @@
 				
 				<table id="edit_table">
 					<tr class="edit_context" id="tr1">
-						<th>작성자</th>
-						<th><input type="text" name="bWriter" size="80"></th>
+						<th>번 호</th><th id="bNo"></th>
+						<th>조회수</th><th></th>
+					</tr>
+					<tr class="edit_context" id="tr2">
+						<th>작성자</th><th></th>
+						<th>작성일</th><th></th>
+					</tr>
+					<tr class="edit_context" id="tr3">
+						<th>제 목</th>
+						<th colspan="3"><input type="text" name="bTitle" value="" size="81"></th>
+					</tr>
+					<tr class="edit_context" id="tr4">
+						<th>내 용</th>
+						<th colspan="3"><textarea rows="15" cols="61" name="bContent"></textarea></th>
+					</tr>
+					<tr class="edit_context" id="tr5">
+						<th colspan="4" align="center">
+							<input type="submit" value="수정 완료">
+							<input type="button" onclick="" value="게시판 보기">
+						</th>
 					</tr>
 				</table>
 			</form>
