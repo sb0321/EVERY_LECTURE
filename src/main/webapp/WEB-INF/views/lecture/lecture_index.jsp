@@ -9,7 +9,7 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
-	<div id="">
+	<div id="lecture_page">
 		<section id="wrapper">
 			<c:forEach items="${lectureList}" var="lectureList">
 				
@@ -38,8 +38,20 @@
 			</c:forEach>
 		</section>
 		
-		<footer>
-		
+		<footer id="footer">
+			<div id="joinSession">
+				<div>이제 시작할 준비가 되셨나요?</div>
+				<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
+			</div>
+			<div id="last">
+				<div id="last_left">
+					<h2>The flat icon belongs to www.flaticon.com</h2>
+					<br>
+					<h2>This site is made by Golden Brothers.Inc</h2>
+				</div>
+				<div id="last_right">
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
