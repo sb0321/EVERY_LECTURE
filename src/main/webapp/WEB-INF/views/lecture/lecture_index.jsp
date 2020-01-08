@@ -12,7 +12,6 @@
 	<section id="wrapper">
 		<c:forEach items="${lectureList}" var="lectureList">
 			<div class="lectureTable">
-<<<<<<< HEAD
 				<div class="lectureLeft">
 					<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
 				</div>
@@ -25,17 +24,10 @@
 						</div>
 						<div class="lectureExplain">
 							<div>
-								<c:out value="${lectureList.lectureExplain }"/>
+								${lectureList.lectureExplain }
 							</div>
 						</div>
 					</div>
-=======
-				<div id="lectureLeft">
-					<img alt="강의 이미지" src="${lectureList.lectureImgPath}">
-				</div>
-				<div id="lectureRight">
-					${lectureList.lectureImgPath}
->>>>>>> refs/remotes/origin/jm
 				</div>		
 			</div>
 		</c:forEach>
