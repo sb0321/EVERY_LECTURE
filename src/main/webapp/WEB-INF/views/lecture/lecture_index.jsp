@@ -11,6 +11,11 @@
 	<%@ include file="../index/index_top.jsp" %>
 	<section id="wrapper">
 		<c:forEach items="${lectureList}" var="lectureList">
+			
+			<div id="title">
+				<h3>강의 리스트</h3>
+			</div>
+		
 			<div class="lectureTable">
 				<div class="lectureLeft">
 					<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">

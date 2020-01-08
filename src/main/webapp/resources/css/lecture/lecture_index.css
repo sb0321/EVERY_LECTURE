@@ -15,18 +15,18 @@ body {
 
 #wrapper {
 	
-	padding-top: 100px;
+	padding-top: 50px;
 	
 	width: 100%;
 	height: 1000px;
 	
-	background-color: orange;
+	background-color: #BFBFE9;
 }
 
 .lectureTable {
 	
-	width: 80%;
-	height: 300px;
+	width: 85%;
+	height: 150px;
 	
 	background-color: white;
 	
@@ -35,8 +35,8 @@ body {
 	
 	margin: auto;
 	
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .lectureLeft {
@@ -140,3 +140,17 @@ body {
 	height: 100%;
 	
 }
+
+#title{
+	width:80%;
+	height:35px;
+	
+	margin:0 auto;
+	text-aign:center;
+}
+#title > h3{
+	font-size:2em;
+	text-align:center;
+}
+
+
