@@ -92,6 +92,14 @@
 		    <version>1.4</version>
 		</dependency>
 		
+		<!-- 웹 소켓 -->
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-websocket</artifactId>
+            <version>${org.springframework-version}</version>
+		</dependency>
+
+		
 		<!-- Jasypt -->
 		<!-- https://mvnrepository.com/artifact/org.jasypt/jasypt -->
 		<dependency>
