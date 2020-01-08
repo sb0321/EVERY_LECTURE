@@ -24,7 +24,8 @@
 						</div>
 						<div class="lectureExplain">
 							<div>
-								${lectureList.lectureExplain }
+								<c:out value="${lectureList.lectureExplain }"/>
+								
 							</div>
 						</div>
 					</div>
