@@ -12,11 +12,22 @@
 	<section id="wrapper">
 		<c:forEach items="${lectureList}" var="lectureList">
 			<div class="lectureTable">
-				<div id="lectureLeft">
-					<img alt="강의 이미지" src="${lectureList.lectureImgPath}">
+				<div class="lectureLeft">
+					<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
 				</div>
-				<div id="lectureRight">
-					${lectureList.lectureImgPath}
+				<div class="lectureRight">
+					<div class="right_wrapper">
+						<div class="lectureName">
+							<div>
+								<c:out value="${lectureList.lectureName}"/>
+							</div>
+						</div>
+						<div class="lectureExplain">
+							<div>
+								<c:out value="${lectureList.lectureExplain }"/>
+							</div>
+						</div>
+					</div>
 				</div>		
 			</div>
 		</c:forEach>
