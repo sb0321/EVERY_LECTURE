@@ -1,8 +1,18 @@
 @charset "UTF-8";
 
+body {
+	width: 1600px;
+	height: auto;
+	
+	margin: auto;
+}
+
 #navi {
 	background-color: #6260b3;
 	width: 100%;
+	
+	margin: auto;
+	display: flex;
 }
 section {	
 	width: 100%;
@@ -110,7 +120,8 @@ textarea{
 	
 	margin: auto;
 	
-	background-color: orange;
+	border-top: 1px solid black;
+/* 	border-bottom: 1px solid black; */
 }
 
 .com_left {
@@ -146,5 +157,67 @@ textarea{
 	padding-left: 20px;
 	display: table-cell;
 	vertical-align: middle;
+}
+
+.com_delete {
+	
+}
+
+#com_com {
+	width: 80%;
+	height: auto;
+	
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+#commentWrite {
+	width: 100%;
+	height: 56.4px;
+	
+	margin: auto;
+}
+
+#commentWrite > textarea {
+	
+	height: auto;
+	
+	padding: 0;
+	
+	border: 1px solid gray;
+}
+
+#commentBox {
+	width: 80%;
+	height: 60px;
+	float: left;
+	
+	min-height: auto;
+	resize: none;
+	
+/* 	display: table-cell; */
+
+	float: left;
+	
+}
+
+#buttonWrapper {
+	width: 20%;
+	height: 100%;
+	float: right;
+}
+
+#buttonWrapper > button {
+	width: 100%;
+	height: 100%;
+}
+
+#delBtn {
+	background-color: red;
+	float: right;
+	
+	height: 100%;
+	
+	color: white;
 }
 

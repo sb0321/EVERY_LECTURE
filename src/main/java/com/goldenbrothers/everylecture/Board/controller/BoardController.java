@@ -72,7 +72,7 @@ public class BoardController {
 		String result = Integer.toString(service.insertBoard(dto));
 		
 		
-		return null;
+		return result;
 	}
 	
 	// 보드 뷰
@@ -81,17 +81,52 @@ public class BoardController {
 		
 		System.out.println(boardID);
 		
-		BoardDTO dto = service.selectOneBoard(boardID);
+		BoardDTO board = service.selectOneBoard(boardID);
+		// 조회수를 올린다.
+		service.boardCountUp(boardID);
 		
-		model.addAttribute("board", dto);
+		model.addAttribute("board", board);
 		
-		return "board/boardView";
+		return "forward:/comment/selectComment/" + boardID;
 	}
 	
 	@RequestMapping(value = "/board/boardRevise/{boardID}")
 	public String boardRevise(@PathVariable String boardID, Model model) {
 		
+		BoardDTO dto = service.selectOneBoard(boardID);
+		
+		model.addAttribute("board", dto);
+		model.addAttribute("boardID", boardID);
 		
 		return "board/boardRevise";
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/board/boardUpadte")
+	public String boardUpadte(@RequestParam HashMap<String, String> newContent) {
+		
+		int boardID = Integer.parseInt(newContent.get("boardID"));
+		String boardName = newContent.get("boardName");
+		String boardText = newContent.get("boardText");
+		
+		// 파라미터 설정
+		BoardDTO update = new BoardDTO();
+		
+		update.setBoardID(boardID);
+		update.setBoardName(boardName);
+		update.setBoardText(boardText);
+		
+		String result = Integer.toString(service.updateBoard(update));
+		
+		return result;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/board/boardDelete")
+	public String boardDelete(@RequestParam String boardID) {
+		
+		String result = Integer.toString(service.deleteBoard(boardID));
+		
+		return result;
 	}
 }

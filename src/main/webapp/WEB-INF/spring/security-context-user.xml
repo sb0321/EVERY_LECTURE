@@ -114,6 +114,43 @@
 		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
 		<security:intercept-url pattern="/board/boardWrite" access="hasRole('USER')"/>
 		<security:intercept-url pattern="/board/write" access="hasRole('USER')"/>
+		<security:intercept-url pattern="/board/boardRevise" access="hasRole('USER')"/>
+		<security:intercept-url pattern="/board/boardDelete" access="hasRole('USER')"/>
+		
+		<security:access-denied-handler error-page="/" />
+		
+		<!-- 세션 관리 -->
+		<security:session-management invalid-session-url="/">
+			<!-- 동일 ID의 최대 세션 개수는 1개 -->
+			<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="false"/>
+		</security:session-management>
+		
+		<!-- 로그인시 -->
+		<security:form-login 
+			login-page="/login/login"
+			login-processing-url="/login/goLogin"
+			default-target-url="/login/userLogin"
+			authentication-failure-url="/login/login"
+			always-use-default-target="true"
+			username-parameter="userID"
+			password-parameter="userPW"
+			
+		/>
+		
+		<security:logout
+			invalidate-session="true"
+			logout-success-url="/"
+			delete-cookies="JESSIONID,SPRING_SECURITY_REMEMBER_ME_COOKIE"
+		/>
+		
+		<security:csrf disabled="true"/>
+	</security:http>
+	
+	<security:http pattern="/comment/**" auto-config="true" use-expressions="true"
+		authentication-manager-ref="userLoginManager">
+		<security:intercept-url pattern="/resources/**" access="permitAll"/>
+		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
+		<security:intercept-url pattern="/comment/writeComment" access="hasRole('USER')"/>
 		
 		<security:access-denied-handler error-page="/" />
 		

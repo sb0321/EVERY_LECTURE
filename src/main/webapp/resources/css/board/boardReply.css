@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
 #navi {
 	background-color: #6260b3;
 	width: 100%;

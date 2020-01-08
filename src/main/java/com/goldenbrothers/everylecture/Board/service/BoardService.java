@@ -1,6 +1,7 @@
 package com.goldenbrothers.everylecture.Board.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,4 +40,21 @@ public class BoardService implements IBoardService {
 		return dao.selectOneBoard(boardID);
 	}
 
+	@Override
+	public int updateBoard(BoardDTO dto) {
+		// TODO Auto-generated method stub
+		return dao.updateBoard(dto);
+	}
+
+	@Override
+	public int deleteBoard(String boardID) {
+		// TODO Auto-generated method stub
+		return dao.deleteBoard(boardID);
+	}
+
+	@Override
+	public int boardCountUp(String boardID) {
+		// TODO Auto-generated method stub
+		return dao.boardCountUp(boardID);
+	}
 }

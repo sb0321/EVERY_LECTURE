@@ -23,10 +23,10 @@
 					<div id="left_sub">Java부터 데이터베이스까지 전부 무료!</div>
 					<br><br>
 					<c:if test="${empty sessionScope.uInfo }">
-						<button id="joinButton" class="eBtn">회원 가입</button>
+						<a href='<c:url value='/join/joinForm'/>'><button id="joinButton" class="eBtn">회원 가입</button></a>
 					</c:if>
 					<c:if test="${not empty sessionScope.uInfo }">
-						<button id="lectureButton" class="eBtn">강의 둘러보기</button>
+						<a href='<c:url value='/lecture/lectureIndex'/>'><button id="lectureButton" class="eBtn">강의 둘러보기</button></a>
 					</c:if>
 				</div>
 			</div>
