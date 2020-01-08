@@ -4,9 +4,9 @@
 	background-color: #6260b3;
 	width: 100%;
 }
+
 body{
 	width:1600px;
-	height:1000px;
 }
 
 #wrapper{
@@ -53,7 +53,7 @@ body{
 #lecture_intro{
 	background-color:white;
 	width:80%;
-	height:auto;
+	height:1600px;
 	text-align:center;
 	margin:0 auto;
 	padding:10px;
