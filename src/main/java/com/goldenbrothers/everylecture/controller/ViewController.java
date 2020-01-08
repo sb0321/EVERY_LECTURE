@@ -93,7 +93,8 @@ public class ViewController {
 		return "redirect:/lecture/lectureList";
 
 	}
-
+	
+	//------------------------board-----------------------------
 	@RequestMapping(value = "/board/boardView")
 	public String boardView() {
 		return "board/boardView";
