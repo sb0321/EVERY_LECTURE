@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.goldenbrothers.everylecture.Board.dao.IBoardDAO">
+
+	<!-- board 전체 선택 -->
+	<select id="selectBoardAll" resultType="com.goldenbrothers.everylecture.Board.model.BoardDTO">
+		SELECT * from test.board ORDER BY boardTime DESC
+	</select>
+	
+	
+	<!-- 사용자 가져오기 -->
+	<select id="selectOneUser" parameterType="String" 
+	resultType="com.goldenbrothers.everylecture.Login.model.LoginDTO">
+		SELECT * FROM test.user WHERE userID = #{userID}
+	</select>
+	
+	<!-- board 입력 -->
+	<insert id="insertBoard" parameterType="com.goldenbrothers.everylecture.Board.model.BoardDTO">
+		INSERT INTO test.board (userID, boardName, boardText) VALUES
+		(#{userID}, #{boardName}, #{boardText})
+	</insert>
+	
+	<!-- board 하나 가져옴 -->
+	<select id="selectOneBoard" parameterType="String"
+	resultType="com.goldenbrothers.everylecture.Board.model.BoardDTO">
+		SELECT * from test.board WHERE boardID = #{boardID}
+	</select>
+
+</mapper>

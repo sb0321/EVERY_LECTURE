@@ -70,17 +70,6 @@ public class ViewController {
 		return "join/joinForm";
 	}
 	
-	
-	@RequestMapping(value = "/board/boardForm")
-	public String board() {
-		return "board/boardForm";
-	}
-	
-	@RequestMapping(value = "/board/boardWrite")
-	public String boardWrite() {
-		return "board/boardWrite";
-	}
-	
 	@RequestMapping(value = "/board/boardEdit")
 	public String boardEdit() {
 		return "board/boardEdit";
@@ -94,10 +83,7 @@ public class ViewController {
 	}
 	
 	//------------------------board-----------------------------
-	@RequestMapping(value = "/board/boardView")
-	public String boardView() {
-		return "board/boardView";
-	}
+
 	
 	@RequestMapping(value = "/board/boardReply")
 	public String boardReply() {

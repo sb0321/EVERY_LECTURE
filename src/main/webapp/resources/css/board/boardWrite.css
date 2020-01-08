@@ -71,6 +71,14 @@ input{
 	border:0px;
 	padding-left:10px;
 }
+
+.eBtn {
+	width: auto;
+	height:60px;
+	
+	color: white;
+}
+
 textarea{
 	width:100%;
 	font-size:1.2em;

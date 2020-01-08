@@ -69,7 +69,7 @@ h3{
 .view_context > th:nth-child(2) {
 	width:80%;
 }
-input{
+button{
 	height:60px;
 	font-size:1em;	
 	border:0px;
@@ -95,5 +95,56 @@ textarea{
 }
 #tr4{
 	height:60px;
+}
+
+#comment_wrapper {
+	width: 80%;
+	height: auto;
+	
+	margin: auto;
+}
+
+.comment_box {
+	width: 80%;
+	height: 100px;
+	
+	margin: auto;
+	
+	background-color: orange;
+}
+
+.com_left {
+	
+	height: 100%;
+	width: 20%;
+	float: left;
+	
+	text-align: left;
+	
+	display: table;
+}
+
+.com_left > div {
+	padding-left: 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.com_right {
+	height: 100%;
+	width: 79.8%;
+	border-left: 1px solid gray;
+	
+	float: right;
+	
+	text-align: left;
+	
+	display: table;
+}
+
+.com_right > div {
+	padding-left: 20px;
+	display: table-cell;
+	vertical-align: middle;
 }
 

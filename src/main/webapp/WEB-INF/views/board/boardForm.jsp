@@ -5,7 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>board_list</title>
-	<link rel="stylesheet" href='<c:url value='/resources/css/board/board.css'/>'>
+<script src='<c:url value='/resources/js/board/boardForm.js'/>'></script>
+<link rel="stylesheet" href='<c:url value='/resources/css/board/boardForm.css'/>'>
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
@@ -21,14 +22,14 @@
 					<tr id="thead_context"><th>번 호</th><th>제 목</th><th>작 성 자</th><th>작 성 일</th><th>조 회 수</th></tr>
 				<thead>
 				<tbody id="board_tbody">
-					<c:forEach items="">
-						<tr id="tbody_context">
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
-						</tr>
+					<c:forEach items="${boardList }" var="board">
+							<tr class="tbody_context">
+								<th>${board.boardID}</th>
+								<th><a href='<c:url value='/board/boardView/${board.boardID}' />'>${board.boardName}</a></th>
+								<th>${board.userID}</th>
+								<th>${board.boardTime}</th>
+								<th>${board.showed}</th>
+							</tr>
 					</c:forEach>
 				</tbody>
 			</table>
@@ -36,7 +37,7 @@
 		
 		<div id="board_button">
 			<hr><br>
-			<button onclick="글쓰기 페이지가 나와야함">게시글 작성</button>
+			<a href='<c:url value='/board/boardWrite' />'><button class="eBtn">게시글 작성</button></a>
 		</div>
 	</section>
 </body>
