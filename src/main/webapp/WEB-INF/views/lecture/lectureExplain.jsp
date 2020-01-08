@@ -9,6 +9,7 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
+<<<<<<< Upstream, based on origin/jm02
 	<div id="wrapper">
 		<div id="head">
 			<br><br>
@@ -40,6 +41,13 @@
 				</div>
 			</div>
 		</div>
+=======
+	<div>
+		<div id="head">
+			<br>
+		</div>
+	
+>>>>>>> e722c0d stss
 	</div>
 </body>
 </html>
