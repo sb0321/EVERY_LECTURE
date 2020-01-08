@@ -14,8 +14,7 @@ body {
 }
 
 #wrapper {
-	
-	padding-top: 50px;
+	padding-top:20px;
 	padding-bottom: 50px;
 	
 	width: 80%;
@@ -247,3 +246,27 @@ footer{
 #lecture_page{
 	background-color:#BFBFE9;
 }
+
+#title{
+	width:80%;
+	height:60px;
+	text-align:center;
+	margin:0 auto;
+	
+	background-color:#BFBFE9;
+	padding-top:50px;
+	padding-bottom:30px;
+	
+}
+#title > h3{
+	font-size:3em;
+}
+#title > hr{
+	width:80%;
+}
+#lecture_admin_page{
+	background-color:#BFBFE9;
+}
+
+
+

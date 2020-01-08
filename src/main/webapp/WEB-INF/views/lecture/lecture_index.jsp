@@ -10,6 +10,11 @@
 <body>
 	<%@ include file="../index/index_top.jsp" %>
 	<div id="lecture_page">
+		<div id="title">
+			<h3>-choose your lecture-</h3>
+			<br><hr>
+		</div>
+
 		<section id="wrapper">
 			<c:forEach items="${lectureList}" var="lectureList">
 				
