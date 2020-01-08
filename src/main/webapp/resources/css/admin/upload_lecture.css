@@ -4,6 +4,7 @@ body {
 	width: 1600px;
 	
 	margin: auto;
+	background-color:#BFBFE9;
 }
 
 
@@ -12,8 +13,6 @@ body {
 	width: 100%;
 	height: 300px;
 	
-	background-color: orange;
-	
 }
 
 #lectureVideo {
@@ -21,6 +20,29 @@ body {
 	width: 100%;
 	height: 300px;
 	
-	background-color: blue;
+}
+
+#wrapper{
+	width:80%;
+}
+
+
+
+#title{
+	width:80%;
+	height:60px;
+	text-align:center;
+	margin:0 auto;
+	
+	background-color:#BFBFE9;
+	padding-top:50px;
+	padding-bottom:30px;
 	
 }
+#title > h3{
+	font-size:3em;
+}
+#title > hr{
+	width:80%;
+}
+
