@@ -1,5 +1,7 @@
 package com.goldenbrothers.everylecture.Admin.service;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -25,6 +27,24 @@ public class AdminService implements IAdminService {
 	public AdminDTO selectOneAdmin(String userID) {
 		// TODO Auto-generated method stub
 		return dao.selectOneAdmin(userID);
+	}
+
+	@Override
+	public int deleteOneLecture(String lectureID) {
+		// TODO Auto-generated method stub
+		return dao.deleteOneLecture(lectureID);
+	}
+
+	@Override
+	public LectureDTO selectOneLecture(String lectureID) {
+		// TODO Auto-generated method stub
+		return dao.selectOneLecture(lectureID);
+	}
+
+	@Override
+	public ArrayList<LectureDTO> selectLectureAll() {
+		// TODO Auto-generated method stub
+		return dao.selectLectureAll();
 	}
 
 }

@@ -18,5 +18,23 @@
 		VALUES(#{adminID}, #{lectureName}, #{lectureExplain}, #{lectureImgName}, #{lectureImgPath})
 	
 	</insert>
+	
+	<!-- 강의 삭제 -->
+	<delete id="deleteOneLecture" parameterType="String">
+		DELETE FROM test.lecture WHERE lectureID = #{lectureID}
+	</delete>
+	
+	<!-- 강의 하나 선택 -->
+	<select id="selectOneLecture" parameterType="String"
+	resultType="com.goldenbrothers.everylecture.Lecture.model.LectureDTO">
+	
+		SELECT * from test.lecture WHERE lectureID = #{lectureID}
+			
+	</select>
+	
+	<!-- 강의 전부 선택 -->
+	<select id="selectLectureAll" resultType="com.goldenbrothers.everylecture.Lecture.model.LectureDTO">
+		SELECT * from lecture
+	</select>
 
 </mapper>
