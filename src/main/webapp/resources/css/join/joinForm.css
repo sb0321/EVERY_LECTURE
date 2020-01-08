@@ -35,10 +35,23 @@ button{
 	margin:0;
 }
 
+/* #join_content{ */
+/* 	width:900px; */
+/* 	margin:0 auto; */
+/* } */
+
 #join_content{
+	background-color:#BFBFE9;
+	
 	width:900px;
+	height:auto;
 	margin:0 auto;
+	margin-bottom:5px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
+
+
 
 #join_logo{
 	width:850;
@@ -99,3 +112,122 @@ button{
 	background-color:#AD65E5;
 	color:white;
 }
+
+
+/* footer */
+#footer {
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
+#joinSession {
+	width: 100%;
+	height: 300px;
+	
+	background-color: #1d7cf8;
+	
+	margin: auto;
+	
+	text-align: center;
+}
+
+#joinSession > div {
+	font-size: 2em;
+	font-weight: bold;
+	
+	color: white;
+	
+	width: 100%;
+	
+	padding-top: 100px;
+	margin-bottom: 20px;
+}
+
+#joinButtonFooter {
+	height: 40px;
+	width: 200px;
+	
+	background-color: white;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	color: #300b4c;
+	
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* last */
+#last {
+	background-color: #300b4c;
+	
+	width: 100%;
+	height: 300px;
+	
+	color: white; 
+}
+
+#last_left {
+	
+	width: 50%;
+	height: 100%;
+	float: left;
+	
+	text-align: center;
+}
+
+#last_right {
+	
+	width: 50%;
+	height: 100%;
+	float: right;
+	
+	
+}
+
+
+
+/* fixed */
+
+#wrapper{
+	
+	width:1600px;
+	height:auto;
+	margin:0 auto;
+	background-color:#BFBFE9;
+	
+	padding-top:5px;
+}
+
+body{
+	width:1600px;
+	height:1000px;
+}
+
+
+
+/* header */
+
+#head{
+	background-color:#BFBFE9;
+	width:900px;
+	height:100px;
+	
+	text-align:center;
+	margin:0 auto;
+	
+	margin-bottom:5px;
+}
+
+#head > h3{
+	height:auto;
+	font-size:2em;
+}
+#head > hr{
+	width:80%;
+}
+

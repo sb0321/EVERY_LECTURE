@@ -4,18 +4,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>회원가입</title>
+<title>sign in</title>
 	<script src='<c:url value='/resources/js/join/join.js'/>'></script>
 	<link rel="stylesheet" type="text/css" href="../resources/css/join/joinForm.css">
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
 	
-	<div id="join_container">
+	<div id="wrapper">
+		<div id="head">
+			<br><br>
+			<h3>Sign-In</h3>
+			<br><hr>
+		</div>
+	
 		<div id="join_content">
-			<div id="join_logo">
-				<img id="logo-full" alt="<EVERY-LECTURE>" src='<c:url value='/resources/image/logo-full.png'/>'>
-			</div>
+			
 			
 				<div class="join_box" id="join_another">
 					<h3 id="id_title">아이디</h3>
@@ -44,7 +48,25 @@
 					<button class="eBtn" type="reset">취 소</button>
 				</div>
 			</div>
+			<br>
 		</div>
+		
+		<div id="footer">
+			<div id="joinSession">
+				<div>이제 시작할 준비가 되셨나요?</div>
+				<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
+			</div>
+			<div id="last">
+				<div id="last_left">
+					<h2>The flat icon belongs to www.flaticon.com</h2>
+					<br>
+					<h2>This site is made by Golden Brothers.Inc</h2>
+				</div>
+				<div id="last_right">
+				</div>
+			</div>
+		</div>
+		
 	</div>
 	
 </body>
