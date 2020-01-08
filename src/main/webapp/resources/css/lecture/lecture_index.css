@@ -13,20 +13,30 @@ body {
 	background-color: #6260b3;
 }
 
-#wrapper {
-	padding-top:20px;
-	padding-bottom: 50px;
+
+
+#lecture_page{
 	
-	width: 80%;
-	height: auto;
-	
-	background-color: #BFBFE9;
+	width:1600px;
+	height:auto;
 	margin:0 auto;
+	background-color:#BFBFE9;
+	
+	padding-top:5px;
+}
+
+#wrapper {
+	background-color:white;
+	width:80%;
+	height:auto;
+	text-align:center;
+	margin:0 auto;
+	padding:10px;
 }
 
 .lectureTable {
 	
-	width: 80%;
+	width: 100%;
 	height: 200px;
 	
 	background-color: white;
@@ -42,7 +52,7 @@ body {
 
 .lectureLeft {
 	height: 100%;
-	width: 30%;
+	width: 29.9%;
 	
 	float: left;
 	
@@ -142,27 +152,35 @@ body {
 	
 }
 
-#title{
-	width:80%;
-	height:35px;
+
+/* *****fix***** */
+#head{
+	background-color:#E7E7E7;
+	width:70%;
+	height:100px;
 	
-	margin:0 auto;
-	text-aign:center;
-}
-#title > h3{
-	font-size:2em;
 	text-align:center;
+	margin:0 auto;
+	
+	margin-bottom:5px;
+}
+#head > h3{
+	height:auto;
+	font-size:2em;
 }
 
-footer{
-	width:100%;
-	height: 120px;
+#content{
+	background-color:#E7E7E7;
 	
-	background-color: #BFBFE9;
-	
-	text-align:center;
+	width:70%;
+	height:auto;
 	margin:0 auto;
+	margin-bottom:5px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
+
+
 
 
 /* footer */
@@ -239,34 +257,4 @@ footer{
 	
 	
 }
-
-
-
-
-#lecture_page{
-	background-color:#BFBFE9;
-}
-
-#title{
-	width:80%;
-	height:60px;
-	text-align:center;
-	margin:0 auto;
-	
-	background-color:#BFBFE9;
-	padding-top:50px;
-	padding-bottom:30px;
-	
-}
-#title > h3{
-	font-size:3em;
-}
-#title > hr{
-	width:80%;
-}
-#lecture_admin_page{
-	background-color:#BFBFE9;
-}
-
-
 

@@ -10,39 +10,41 @@
 <body>
 	<%@ include file="../index/index_top.jsp" %>
 	<div id="lecture_page">
-		<div id="title">
-			<h3>-choose your lecture-</h3>
-			<br><hr>
-		</div>
-
-		<section id="wrapper">
-			<c:forEach items="${lectureList}" var="lectureList">
-				
-				<div class="lectureTable">
-					<div class="lectureLeft">
-						<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
-					</div>
-					<div class="lectureRight">
-						<div class="right_wrapper">
-							<div class="lectureName">
-								<div>
-									<c:out value="${lectureList.lectureName}"/>
-								</div>
-							</div>
-							<div class="lectureExplain">
-								<div>
-									<c:out value="${lectureList.lectureExplain }"/>
-								</div>
-								<div>
-									<button class="eBtn">강의 등록하기</button>
-								</div>
-							</div>
-						</div>
-					</div>		
-				</div>
-			</c:forEach>
-		</section>
 		
+		<div id="head">
+			<br><br>
+			<h3>Choose Your Lecture</h3>
+		</div>
+		<div id="content">
+			<section id="wrapper">
+				<c:forEach items="${lectureList}" var="lectureList">
+					
+					<div class="lectureTable">
+						<div class="lectureLeft">
+							<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
+						</div>
+						<div class="lectureRight">
+							<div class="right_wrapper">
+								<div class="lectureName">
+									<div>
+										<c:out value="${lectureList.lectureName}"/>
+									</div>
+								</div>
+								<div class="lectureExplain">
+									<div>
+										<c:out value="${lectureList.lectureExplain }"/>
+									</div>
+									<div>
+										<button class="eBtn">강의 등록하기</button>
+									</div>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</c:forEach>
+			</section>
+		</div>
+			
 		<footer id="footer">
 			<div id="joinSession">
 				<div>이제 시작할 준비가 되셨나요?</div>
