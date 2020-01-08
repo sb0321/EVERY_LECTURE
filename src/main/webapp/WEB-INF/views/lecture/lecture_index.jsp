@@ -25,7 +25,9 @@
 						<div class="lectureExplain">
 							<div>
 								<c:out value="${lectureList.lectureExplain }"/>
-								
+							</div>
+							<div>
+								<button class="eBtn">강의 등록하기</button>
 							</div>
 						</div>
 					</div>
