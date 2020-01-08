@@ -9,36 +9,38 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
-	<section id="wrapper">
-		<c:forEach items="${lectureList}" var="lectureList">
-			
-			<div id="title">
-				<h3>강의 리스트</h3>
-			</div>
-		
-			<div class="lectureTable">
-				<div class="lectureLeft">
-					<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
-				</div>
-				<div class="lectureRight">
-					<div class="right_wrapper">
-						<div class="lectureName">
-							<div>
-								<c:out value="${lectureList.lectureName}"/>
-							</div>
-						</div>
-						<div class="lectureExplain">
-							<div>
-								<c:out value="${lectureList.lectureExplain }"/>
-							</div>
-							<div>
-								<button class="eBtn">강의 등록하기</button>
-							</div>
-						</div>
+	<div id="">
+		<section id="wrapper">
+			<c:forEach items="${lectureList}" var="lectureList">
+				
+				<div class="lectureTable">
+					<div class="lectureLeft">
+						<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
 					</div>
-				</div>		
-			</div>
-		</c:forEach>
-	</section>
+					<div class="lectureRight">
+						<div class="right_wrapper">
+							<div class="lectureName">
+								<div>
+									<c:out value="${lectureList.lectureName}"/>
+								</div>
+							</div>
+							<div class="lectureExplain">
+								<div>
+									<c:out value="${lectureList.lectureExplain }"/>
+								</div>
+								<div>
+									<button class="eBtn">강의 등록하기</button>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</c:forEach>
+		</section>
+		
+		<footer>
+		
+		</footer>
+	</div>
 </body>
 </html>
