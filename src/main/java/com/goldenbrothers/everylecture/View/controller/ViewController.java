@@ -82,6 +82,12 @@ public class ViewController {
 
 	}
 	
+	@RequestMapping(value = "/lecture/lectureExplain")
+	public String lecture_explain() {
+		return "redirect:/lecture/lectureExplain";
+
+	}
+	
 	//------------------------board-----------------------------
 
 	
