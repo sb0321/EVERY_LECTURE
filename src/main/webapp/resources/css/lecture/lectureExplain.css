@@ -4,4 +4,151 @@
 	background-color: #6260b3;
 	width: 100%;
 }
+body{
+	width:1600px;
+}
 
+#wrapper{
+	
+	width:1600px;
+	height:auto;
+	margin:0 auto;
+	background-color:#BFBFE9;
+	
+	padding-top:5px;
+}
+
+/* header */
+
+#head{
+	background-color:#E7E7E7;
+	width:70%;
+	height:100px;
+	
+	text-align:center;
+	margin:0 auto;
+	
+	margin-bottom:5px;
+}
+
+#head > h3{
+	height:auto;
+	font-size:2em;
+}
+
+/* content */
+
+#content{
+	background-color:#E7E7E7;
+	
+	width:70%;
+	height:auto;
+	margin:0 auto;
+	margin-bottom:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#lecture_intro{
+	background-color:white;
+	width:80%;
+	height:1600px;
+	text-align:center;
+	margin:0 auto;
+	padding:10px;
+	
+}
+#intro_image{
+	width:50%;
+	height:400px;
+	float:left;
+	background-color:yellow;
+}
+#intro_title{
+	width:50%;
+	height:400px;
+	float:right;
+	background-color:red;
+}
+#intro_exp{
+	margin-top:410px;
+	width:100%;
+	height:300px;
+	background-color:black;
+}
+
+
+/* footer */
+#footer {
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
+#joinSession {
+	width: 100%;
+	height: 300px;
+	
+	background-color: #1d7cf8;
+	
+	margin: auto;
+	
+	text-align: center;
+}
+
+#joinSession > div {
+	font-size: 2em;
+	font-weight: bold;
+	
+	color: white;
+	
+	width: 100%;
+	
+	padding-top: 100px;
+	margin-bottom: 20px;
+}
+
+#joinButtonFooter {
+	height: 40px;
+	width: 200px;
+	
+	background-color: white;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	color: #300b4c;
+	
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* last */
+#last {
+	background-color: #300b4c;
+	
+	width: 100%;
+	height: 300px;
+	
+	color: white; 
+}
+
+#last_left {
+	
+	width: 50%;
+	height: 100%;
+	float: left;
+	
+	text-align: center;
+}
+
+#last_right {
+	
+	width: 50%;
+	height: 100%;
+	float: right;
+	
+	
+}
