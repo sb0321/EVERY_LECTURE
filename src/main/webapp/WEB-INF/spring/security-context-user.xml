@@ -181,6 +181,41 @@
 		<security:csrf disabled="true"/>
 	</security:http>
 	
+	<security:http pattern="/lecture/**" auto-config="true" use-expressions="true"
+		authentication-manager-ref="userLoginManager">
+		<security:intercept-url pattern="/resources/**" access="permitAll"/>
+		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
+		<security:intercept-url pattern="/lecture/**" access="hasRole('ROLE_USER, ROLE_ADMIN')"/>
+		
+		<security:access-denied-handler error-page="/" />
+		
+		<!-- 세션 관리 -->
+		<security:session-management invalid-session-url="/">
+			<!-- 동일 ID의 최대 세션 개수는 1개 -->
+			<security:concurrency-control max-sessions="1" error-if-maximum-exceeded="false"/>
+		</security:session-management>
+		
+		<!-- 로그인시 -->
+		<security:form-login 
+			login-page="/login/login"
+			login-processing-url="/login/goLogin"
+			default-target-url="/login/userLogin"
+			authentication-failure-url="/login/login"
+			always-use-default-target="true"
+			username-parameter="userID"
+			password-parameter="userPW"
+			
+		/>
+		
+		<security:logout
+			invalidate-session="true"
+			logout-success-url="/"
+			delete-cookies="JESSIONID,SPRING_SECURITY_REMEMBER_ME_COOKIE"
+		/>
+		
+		<security:csrf disabled="true"/>
+	</security:http>
+	
 	<security:authentication-manager id="userLoginManager">
 		<security:authentication-provider>
 			<!-- users-by-username-query: ID에 따른 비밀번호 일치여부 확인 -->
