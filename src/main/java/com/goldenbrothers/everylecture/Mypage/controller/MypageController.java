@@ -27,6 +27,12 @@ public class MypageController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MypageController.class);
 	
+	// ¸¶ÀÌÆäÀÌÁö ÀÌµ¿
+	@RequestMapping(value = "/mypage/mypage")
+	public String mypage() {
+		return "redirect:/lecture/getRegisteredLectureMypage";
+	}
+	
 	@ResponseBody
 	@RequestMapping(value = "/mypage/changeName")
 	public String changeName(HttpSession session, @RequestParam String userName) {
@@ -101,7 +107,7 @@ public class MypageController {
 		return result;
 	}
 	
-	// È¸¿ø Å»Åð
+	// È¸¿ø Å»Åð Ã¼Å©
 	@ResponseBody
 	@RequestMapping(value = "/mypage/expireUserCheck")
 	public String expireUserCheck(Principal principal) {
@@ -113,6 +119,7 @@ public class MypageController {
 	}
 	
 	
+	// È¸¿ø Å»Åð
 	@ResponseBody
 	@RequestMapping(value = "/mypage/expireUser")
 	public String expireUser(@RequestParam HashMap<String, String> user) {

@@ -3,7 +3,13 @@ $(document).ready(function() {
 	$user_url = $('#profileBtn');
 	
 	$lecture_url.on("click", function() {
+		
 		changePart("/everylecture/mypage/mypageLecture");
+		
+//		$.ajax({
+//			url : "/everylecture/lecture/getRegisteredLecture",
+//			type : "POST",
+//		});
 	});
 	
 	$user_url.on("click", function() {

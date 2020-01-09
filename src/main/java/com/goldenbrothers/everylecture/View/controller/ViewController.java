@@ -38,11 +38,6 @@ public class ViewController {
 		return "/login/login";
 	}
 	
-	// 마이페이지 이동
-	@RequestMapping(value = "/mypage/mypage")
-	public String mypage() {
-		return "/mypage/mypage";
-	}
 	
 	@RequestMapping(value = "/mypage/mypageLecture")
 	public String go_lecture() {

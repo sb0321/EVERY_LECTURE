@@ -15,11 +15,11 @@
 				<br><br><hr>	
 			</div>
 			<div>
-				<c:forEach items="" var="prd">
+				<c:forEach items="${registered}" var="registered">
 					<div id="lect_check"></div>
-					<div id="lect_image"></div>
-					<div id="lect_name"></div>
-					<div id="lect_progress"></div>
+					<img alt="강의 이미지" src="${registered.lectureImgPath}">
+					<div id="lect_name">${registered}</div>
+					<div id="lect_progress">${registered}</div>
 				</c:forEach>
 			</div>
 		</div>

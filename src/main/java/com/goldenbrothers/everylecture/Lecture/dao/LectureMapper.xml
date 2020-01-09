@@ -7,6 +7,17 @@
 		SELECT * FROM test.lecture
 	</select>
 	
+	<insert id="registerLecture" 
+	parameterType="com.goldenbrothers.everylecture.Lecture.model.UserClassDTO">
+		INSERT INTO test.userClass (userID, lectureID) VALUES
+		(#{userID}, #{lectureID})
+	</insert>
 	
+	<!-- 사용자가 등록한 강의들을 가져옴 -->
+	<select id="getRegisteredLecture" parameterType="String"
+	resultType="HashMap">
+		SELECT u.userID, l.lectureID, l.lectureName, l.lectureExplain, l.lectureImgName, l.lectureImgPath 
+		FROM test.userClass u, test.lecture l WHERE u.lectureID = l.lectureID AND u.userID = #{userID}
+	</select>
 
 </mapper>

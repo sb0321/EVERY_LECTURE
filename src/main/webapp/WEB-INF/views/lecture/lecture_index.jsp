@@ -32,10 +32,10 @@
 								</div>
 								<div class="lectureExplain">
 									<div>
-										<c:out value="${lectureList.lectureExplain }"/>
+										<c:out value="${lectureList.lectureExplain}"/>
 									</div>
 									<div>
-										<button class="eBtn">강의 등록하기</button>
+										<a href='<c:url value='/lecture/applyLecture/${lectureList.lectureID}' />'><button class="eBtn">강의 등록하기</button></a>
 									</div>
 								</div>
 							</div>
