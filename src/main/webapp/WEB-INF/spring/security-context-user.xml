@@ -185,7 +185,7 @@
 		authentication-manager-ref="userLoginManager">
 		<security:intercept-url pattern="/resources/**" access="permitAll"/>
 		<!-- 로그인 세션을 가진 사용자만 접근 가능한 것 -->
-		<security:intercept-url pattern="/lecture/**" access="hasRole('ROLE_USER, ROLE_ADMIN')"/>
+		<security:intercept-url pattern="/lecture/**" access="hasRole('ROLE_USER')"/>
 		
 		<security:access-denied-handler error-page="/" />
 		
