@@ -107,21 +107,19 @@ textarea{
 	height:60px;
 }
 
-#comment_wrapper {
-	width: 80%;
-	height: auto;
-	
-	margin: auto;
-}
-
 .comment_box {
 	width: 80%;
 	height: 100px;
-	
 	margin: auto;
+	
+	overflow: auto;
 	
 	border-top: 1px solid black;
 /* 	border-bottom: 1px solid black; */
+}
+
+.comment_box:last-child {
+	margin-bottom: 200px;
 }
 
 .com_left {
@@ -168,7 +166,7 @@ textarea{
 	height: auto;
 	
 	margin: auto;
-	margin-bottom: 100px;
+	margin-bottom: 10px;
 }
 
 #commentWrite {
@@ -176,6 +174,14 @@ textarea{
 	height: 56.4px;
 	
 	margin: auto;
+}
+
+.comText {
+	display: table-cell;
+	vertical-align: middle;
+	
+	width: 100%;
+	white-space: pre-line;
 }
 
 #commentWrite > textarea {
@@ -221,3 +227,7 @@ textarea{
 	color: white;
 }
 
+#none {
+	width: 80%;
+	margin: auto;
+}

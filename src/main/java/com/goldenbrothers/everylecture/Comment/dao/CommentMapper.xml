@@ -12,7 +12,7 @@
 	<!-- 맞는 댓글을 다 가져온다 -->
 	<select id="selectComment" parameterType="String"
 	resultType="com.goldenbrothers.everylecture.Comment.model.CommentDTO">
-		SELECT * FROM test.comment WHERE boardID = #{boardID}
+		SELECT * FROM test.comment WHERE boardID = #{boardID} ORDER BY comTime DESC 
 	</select>
 	
 	<!-- 댓글 삭제 -->

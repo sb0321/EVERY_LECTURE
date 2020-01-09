@@ -48,38 +48,43 @@
 				</table>
 			</div>	
 		</div>
-		<div id="comment_wrapper">
+			<c:if test="${not empty uInfo }">
+				<div id="com_com">
+					<div id="commentWrite">
+						<textarea name="commentText" onkeydown="resize(this)" onkeyup="resize(this)" id="commentBox" rows="3" cols="10"></textarea>
+						<div id="buttonWrapper">
+							<button class="eBtn" id="comSubmit">댓글 달기</button>
+						</div>
+					</div>
+				</div>
+			</c:if>
+			<c:if test="${empty uInfo }">
+				<h2 id="none">댓글을 적으려면 로그인 하세요.</h2>
+			</c:if>
 			<c:forEach items="${commentList}" var="comm" varStatus="status">
 				<div class="comment_box">
 					<div class="com_left">
-						<div>
-							${comm.userID }
-						</div>
-						<div>
-							${comm.comTime }
+						<div class="left_wrapper">
+							<div>
+								${comm.userID }
+							</div>
+							<div>
+								${comm.comTime }
+							</div>
 						</div>
 					</div>
 					<div class="com_right">
-						<div>
+						<h2 class="comText">
 							${comm.comText }
-						</div>
+						</h2>
 						<c:if test="${uInfo.userID eq comm.userID }">
-							<div>
+							<div class="deleteBtnWrapper">
 								<button id="delBtn" class="eBtn" onclick="delComment(${comm.comID})">삭제</button>
 							</div>
 						</c:if>
 					</div>
 				</div>
 			</c:forEach>
-			<div id="com_com">
-				<div id="commentWrite">
-					<textarea name="commentText" onkeydown="resize(this)" onkeyup="resize(this)" id="commentBox" rows="3" cols="10"></textarea>
-					<div id="buttonWrapper">
-						<button class="eBtn" id="comSubmit">댓글 달기</button>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
 </body>
 </html>
