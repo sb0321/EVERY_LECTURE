@@ -1,6 +1,6 @@
 body {
 	width: 1600px;
-	
+	height:2000px;
 	margin: auto;
 	
 	background-color: #6260b3;
@@ -236,80 +236,110 @@ section {
 }
 
 
-/* ********************************************************* */
-/*
-.lect_table{
-	width: 80%;
-	height: 250px;
-	margin: auto;
-	text-align: center;
-	font-size:1.5em;
-	padding-top:15px;
-}
-.lect_table input{
-	width:80%;
-	height:80%;
-}
 
-.lect_table tr{
-	width:100%;
-	height:100%;
-}
-*/
+/********************************************/
+
 #lect_mid{
-	height: 100%;
-	width: 100%;
+	height: auto;
+	width: 1200px;
 	display: table-cell;
 	vertical-align: top;
 	padding-top:30px;
 	padding-bottom:15px;
 }
 
-#lect_title{
-	width:95%;
-	height:60px;
+#content1{
+	width:90%;
+	height:auto;
 	margin:0 auto;
 	text-align:center;
-	margin-bottom:0;
+	background-color:yellow;
+	padding:10px;
+}
+#my_lecture{
+	width:100%;
+	height:200px;
 }
 
-#lect_title > div {
-	display: inline-block;
+#image{
+	width:20%;
+	height:100%;
+	float:left;
+	
+	background-color:white;
+}
+#lec_title{
+	width:30%;
+	height:100%;
+	margin-left:20%;
+	background-color:red;
+}
+#3{
+	width:30%;
+	height:100%;
+	margin-left:50%;
+	
+	background-color:pink;
+}
+#4{
+	width:20%;
+	height:100%;
+	float:right;
+	
+	background-color:blue;
+}
+
+
+/********************************************/
+/*title*/
+
+#title_table{
+	width:100%;
+	height:auto;
+	font-size:1.5em;	
+}
+#tr{
 	text-align:center;
 }
+#tr > td:nth-child(1){
+	width:20%;
+	background-color:red;
+}
+#tr > td:nth-child(2){
+	width:30%;
+	background-color:orange;
+}
+#tr > td:nth-child(3){
+	width:30%;
+	background-color:green;
+}
+#tr > td:nth-child(4){
+	width:20%;
+	background-color:yellow;
+}
 
-#jTitle_check{
-	width:50px;
-	font-size:1.5em;
-}
-#jTitle_image{
-	width:120px;
-}
-#jTitle_name{
-	width:300px;
-	font-size:1.5em;
-}
-#jTitle_progress{
-	width:120px;
-	font-size:1.5em;
-}
+
+
+
+
+/********************************************/
 
 
 #lect_check{
 	width:50px;
-	height:100px;
+	height:auto;
 }
 #lect_image{
 	width:120px;
-	height:100px;
+	height:auto;
 }
 #lect_name{
 	width:300px;
-	height:100px;
+	height:auto;
 }
 #lect_progress{
 	width:120px;
-	height:100px;
+	height:auto;
 }
 
 #expireUser {

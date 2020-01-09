@@ -6,21 +6,20 @@
 	<div id="context">강의 목록</div>
 	<div id="content_wrapper">
 		<div id="lect_mid">
-		
-			<div id="lect_title">
-				<div id="jTitle_check">선택</div>
-				<div id="jTitle_image"></div>
-				<div id="jTitle_name">강의 제목</div>
-				<div id="jTitle_progress">진행도</div>	
-				<br><br><hr>	
-			</div>
-			<div>
+			<div id="content1">
+				<table id="title_table">
+					<tr id="tr"><td>사진</td><td>강의 제목</td><td>진행도</td><td>강의 보러가기</td></tr>
+				</table>
+				
 				<c:forEach items="${registered}" var="registered">
-					<div id="lect_check"></div>
-					<img alt="강의 이미지" src="${registered.lectureImgPath}">
-					<div id="lect_name">${registered}</div>
-					<div id="lect_progress">${registered}</div>
+				<div id="my_lecture">
+					<img id="image" alt="강의 이미지" src="${registered.lectureImgPath}">
+					<div id="lec_title">${registered}</div>
+					<div id="3">${registered}</div>
+					<div id="4"><button class="eBtn">Go</button></div>
+				</div>
 				</c:forEach>
+				
 			</div>
 		</div>
 	</div>
