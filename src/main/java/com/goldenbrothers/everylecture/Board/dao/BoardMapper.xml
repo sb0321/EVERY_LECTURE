@@ -42,5 +42,16 @@
 	<update id="boardCountUp" parameterType="String">
 		UPDATE test.board SET showed = showed + 1 WHERE boardID = #{boardID}
 	</update>
+	
+	<!-- board 몇개를 가져오기 -->
+	<select id="selectBoardLimit" parameterType="int"
+	resultType="com.goldenbrothers.everylecture.Board.model.BoardDTO">
+		SELECT * FROM test.board ORDER BY boardTime DESC LIMIT #{start}, #{end}
+	</select>
+	
+	<!-- board 전체 개수 -->
+	<select id="selectBoardCount" resultType="int">
+		SELECT count(*) FROM test.board
+	</select>
 
 </mapper>
