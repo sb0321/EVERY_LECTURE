@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 #navi {
 	background-color: #6260b3;
 	width: 100%;
@@ -19,7 +20,8 @@ body{
 	padding-top:5px;
 }
 
-/* header */
+
+/* ********header******** */
 
 #head{
 	background-color:#E7E7E7;
@@ -37,9 +39,10 @@ body{
 	font-size:2em;
 }
 
-/* content */
 
-#content{
+/* ********content1******** */
+
+#content1{
 	background-color:#E7E7E7;
 	
 	width:70%;
@@ -52,209 +55,74 @@ body{
 
 #lecture_intro{
 	background-color:white;
-	width:80%;
+	width:70%;
 	height:auto;
 	text-align:center;
 	margin:0 auto;
 	padding:10px;
-	
+	padding-top:35px;
 }
 #intro_image{
-	width:50%;
-	height:400px;
+	width:40%;
+	height:auto;
 	float:left;
-	background-color:yellow;
+	text-align:center;
+	margin:0 auto;
 }
 #intro_title{
-	width:50%;
-	height:400px;
+	width:60%;
+	height:auto;
 	float:right;
-	background-color:red;
+	padding-top:50px;
 }
 #intro_exp{
-	margin-top:410px;
+	margin-top:210px;
 	width:100%;
-	height:300px;
-	background-color:black;
+	height:180px;
+}
+h3{
+	font-size:2em;
+}
+h2{
+	font-size:1em;
 }
 
-
-/* footer */
-#footer {
-	width: 100%;
-	height: auto;
-	
-	margin: auto;
+#image{
+	width:200px;
+	height:200px;
+	padding:0px;
+	margin:0 auto;
+	test-align:center;
 }
 
-#joinSession {
-	width: 100%;
-	height: 300px;
+/* ********content2******** */
+
+#content2{
+	background-color:#E7E7E7;
 	
-	background-color: #1d7cf8;
+	width:70%;
+	height:auto;
+	margin:0 auto;
+	margin-bottom:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#video_area{
 	
-	margin: auto;
+	background-color:white;
+	width:70%;
+	height:auto;
+	text-align:center;
+	margin:0 auto;
+	padding:10px;
+}
+#video_section{
+	width:100%;
+	height:80px;
+	border-bottom:10px;
 	
 	text-align: center;
-}
-
-#joinSession > div {
-	font-size: 2em;
-	font-weight: bold;
-	
-	color: white;
-	
-	width: 100%;
-	
-	padding-top: 100px;
-	margin-bottom: 20px;
-}
-
-#joinButtonFooter {
-	height: 40px;
-	width: 200px;
-	
-	background-color: white;
-	
-	border-radius: 5px;
-	
-	margin: auto;
-	
-	color: #300b4c;
-	
-	font-size: 1em;
-	font-weight: bold;
-}
-
-/* last */
-#last {
-	background-color: #300b4c;
-	
-	width: 100%;
-	height: 300px;
-	
-	color: white; 
-}
-
-#last_left {
-	
-	width: 50%;
-	height: 100%;
-	float: left;
-	
-	text-align: center;
-}
-
-#last_right {
-	
-	width: 50%;
-	height: 100%;
-	float: right;
-	
-	
-}
-
-
-/* 등록된 강의 보기 */
-
-.lectureTable {
-	
-	width: 100%;
-	height: 200px;
-	
-	background-color: white;
-	
-	border: 1px solid gray;
-	border-radius: 10px;
-	
-	margin: auto;
-	
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
-
-.lectureLeft {
-	height: 100%;
-	width: 29.9%;
-	
-	float: left;
-	
-	border-right: 1px solid gray;
-	border-right-style: dotted;
-}
-
-.lectureRight {
-	height: 100%;
-	width: 69.9%;
-	
-	float: right;
-}
-
-.right_wrapper {
-	width: 100%;
-	height: 100%;
-	
-	display: table;
-}
-
-.lectureName {
-	width: 100%;
-	height: 20%;
-	
-	margin: auto;
-	
 	font-size: 1.5em;
-	
-	padding: 0;
-	
-	display: table;
-}
-
-.lectureName > div {
-	width: 100%;
-	height: auto;
-	
-	text-align: center;
-	
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.lectureExplain {
-	
-	border-top: 1px solid black;
-	
-	text-align: center;
-	width: 100%;
-	height: 79.8%;
-	
-	display: table;
-	
-	font-size: 1.5em;
-	
-}
-
-.lectureExplain > div:nth-child(1) {
-	
-	width: 80%;
-	height: auto;
-	
-	display: table-cell;
-	vertical-align: middle;
-	
-	text-align: left;
-	
-	white-space: pre-line;
-}
-
-.lectureExplain > div:nth-child(2) {
-	
-	width: 20%;
-	height: 100%;
-	
-	display: table-cell;
-	vertical-align: middle;
-	
 }
 
 .eBtn {
@@ -268,9 +136,37 @@ body{
 	color: white;
 }
 
-.lectureImg {
+
+/* footer */
+#footer {
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
+
+/* last */
+#last {
+	background-color: #300b4c;
 	
 	width: 100%;
+	height: 300px;
+	
+	color: white; 
+}
+#last_left {
+	
+	width: 50%;
 	height: 100%;
+	float: left;
+	
+	text-align: center;
+}
+#last_right {
+	
+	width: 50%;
+	height: 100%;
+	float: right;
 	
 }

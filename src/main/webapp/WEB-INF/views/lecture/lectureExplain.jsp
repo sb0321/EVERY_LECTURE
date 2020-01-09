@@ -14,48 +14,45 @@
 			<br><br>
 			<h3>Lecture-Introduce</h3>
 		</div>
-	
-		<div id="content">
+		
+		<div id="content1">
+		
 			<div id="lecture_intro">
-				<div id="intro_image"></div>
-				<div id="intro_title"></div>
-				<div id="intro_exp"></div>
+				<div id="intro_image">
+					<img id="image" alt="강의 이미지" src="">
+				</div>
 				
-				<div>
-<%-- 				<c:forEach items="${lectureList}" var="lectureList"> --%>
-					<div class="lectureTable">
-						<div class="lectureLeft">
-							<img alt="강의 이미지" class="lectureImg" src="${lectureList.lectureImgPath}">
-						</div>
-						<div class="lectureRight">
-							<div class="right_wrapper">
-								<div class="lectureName">
-									<div>
-										<c:out value="${lectureList.lectureName}"/>
-									</div>
-								</div>
-								<div class="lectureExplain">
-									<div>
-										<c:out value="${lectureList.lectureExplain }"/>
-									</div>
-									<div>
-										<button class="eBtn">강의 등록하기</button>
-									</div>
-								</div>
-							</div>
-						</div>		
-					</div>
-<%-- 				</c:forEach> --%>				
+				<div id="intro_title">
+					<h3>제목제목제목제목제목제목제목제목제목</h3>
+				</div>
 				
+				<div id="intro_exp">
+				<br><hr>
+					<h2>설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+						설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명
+					</h2>
 				</div>
 			</div>
 		</div>
 		
+
+		<div id="content2">
+			<div id="video_area">
+		<%-- 	<c:forEach items="${videoList}" var="videoList"> --%>	
+				<div id=video_section>
+					<c:out value="${videoList.videoTitle }"/>
+				</div>
+		<%-- 	</c:forEach> --%>	
+			</div>			
+		</div>
+		
 		<div id="footer">
-			<div id="joinSession">
-				<div>이제 시작할 준비가 되셨나요?</div>
-				<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
-			</div>
 			<div id="last">
 				<div id="last_left">
 					<h2>The flat icon belongs to www.flaticon.com</h2>
