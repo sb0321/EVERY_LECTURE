@@ -35,12 +35,48 @@ public class BoardController {
 	@RequestMapping(value = "/board/boardForm")
 	public String go_boardList(Model model) {
 		
-		// 전체 리스트를 가져온다.
-		ArrayList<BoardDTO> boardList = service.selectBoardAll();
+		int start = 0;
+		int end = start + 10;
 		
+		// 처음 pagenation
+		HashMap<String, Integer> pagination = new HashMap<String, Integer>();
+		pagination.put("start", start);
+		pagination.put("end", end);
+		
+		// 10개씩 전체 리스트를 가져온다.
+		ArrayList<BoardDTO> boardList = service.selectBoardLimit(pagination);
 		model.addAttribute("boardList", boardList);
 		
+		int totalBoardCount = service.selectBoardCount();
+		model.addAttribute("totalBoardCount", totalBoardCount);
+		
+		model.addAttribute("curPage", 1);
+		
 		return "board/boardForm";
+	}
+	
+	// 게시판 페이지 페이지네이션
+	@ResponseBody
+	@RequestMapping(value = "/board/pagination")
+	public void pagenation(@RequestParam int curPage, Model model) {
+		
+		int pageSize = 10;
+		
+		int start = (curPage - 1) * pageSize;
+		int end = start + 10;
+		
+		// 페이지네이션 파라미터 설정
+		HashMap<String, Integer> pagination = new HashMap<String, Integer>();
+		pagination.put("start", start);
+		pagination.put("end", end);
+		
+		ArrayList<BoardDTO> boardList = service.selectBoardLimit(pagination);
+		model.addAttribute("boardList", boardList);
+		
+		int totalBoardCount = service.selectBoardCount();
+		model.addAttribute("totalBoardCount", totalBoardCount);
+		
+		model.addAttribute("curPage", curPage);
 	}
 	
 	@RequestMapping(value = "/board/boardWrite")

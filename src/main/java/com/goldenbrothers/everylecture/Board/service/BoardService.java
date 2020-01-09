@@ -57,4 +57,16 @@ public class BoardService implements IBoardService {
 		// TODO Auto-generated method stub
 		return dao.boardCountUp(boardID);
 	}
+
+	@Override
+	public ArrayList<BoardDTO> selectBoardLimit(HashMap<String, Integer> pagination) {
+		// TODO Auto-generated method stub
+		return dao.selectBoardLimit(pagination);
+	}
+
+	@Override
+	public int selectBoardCount() {
+		// TODO Auto-generated method stub
+		return dao.selectBoardCount();
+	}
 }

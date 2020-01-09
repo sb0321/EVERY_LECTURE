@@ -15,5 +15,7 @@ public interface IBoardService {
 	public int updateBoard(BoardDTO dto);
 	public int deleteBoard(String boardID);
 	public int boardCountUp(String boardID);
+	public ArrayList<BoardDTO> selectBoardLimit(HashMap<String, Integer> pagination);
+	public int selectBoardCount();
 
 }

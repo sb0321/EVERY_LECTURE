@@ -30,6 +30,18 @@
 								<th>${board.showed}</th>
 							</tr>
 					</c:forEach>
+					<tr>
+						<c:if test="${curpage eq 1}">
+							<td><button class="eBtn">prev</button></td>
+						</c:if>
+						<!-- pagination -->
+						<c:forEach begin="1" end="${(totalBoardCount / 10) + (1 - (totalBoardCount / 10) % 1) % 1}" var="page">
+							<td><button class="eBtn" onclick=""><c:out value="${page}"/></button></td>
+						</c:forEach>
+						<c:if test="${curpage eq 1}">
+							<td><button class="eBtn">prev</button></td>
+						</c:if>
+					</tr>
 				</tbody>
 			</table>
 		</div>
