@@ -82,8 +82,6 @@ public class BoardController {
 		
 		model.addAttribute("curPage", curPage);
 		
-		System.out.println(boardList.get(0).getBoardName());
-		
 		return "board/boardForm";
 	}
 	

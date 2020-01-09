@@ -34,11 +34,9 @@
 						<c:if test="${curpage eq 1}">
 							<td><button class="eBtn">prev</button></td>
 						</c:if>
-							<c:if test="${curpage eq 1}">
-								<td>
-									<button class="eBtn">prev</button>
-								</td>
-							</c:if>
+						<c:if test="${curpage eq 1}">
+							<td><button class="eBtn">prev</button></td>
+						</c:if>
 					</tr>
 				</tbody>
 			</table>

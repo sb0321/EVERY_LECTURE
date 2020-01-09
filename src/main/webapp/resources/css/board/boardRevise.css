@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 body {
 	width: 1600px;
 	height: auto;
@@ -9,29 +10,57 @@ body {
 	background-color: #6260b3;
 	width: 100%;
 }
-section {	
-	width: 100%;
-	height: 110vh;
-	background-color: white;
+
+#wrapper{
+	
+	width:1600px;
+	height:auto;
+	margin:0 auto;
+	background-color:#BFBFE9;
+	
+	margin-bottom:5px;
+	padding-top:5px;
 }
+
+/* ******************************************************************** */
+/* head */
+
 #board_top{
-	width:80%;
-	height:180px;
+	background-color:white;
+	width:70%;
+	height:auto;
 	text-align:center;	
 	margin:0 auto;
-	padding-top:50px;
+	padding-bottom:5px;
+	
+	margin-bottom:5px;
 }
 #board_image{
 	width:520px;
 	height:180px;
 }
 
+
+/* content1 */
+
 #write_area{
-	width:80%;
-	height:600px;
+	background-color:white;
+	
+	width:70%;
+	height:auto;
+	
 	text-align:center;
 	margin:0 auto;
+	
+	padding-top:10px;
+	padding-bottom:60px;
+	
+	margin-bottom:5px;
 }
+#Write_area > h3{
+	font-size:2em;	
+}
+
 
 #write_area > form{
 	width:80%;
@@ -91,10 +120,6 @@ textarea{
 	padding-top:20px;
 }
 
-h3{
-	font-size:2em;	
-}
-
 #tr1{
 	height:60px;
 }
@@ -102,3 +127,83 @@ h3{
 	height:60px;
 }
 
+
+
+
+/* ******************************************************************** */
+
+/* footer */
+
+#footer {
+	width: 100%;
+	height: auto;
+	
+	margin: auto;
+}
+
+#joinSession {
+	width: 100%;
+	height: 300px;
+	
+	background-color: #1d7cf8;
+	
+	margin: auto;
+	
+	text-align: center;
+}
+
+#joinSession > div {
+	font-size: 2em;
+	font-weight: bold;
+	
+	color: white;
+	
+	width: 100%;
+	
+	padding-top: 100px;
+	margin-bottom: 20px;
+}
+
+#joinButtonFooter {
+	height: 40px;
+	width: 200px;
+	
+	background-color: white;
+	
+	border-radius: 5px;
+	
+	margin: auto;
+	
+	color: #300b4c;
+	
+	font-size: 1em;
+	font-weight: bold;
+}
+
+/* last */
+#last {
+	background-color: #300b4c;
+	
+	width: 100%;
+	height: 300px;
+	
+	color: white; 
+}
+
+#last_left {
+	
+	width: 50%;
+	height: 100%;
+	float: left;
+	
+	text-align: center;
+}
+
+#last_right {
+	
+	width: 50%;
+	height: 100%;
+	float: right;
+	
+	
+}

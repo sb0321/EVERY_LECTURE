@@ -10,13 +10,14 @@
 </head>
 <body>
 	<%@ include file="../index/index_top.jsp" %>
-	<section>
+	<div id="wrapper">
+	
 		<div id="board_top">
 			<img src='<c:url value='/resources/image/board.PNG' />' id="board_image">
 		</div>
 			
 		<div id="write_area">
-		<hr><br>
+		<br>
 		<h3>게시글 작성</h3><br><br>
 			<table id="write_table">
 				<tr class="write_context" id="tr1">
@@ -43,6 +44,23 @@
 				</tr>
 			</table>
 		</div>
-	</section>
+		
+		<div id="footer">
+			<div id="joinSession">
+				<div>이제 시작할 준비가 되셨나요?</div>
+				<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
+			</div>
+			<div id="last">
+				<div id="last_left">
+					<h2>The flat icon belongs to www.flaticon.com</h2>
+					<br>
+					<h2>This site is made by Golden Brothers.Inc</h2>
+				</div>
+				<div id="last_right">
+				</div>
+			</div>
+		</div>
+		
+	</div>
 </body>
 </html>
