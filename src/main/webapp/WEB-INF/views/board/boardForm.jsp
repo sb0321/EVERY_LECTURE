@@ -12,7 +12,7 @@
 	<%@ include file="../index/index_top.jsp" %>
 	<div id="wrapper">
 		<div id="board_top">
-			<img src="../resources/image/board.PNG" id="board_image">
+			<img src='<c:url value='/resources/image/board.PNG' />' id="board_image">
 		</div>
 		
 		<div id="board_list">
@@ -34,16 +34,18 @@
 						<c:if test="${curpage eq 1}">
 							<td><button class="eBtn">prev</button></td>
 						</c:if>
-						<!-- pagination -->
-						<c:forEach begin="1" end="${(totalBoardCount / 10) + (1 - (totalBoardCount / 10) % 1) % 1}" var="page">
-							<td><button class="eBtn" onclick="goPagination(${page})"><c:out value="${page}"/></button></td>
-						</c:forEach>
-						<c:if test="${curpage eq 1}">
-							<td><button class="eBtn">prev</button></td>
-						</c:if>
+							<c:if test="${curpage eq 1}">
+								<td>
+									<button class="eBtn">prev</button>
+								</td>
+							</c:if>
 					</tr>
 				</tbody>
 			</table>
+			<!-- pagination -->
+			<c:forEach begin="1" end="${(totalBoardCount / 10) + (1 - (totalBoardCount / 10) % 1) % 1}" var="page">
+				<button class="eBtn" id="pageBtn" onclick="goPagination(${page})"><c:out value="${page}"/></button>
+			</c:forEach>
 		</div>
 		
 		<div id="board_button">

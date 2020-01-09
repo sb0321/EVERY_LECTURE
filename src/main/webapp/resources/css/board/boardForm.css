@@ -228,3 +228,17 @@ body {
 	
 }
 
+.paginationBtn < tr {
+	text-align: center;
+}
+
+.paginationBtn {
+	display: block;
+	margin: auto;
+}
+
+#pageBtn {
+	width: 50px;
+	height: 30px;
+	color: white;
+}

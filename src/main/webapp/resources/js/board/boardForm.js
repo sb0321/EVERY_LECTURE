@@ -10,21 +10,23 @@ $(document).ready(function() {
 
 function goPagination(goPage) {
 	
-	var data = {
-			"curPage" : goPage
-	}
+//	var data = {
+//			"curPage" : goPage
+//	}
 	
-	$.ajax({
-		url : "/everylecture/board/pagination",
-		type : "POST",
-		data : data,
-		async : true,
-		success : function(result) {
+//	$.ajax({
+//		url : "/everylecture/board/pagination",
+//		type : "POST",
+//		data : data,
+//		async : true,
+//		success : function(result) {
 //			alert(result);
-			location.reload();
-		},
-		error : function() {}
-	})
+//			location.reload();
+//		},
+//		error : function() {}
+//	});
+	
+	location.href="/everylecture/board/pagination/" + String(goPage); 
 	
 	
 	

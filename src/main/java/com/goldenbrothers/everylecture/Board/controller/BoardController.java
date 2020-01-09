@@ -56,9 +56,8 @@ public class BoardController {
 	}
 	
 	// 게시판 페이지 페이지네이션
-	@ResponseBody
-	@RequestMapping(value = "/board/pagination")
-	public String pagenation(@RequestParam int curPage, Model model) {
+	@RequestMapping(value = "/board/pagination/{curPage}")
+	public String pagenation(@PathVariable int curPage, Model model) {
 		
 		System.out.println(curPage);
 		
@@ -85,7 +84,7 @@ public class BoardController {
 		
 		System.out.println(boardList.get(0).getBoardName());
 		
-		return "";
+		return "board/boardForm";
 	}
 	
 	@RequestMapping(value = "/board/boardWrite")
