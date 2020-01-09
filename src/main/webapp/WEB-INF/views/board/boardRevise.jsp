@@ -11,12 +11,13 @@
 <body>
 	<%@ include file="../index/index_top.jsp" %>
 	<div id="wrapper">
+	
 		<div id="board_top">
 			<img src='<c:url value='/resources/image/board.PNG' />' id="board_image">
 		</div>
 			
 		<div id="write_area">
-		<hr><br>
+		<br>
 		<h3>게시글 작성</h3><br><br>
 			<table id="write_table">
 				<tr class="write_context" id="tr1">

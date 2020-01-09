@@ -42,7 +42,6 @@ body{
 
 /* content1 */
 
-
 #view_area{
 	background-color:white;
 	
@@ -254,7 +253,7 @@ textarea{
 	margin:0 auto;
 	margin-bottom:5px;
 	padding-top:10px;
-	padding-bottom:10px;
+	padding-bottom:60px;
 }
 
 #content2-1{
