@@ -58,12 +58,20 @@ public class BoardController {
 	// 게시판 페이지 페이지네이션
 	@ResponseBody
 	@RequestMapping(value = "/board/pagination")
-	public void pagenation(@RequestParam int curPage, Model model) {
+	public String pagenation(@RequestParam int curPage, Model model) {
+		
+		System.out.println(curPage);
 		
 		int pageSize = 10;
 		
 		int start = (curPage - 1) * pageSize;
 		int end = start + 10;
+		
+		int totalBoardCount = service.selectBoardCount();
+		model.addAttribute("totalBoardCount", totalBoardCount);
+		
+		if(totalBoardCount <= end)
+			end = totalBoardCount;
 		
 		// 페이지네이션 파라미터 설정
 		HashMap<String, Integer> pagination = new HashMap<String, Integer>();
@@ -73,10 +81,11 @@ public class BoardController {
 		ArrayList<BoardDTO> boardList = service.selectBoardLimit(pagination);
 		model.addAttribute("boardList", boardList);
 		
-		int totalBoardCount = service.selectBoardCount();
-		model.addAttribute("totalBoardCount", totalBoardCount);
-		
 		model.addAttribute("curPage", curPage);
+		
+		System.out.println(boardList.get(0).getBoardName());
+		
+		return "";
 	}
 	
 	@RequestMapping(value = "/board/boardWrite")
