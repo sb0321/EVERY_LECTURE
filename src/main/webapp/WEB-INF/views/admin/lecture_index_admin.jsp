@@ -12,11 +12,12 @@
 	<%@ include file="../index/index_top.jsp" %>
 	<div id="lecture_admin_page">
 		<div id="title">
-			<h3>-강의 관리 페이지 입니다-</h3>
+			<h3>강의 관리 페이지 - 관리자</h3>
 			<br><hr>
 		</div>
 		
 		<section id="wrapper">
+			<div id="content1">
 			<c:forEach items="${lectureList}" var="lectureList" varStatus="status">
 				<div class="lectureTable">
 					<div class="lectureLeft">
@@ -41,7 +42,24 @@
 					</div>		
 				</div>
 			</c:forEach>
+			</div>
 		</section>
+		
+		<div id="footer">
+			<div id="joinSession">
+				<div>이제 시작할 준비가 되셨나요?</div>
+				<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
+			</div>
+			<div id="last">
+				<div id="last_left">
+					<h2>The flat icon belongs to www.flaticon.com</h2>
+					<br>
+					<h2>This site is made by Golden Brothers.Inc</h2>
+				</div>
+				<div id="last_right">
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

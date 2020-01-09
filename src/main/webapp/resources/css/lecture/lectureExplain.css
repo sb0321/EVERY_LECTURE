@@ -6,6 +6,7 @@
 }
 body{
 	width:1600px;
+	height:1000px;
 }
 
 #wrapper{
@@ -52,7 +53,7 @@ body{
 #lecture_intro{
 	background-color:white;
 	width:80%;
-	height:1600px;
+	height:auto;
 	text-align:center;
 	margin:0 auto;
 	padding:10px;

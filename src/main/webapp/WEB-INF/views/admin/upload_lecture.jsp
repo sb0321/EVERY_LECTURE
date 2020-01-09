@@ -9,15 +9,17 @@
 <link rel="stylesheet" href='<c:url value='/resources/css/admin/upload_lecture.css'/>'/>
 </head>
 <body>
+	<%@ include file="../index/index_top.jsp" %>
 	<div id="wrapper">
 		<div id="title">
-			<h3>관리자 페이지 - 동영상 등록</h3>
+			<h3>강의 등록 페이지 - 관리자</h3>
 			<br><hr>
 		</div>
-	
+		
 		<section id="lectureInfo">
-			<div id="info_title">-강의 정보 입력-</div>
-			<div>
+			<br>
+			<div id="info_title">Lecture Information</div>
+			<div id="content1">
 				<form id="lectureUploadForm"  method="post" enctype="multipart/form-data">
 					<table>
 						<tr class="upload_table" id="tr1">
@@ -35,16 +37,31 @@
 						</tr>
 					</table>
 				</form>
+				<br>
 			</div>
 		</section>
+		
 		<section id="lectureVideo">
-			<br><hr><br><hr>
+			<br><hr>
 			
 		</section>
-	
-		<footer>
-			
-		</footer>
+		
+		<div id="footer">
+			<div id="joinSession">
+				<div>이제 시작할 준비가 되셨나요?</div>
+				<button id="joinButtonFooter" class="eBtn">회원 가입 하기</button>
+			</div>
+			<div id="last">
+				<div id="last_left">
+					<h2>The flat icon belongs to www.flaticon.com</h2>
+					<br>
+					<h2>This site is made by Golden Brothers.Inc</h2>
+				</div>
+				<div id="last_right">
+				</div>
+			</div>
+		</div>
+		
 	</div>
 </body>
 </html>
