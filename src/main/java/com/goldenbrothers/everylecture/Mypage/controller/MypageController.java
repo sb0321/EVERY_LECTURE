@@ -30,7 +30,7 @@ public class MypageController {
 	// 마이페이지 이동
 	@RequestMapping(value = "/mypage/mypage")
 	public String mypage() {
-		return "redirect:/lecture/getRegisteredLectureMypage";
+		return "forward:/lecture/getRegisteredLectureMypage";
 	}
 	
 	@ResponseBody

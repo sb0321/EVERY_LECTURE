@@ -32,16 +32,39 @@ public class LectureController {
 	private static final Logger logger = LoggerFactory.getLogger(LectureController.class);
 	
 	@RequestMapping(value = "/lecture/lectureList")
-	public String lecture_list(Model model, HttpServletRequest request) {
+	public String lecture_list(Model model, HttpServletRequest request, HttpSession session) {
 		
+		String userID = ((LoginDTO) session.getAttribute("uInfo")).getUserID();
 		
 		// 모든 강의를 가져온다.
 		ArrayList<LectureDTO> lectureList = service.selectLectureAll();
 		
-		// 넣는다.
-		model.addAttribute("lectureList", lectureList);
+		// 현재 등록된 강의를 찾는다.
+		ArrayList<HashMap<String, Object>> registeredLectureList = service.getRegisteredLecture(userID);
+		System.out.println(registeredLectureList.toString() + " registeredLectureList");
 		
-		System.out.println(request.getSession().getServletContext().getRealPath("/"));
+		// 현재 듣고 있는 강의들의 lectureID의 배열을 만든다.
+		ArrayList<String> registeredLectureIDs = new ArrayList<String>();
+		for(int i = 0; i < registeredLectureList.size(); i++) {
+			// lectureID만 모여있는 배열을 만든다.
+			registeredLectureIDs.add(Integer.toString((int) registeredLectureList.get(i).get("lectureID")));			
+		}
+		
+		System.out.println(registeredLectureIDs.toString() + " registeredLectureIDs");
+		// 등록된 강좌는 뺀다.
+		ArrayList<LectureDTO> result = new ArrayList<LectureDTO>();
+		for(int j = 0; j < lectureList.size(); j++) {
+//			System.out.println(lectureList.get(j).getLectureID());
+			if(!registeredLectureIDs.contains(Integer.toString(lectureList.get(j).getLectureID()))) {
+				System.out.println(lectureList.get(j).getLectureID());
+				result.add(lectureList.get(j));
+			}
+		}
+		System.out.println(result.toString() + " result");
+		
+		
+		// 강의 리스트를넣는다.
+		model.addAttribute("lectureList", result);
 		
 		return "lecture/lecture_index";
 	}
@@ -60,6 +83,10 @@ public class LectureController {
 		dto.setUserID(userID);
 		
 		String result = Integer.toString(service.registerLecture(dto));
+		
+		ArrayList<HashMap<String, Object>> registered = service.getRegisteredLecture(userID);
+		
+		session.setAttribute("registered", registered);
 		
 		return "/mypage/mypage";
 	}
