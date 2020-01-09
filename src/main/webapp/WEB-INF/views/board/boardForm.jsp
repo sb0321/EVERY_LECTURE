@@ -37,7 +37,7 @@
 						</c:if>
 						<!-- pagination -->
 						<c:forEach begin="1" end="${(totalBoardCount / 10) + (1 - (totalBoardCount / 10) % 1) % 1}" var="page">
-							<td><button class="eBtn" onclick=""><c:out value="${page}"/></button></td>
+							<td><button class="eBtn" onclick="goPagination(${page})"><c:out value="${page}"/></button></td>
 						</c:forEach>
 						<c:if test="${curpage eq 1}">
 							<td><button class="eBtn">prev</button></td>
