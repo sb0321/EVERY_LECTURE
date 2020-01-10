@@ -34,4 +34,10 @@ public class LectureService implements ILectureService {
 		return dao.getRegisteredLecture(userID);
 	}
 
+	@Override
+	public LectureDTO selectOneLecture(String lectureID) {
+		// TODO Auto-generated method stub
+		return dao.selectOneLecture(lectureID);
+	}
+
 }

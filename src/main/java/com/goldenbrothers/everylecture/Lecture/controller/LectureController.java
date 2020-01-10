@@ -105,5 +105,15 @@ public class LectureController {
 		return "/mypage/mypage";
 		
 	}
+	
+	@RequestMapping(value = "/lecture/goLectureExplain/{lectureID}")
+	public String go_Lecture_explain(@PathVariable String lectureID, Model model) {
+		
+		LectureDTO lecture = service.selectOneLecture(lectureID);
+		
+		model.addAttribute("lecture", lecture);
+		
+		return "lecture/lectureExplain";
+	}
 
 }

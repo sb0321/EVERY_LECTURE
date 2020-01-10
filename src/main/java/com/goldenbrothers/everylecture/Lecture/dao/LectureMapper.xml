@@ -7,6 +7,11 @@
 		SELECT * FROM test.lecture
 	</select>
 	
+	<!-- 하나의 강의 정보 가져옴 -->
+	<select id="selectOneLecture" resultType="com.goldenbrothers.everylecture.Lecture.model.LectureDTO">
+		SELECT * FROM test.lecture WHERE lectureID = #{lectureID};
+	</select>
+	
 	<insert id="registerLecture" 
 	parameterType="com.goldenbrothers.everylecture.Lecture.model.UserClassDTO">
 		INSERT INTO test.userClass (userID, lectureID) VALUES

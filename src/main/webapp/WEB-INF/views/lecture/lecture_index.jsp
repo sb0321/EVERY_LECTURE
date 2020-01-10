@@ -27,7 +27,9 @@
 							<div class="right_wrapper">
 								<div class="lectureName">
 									<div>
-										<c:out value="${lectureList.lectureName}"/>
+										<a href='<c:url value='/lecture/goLectureExplain/${lectureList.lectureID}' />'>
+											<c:out value="${lectureList.lectureName}"/>
+										</a>
 									</div>
 								</div>
 								<div class="lectureExplain">
