@@ -1,6 +1,8 @@
 package com.goldenbrothers.everylecture.Mypage.service;
 
 
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -37,6 +39,12 @@ public class MypageService implements IMypageService {
 	public int updatePW(LoginDTO dto) {
 		// TODO Auto-generated method stub
 		return dao.updatePW(dto);
+	}
+
+	@Override
+	public int deleteRegisteredLecture(HashMap<String, String> IDs) {
+		// TODO Auto-generated method stub
+		return dao.deleteRegisteredLecture(IDs);
 	}
 	
 	

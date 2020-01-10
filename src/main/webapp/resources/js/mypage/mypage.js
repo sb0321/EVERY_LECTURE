@@ -6,6 +6,8 @@ $(document).ready(function() {
 	
 	$expire = $('#expireUser');
 	
+	$deleteLec = $('#but2');
+	
 	
 	// 이름을 수정할 때 보내는 ajax
 	$changeNameBtn.on("click", function() {
@@ -114,3 +116,11 @@ $(document).ready(function() {
 	});
 	
 });
+
+
+// 등록된 게시판 삭제
+function deleteLecture(lectureID) {
+	
+	location.href='/everylecture/mypage/deleteRegisteredLecture/' + String(lectureID);
+	
+}

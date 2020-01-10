@@ -26,5 +26,10 @@
 	<update id="updatePW" parameterType="com.goldenbrothers.everylecture.Login.model.LoginDTO">
 		UPDATE test.user SET userPW = #{userPW} WHERE userID = #{userID}
 	</update>
+	
+	<!-- 등록된 강의 삭제 -->
+	<delete id="deleteRegisteredLecture" parameterType="HashMap">
+		DELETE FROM test.userClass WHERE lectureID = #{lectureID} and userID = #{userID};
+	</delete>
 
 </mapper>

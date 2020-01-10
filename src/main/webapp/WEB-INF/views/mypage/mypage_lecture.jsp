@@ -12,16 +12,16 @@
 				</table>
 				
 				<c:forEach items="${registered}" var="registered">
-				<div id="my_lecture">
-					<img id="image" alt="강의 이미지" src="${registered.lectureImgPath}">
-					<div id="lec_title">${registered.lectureName}</div>
-				</div>	
-				<div id="div_button">
-					<div id="4"><button id="but1" class="eBtn">Go</button>
-								<button id="but2" class="eBtn">삭 제</button>
-					</div>
-				</div>	
-				
+					<div id="my_lecture">
+						<img id="image" alt="강의 이미지" src="${registered.lectureImgPath}">
+						<div id="lec_title">${registered.lectureName}</div>
+					</div>	
+					<div id="div_button">
+						<div id="4">
+							<button id="but1" class="eBtn">Go</button>
+							<button id="but2" class="eBtn" onclick="deleteLecture(${registered.lectureID})">삭 제</button>
+						</div>
+					</div>	
 				</c:forEach>
 				
 			</div>

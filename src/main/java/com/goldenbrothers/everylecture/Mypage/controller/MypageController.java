@@ -11,6 +11,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -127,6 +129,22 @@ public class MypageController {
 		String result = Integer.toString(service.deleteUser(user.get("userID")));
 		
 		return result;
+	}
+	
+	// 등록된 강의 삭제
+	@RequestMapping(value = "/mypage/deleteRegisteredLecture/{lectureID}")
+	public String delete_registered_lecture(@PathVariable String lectureID, HttpSession session) {
+		
+		String userID = ((LoginDTO) session.getAttribute("uInfo")).getUserID();
+		
+		HashMap<String, String> IDs = new HashMap<String, String>();
+		
+		IDs.put("lectureID", lectureID);
+		IDs.put("userID", userID);
+		
+		service.deleteRegisteredLecture(IDs);
+		
+		return "forward:/mypage/mypage";
 	}
 
 }
