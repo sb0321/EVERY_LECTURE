@@ -14,8 +14,8 @@
 				<c:forEach items="${registered}" var="registered">
 				<div id="my_lecture">
 					<img id="image" alt="강의 이미지" src="${registered.lectureImgPath}">
-					<div id="lec_title">${registered}</div>
-					<div id="3">${registered}</div>
+					<div id="lec_title">${registered.lectureName}</div>
+					<div id="3"></div>
 					<div id="4"><button class="eBtn">Go</button></div>
 				</div>
 				</c:forEach>
