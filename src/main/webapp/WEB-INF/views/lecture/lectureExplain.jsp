@@ -19,7 +19,7 @@
 		
 			<div id="lecture_intro">
 				<div id="intro_image">
-					<img id="image" alt="강의 이미지" src='<c:url value='${lecture.lectureImgPath}' />'>
+					<img id="image" alt="강의 이미지" src="${lecture.lectureImgPath}">
 				</div>
 				
 				<div id="intro_title">
