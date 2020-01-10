@@ -21,12 +21,10 @@ $(document).ready(function() {
 		console.log(form);
 		
 		var check = $lectureImg.val().split('.').pop().toLowerCase();
-		alert(check);
-		if($.inArray(check, ['gif','jpg','jpeg','png'] == -1)) {
+		if($.inArray(check, ['gif','jpg','jpeg','png']) == -1) {
 			alert("이미지 파일의 확장자는 gif, jpg, jpeg, png만 가능합니다.");
 		}
 		else {
-			
 			$.ajax({
 				url : "/everylecture/admin/uploadLecutureInfo",
 				enctype : "multipart/form-data",
